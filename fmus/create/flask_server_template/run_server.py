@@ -33,8 +33,9 @@ def handle_error(e):
 if __name__ == '__main__':
     # Open the right port
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    sock.bind(('', 0))  # Get a free port at random with '0'
-    address, port = sock.getsockname()  # Retrieve the port and address
+    address = 'localhost'
+    sock.bind(('localhost', 0))  # Get a free port at random with '0'
+    port = sock.getsockname()[1]  # Retrieve the port and address
     sock.close()  # Close the socket and use the port with Flask
 
     # Write a file with port and address
