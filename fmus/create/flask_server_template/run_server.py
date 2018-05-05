@@ -40,7 +40,7 @@ if __name__ == '__main__':
 
     # Write a file with port and address
     path_to_server = os.path.dirname(__file__)
-    with open(path_to_server + "server_config.txt", "w") as config:
+    with open(os.path.join(path_to_server, "server_config.txt"), "w") as config:
         config.write(address + ',' + str(port))
 
     # Start the server
