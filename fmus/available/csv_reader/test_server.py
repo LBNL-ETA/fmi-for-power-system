@@ -1,4 +1,5 @@
 import requests
+from datetime import datetime
 
 with open('server_config.txt') as config:
     line = config.readline().split(':')
@@ -10,17 +11,20 @@ port = line[3]
 print('')
 print('Valid request')
 url = 'http://' + address + ':' + port + '/dostep/'
-url += '1&parameter1,input1,input2&55,6,7&result1,result2'
+url += '1&column&0&output'
 print(url)
+start_time = datetime.now()
 response = requests.get(url)
+time_elapsed = datetime.now() - start_time
 print(response.content)
+print('Time elapsed (hh:mm:ss.ms) {}'.format(time_elapsed))
 print('')
 
 # Wrong request: time is a string
 print('')
-print('Wrong request: time is a string')
+print('Wrong request: index is out of bound')
 url = 'http://' + address + ':' + port + '/dostep/'
-url += 'cyder&parameter1,input1,input2&55,6,7&result1,result2'
+url += '1&column&100&output'
 print(url)
 response = requests.get(url)
 print(response.content)
