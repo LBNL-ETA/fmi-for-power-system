@@ -1,2 +1,5 @@
 # Server configuration file
 server_config.txt
+
+# Log for FMU generation
+*.log
