@@ -12,7 +12,7 @@ model simulator
   parameter String patResScri = Modelica.Utilities.Files.loadResource("C:\\Users\\DRRC\\Desktop\\fmi-for-power-system\\tests\\001_load_and_simulate\\csv_reader\\start_server.bat")
     "Path to the script in resource folder";
   // used to generate the FMU
-   parameter String _configurationFileName = "dummy.csv"
+  parameter String _configurationFileName = Modelica.Utilities.Files.loadResource("C:\\Users\\DRRC\\Desktop\\fmi-for-power-system\\tests\\001_load_and_simulate\\csv_reader\\data.csv")
     "Path to the configuration or input file";
   parameter Boolean _saveToFile (fixed=true) = false "Flag for writing results"; 
   
@@ -20,7 +20,8 @@ protected
    parameter String runServer = Modelica.Utilities.Files.loadResource("C:\\Users\\DRRC\\Desktop\\fmi-for-power-system\\tests\\001_load_and_simulate\\csv_reader\\run_server.py")
     "Path to the script to run the server";
   SimulatorToFMU.Server.Functions.BaseClasses.ServerObject obj=
-  SimulatorToFMU.Server.Functions.BaseClasses.ServerObject(patResScri=patResScri);
+  SimulatorToFMU.Server.Functions.BaseClasses.ServerObject(patResScri=patResScri,
+    patConFil=_configurationFileName);
   
    parameter Integer nDblPar=0 
     "Number of double parameter values to sent to Simulator";
@@ -63,7 +64,6 @@ protected
 	  
 	// Exchange data
 	yR = SimulatorToFMU.Server.Functions.simulator(
-	  conFilNam=_configurationFileName,
 	  modTim=time,
 	  nDblInp=nDblInp,
 	  dblInpNam=dblInpNam,
