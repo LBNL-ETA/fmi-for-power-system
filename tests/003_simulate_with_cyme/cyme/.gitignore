@@ -5,7 +5,7 @@ server_config.txt
 *.log
 
 # Save grid model named 'grid'
-!grid.sxst
+!IEEE_34_node_test_feeder.sxst
 
 # Save total load demand file
 !total_load.csv

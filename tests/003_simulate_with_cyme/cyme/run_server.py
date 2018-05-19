@@ -17,7 +17,7 @@ class Substation(object):
 
     # INITIALIZATION
     #################################################################
-    def initialize_cyme(inputs):
+    def initialize_cyme(self, inputs):
         """
         Initialize the CYME FMU
         """
@@ -35,25 +35,26 @@ class Substation(object):
             self.configuration['total_load_filename'], index_col=0)
 
         # Create a list of all the feeder names
-        self.feeders = [value.split('_')[0] for value in self.scada.columns]
-        if configuration['substation_network'] in self.feeders:
+        self.feeders = list(set(
+            [value.split('_')[0] for value in self.scada.columns]))
+        if self.configuration['substation_network'] in self.feeders:
             self.substation_and_feeders = list(self.feeders)
         else:
             self.substation_and_feeders = list(self.feeders)
             self.substation_and_feeders.append(
-                configuration['substation_network'])
+                self.configuration['substation_network'])
 
         # Reset iteration count and results
         self.first_iteration = True
         self.results = []
 
         # Open model
-        cympy.study.Open(configuration['model_filename'])
+        cympy.study.Open(self.configuration['model_filename'])
         return 'Initialization complete'
 
     # DOSTEP
     #################################################################
-    def simulate_cyme(inputs):
+    def simulate_cyme(self, inputs):
         """
         Simulate the CYME FMU
         """
@@ -65,7 +66,7 @@ class Substation(object):
                 voltages[name] =  value
             elif 'KW' in name or 'KVAR' in name:
                 loads[name] = value
-            elif 'time' not in name or 'outputnames' not in name:
+            elif 'time' not in name and 'outputnames' not in name:
                 raise Exception("Wrong input " + str(name))
 
         # If first iteration add load to the feeder model
@@ -78,7 +79,7 @@ class Substation(object):
 
         # Set voltage at the feeder/substation head [V]
         if voltages:
-            self._set_voltages(voltages, configuration['substation_network'])
+            self._set_voltages(voltages, self.configuration['substation_network'])
 
         # Retrieve current feeder load
         # Load are expected in MW and converted to kW
@@ -154,7 +155,7 @@ class Substation(object):
             "Sources[0].EquivalentSourceModels[0]" +
             ".EquivalentSource.OperatingVoltage3", network)
 
-    def _set_power_devices(self, device_ids, values):
+    def _set_load_power(self, device_ids, values):
         # Get active load model
         activeLoadModel = cympy.study.GetActiveLoadModel()
 
@@ -212,8 +213,8 @@ def initialize(parameter_names, parameter_values):
               for key, value in
               zip(parameter_names.split(','), parameter_values.split(','))}
     inputs['_configurationFileName'] = (
-        inputs['_configurationFileName'].replace('%', '\\'))
-    initialize_cyme(inputs)
+        inputs['_configurationFileName'].replace('!', '\\'))
+    substation.initialize_cyme(inputs)
     return 'Server initialized'
 
 @app.route('/dostep/<time>&<inputnames>&<inputvalues>&<outputnames>')
@@ -224,7 +225,7 @@ def step(time, inputnames, inputvalues, outputnames):
               zip(inputnames.split(','), inputvalues.split(','))}
     inputs['time'] = float(time)
     inputs['outputnames'] = outputnames.split(',')
-    outputs = simulate_cyme(inputs)
+    outputs = substation.simulate_cyme(inputs)
     return ','.join([str(output) for output in outputs])
 
 @app.route('/shutdown')
@@ -239,10 +240,10 @@ def shutdown():
 def ping():
     return 'pinged'
 
-@app.errorhandler(Exception)
-def handle_error(e):
-    #Handle error message back to the FMU
-    return 'ERROR: ' + str(e)
+# @app.errorhandler(Exception)
+# def handle_error(e):
+#     #Handle error message back to the FMU
+#     return 'ERROR: ' + str(e)
 
 # LAUNCH SERVER
 #################################################################
@@ -260,7 +261,7 @@ if __name__ == '__main__':
         config.write('address:' + address + ':port:' + str(port) + ':')
 
     # Create state variables
-    sub = Substation()
+    substation = Substation()
 
     # Start the server
     app.run(port=port, debug=True, use_reloader=False)

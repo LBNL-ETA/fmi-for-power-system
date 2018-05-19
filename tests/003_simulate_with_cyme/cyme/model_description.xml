@@ -7,19 +7,35 @@
   generationTool="SimulatorToFMU">
   <ModelVariables>
     <ScalarVariable
-      name="column"
-      description="input"
+      name="IEEE34NODES!828!KW"
+      description="input P"
       causality="input">
       <Real
-        unit="V"
+        unit="kW"
         start="0"/>
     </ScalarVariable>
     <ScalarVariable
-      name="y"
-      description="output"
+      name="IEEE34NODES!836!KW"
+      description="input P"
+      causality="input">
+      <Real
+        unit="kW"
+        start="0"/>
+    </ScalarVariable>
+
+    <ScalarVariable
+      name="828!Vpu"
+      description="output voltage p.u."
       causality="output">
       <Real
-        unit="A"/>
+        unit="V"/>
+    </ScalarVariable>
+    <ScalarVariable
+      name="836!Vpu"
+      description="output voltage p.u."
+      causality="output">
+      <Real
+        unit="V"/>
     </ScalarVariable>
   </ModelVariables>
 </SimulatorModelDescription>
