@@ -52,17 +52,37 @@ def handle_error(e):
     return 'ERROR: ' + str(e)
 #################################################################
 
-
 if __name__ == '__main__':
     # Open the right port
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     address = 'localhost'
-    sock.bind(('localhost', 0))  # Get a free port at random with '0'
+    sock.bind((address, 0))  # Get a free port at random with '0'
     port = sock.getsockname()[1]  # Retrieve the port and address
     sock.close()  # Close the socket and use the port with Flask
 
     # Write a file with port and address
     path_to_server = os.path.dirname(__file__)
+    ping_server_code = (
+    """
+    def main():
+        import socket
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        result = sock.connect_ex(('localhost', """ + str(port) + """))
+        if result == 0:
+            return 0
+        else:
+            return 1
+
+    if __name__ == '__main__':
+        import sys
+        sys.exit(main())
+    """)
+
+    # Write a file which allows checking if the server is up
+    with open(os.path.join(path_to_server, "check_server.py"), "w") as py_ping:
+        py_ping.write(ping_server_code)
+
+    # Write te configuration file for connecting to the server
     with open(os.path.join(path_to_server, "server_config.txt"), "w") as config:
         config.write('address:' + address + ':port:' + str(port) + ':')
 
