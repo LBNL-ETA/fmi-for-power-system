@@ -10,7 +10,7 @@
       name="_configurationFileName"
       description="parameter"
       causality="parameter"
-      start="C:\\Users\\DRRC\\Desktop\\fmi-for-power-system\\tests\\001_load_and_simulate\\csv_reader\\data.csv"
+      start="C:\\Users\\DRRC\\Desktop\\fmi-for-power-system\\tests\\001_load_and_simulate\\ME_server\\csv_reader\\data.csv"
       type="String">
     </ScalarVariable>
     <ScalarVariable
