@@ -14,10 +14,12 @@ def initialize(parameter_names, parameter_values):
     inputs['_configurationFileName'] = inputs['_configurationFileName'].replace('%', '\\')
     global df  # Make sure that df will be availble for the dostep()
     df = pandas.read_csv(inputs['_configurationFileName'], index_col=0)
+    print(df.head())
     return 'Server initialized'
 
 @app.route('/dostep/<time>&<inputnames>&<inputvalues>&<outputnames>')
 def step(time, inputnames, inputvalues, outputnames):
+    print('HELLO WORLD STEP')
     inputs = _parse_url(time, inputnames, inputvalues, outputnames)
     outputs = []
     outputs.append(df.loc[int(inputs['time']), df.columns[int(inputs['column'])]])
@@ -62,21 +64,24 @@ if __name__ == '__main__':
 
     # Write a file with port and address
     path_to_server = os.path.dirname(__file__)
-    ping_server_code = (
-    """
-    def main():
-        import socket
-        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        result = sock.connect_ex(('localhost', """ + str(port) + """))
-        if result == 0:
-            return 0
-        else:
-            return 1
+    ping_server_code = """def main():
+    import urllib.request
+    try:
+        response = urllib.request.urlopen("http://localhost:""" + str(port) + """/ping").read()
+        response = response.decode('utf-8')
+    except:
+        response = 'bad request'
+    if response in 'pinged':
+        print('The Server is up')
+        return 0
+    else:
+        print('The server is not up yet')
+        return 1
 
-    if __name__ == '__main__':
-        import sys
-        sys.exit(main())
-    """)
+if __name__ == '__main__':
+    import sys
+    sys.exit(main())
+    """
 
     # Write a file which allows checking if the server is up
     with open(os.path.join(path_to_server, "check_server.py"), "w") as py_ping:
