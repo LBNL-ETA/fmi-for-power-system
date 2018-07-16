@@ -1,7 +1,7 @@
 def main():
     import urllib2
     try:
-        response = urllib2.urlopen("http://localhost:52184/ping").read()
+        response = urllib2.urlopen("http://localhost:63712/ping").read()
         response = response.decode('utf-8')
     except:
         response = 'bad request'

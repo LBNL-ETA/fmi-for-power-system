@@ -7,35 +7,37 @@
   generationTool="SimulatorToFMU">
   <ModelVariables>
     <ScalarVariable
+      name="_configurationFileName"
+      description="parameter"
+      causality="parameter"
+      start="C:\\Users\\DRRC\\Desktop\\fmi-for-power-system\\tests\\003_simulate_with_cyme\\cyme\\jonathan.json2"
+      type="String">
+    </ScalarVariable>
+    <ScalarVariable
       name="IEEE34NODES!828!KW"
       description="input P"
-      causality="input">
-      <Real
-        unit="kW"
-        start="0"/>
+      causality="input"
+      type="Real"
+      unit="kW">
     </ScalarVariable>
     <ScalarVariable
       name="IEEE34NODES!836!KW"
       description="input P"
-      causality="input">
-      <Real
-        unit="kW"
-        start="0"/>
-    </ScalarVariable>
-
-    <ScalarVariable
-      name="828!Vpu"
-      description="output voltage p.u."
-      causality="output">
-      <Real
-        unit="V"/>
+      causality="input"
+      type="Real"
+      unit="kW">
     </ScalarVariable>
     <ScalarVariable
-      name="836!Vpu"
+      name="voltage!828!Vpu"
       description="output voltage p.u."
-      causality="output">
-      <Real
-        unit="V"/>
+      causality="output"
+      type="Real">
+    </ScalarVariable>
+    <ScalarVariable
+      name="voltage!836!Vpu"
+      description="output voltage p.u."
+      causality="output"
+      type="Real">
     </ScalarVariable>
   </ModelVariables>
 </SimulatorModelDescription>

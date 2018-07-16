@@ -198,8 +198,8 @@ class Substation(object):
         # Query the right output name at the source node
         output = []
         for name in output_names:
-            node = name.split('!')[0]
-            category = name.split('!')[1]
+            node = name.split('!')[1]
+            category = name.split('!')[2]
             temp = cympy.study.QueryInfoNode(category, node)
             output.append(float(temp))
         return output
@@ -251,12 +251,36 @@ if __name__ == '__main__':
     # Open the right port
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     address = 'localhost'
-    sock.bind(('localhost', 0))  # Get a free port at random with '0'
+    sock.bind((address, 0))  # Get a free port at random with '0'
     port = sock.getsockname()[1]  # Retrieve the port and address
     sock.close()  # Close the socket and use the port with Flask
 
     # Write a file with port and address
     path_to_server = os.path.dirname(__file__)
+    ping_server_code = """def main():
+    import urllib2
+    try:
+        response = urllib2.urlopen("http://localhost:""" + str(port) + """/ping").read()
+        response = response.decode('utf-8')
+    except:
+        response = 'bad request'
+    if response in 'pinged':
+        print('The Server is up')
+        return 0
+    else:
+        print('The server is not up yet')
+        return 1
+
+if __name__ == '__main__':
+    import sys
+    sys.exit(main())
+    """
+
+    # Write a file which allows checking if the server is up
+    with open(os.path.join(path_to_server, "check_server.py"), "w") as py_ping:
+        py_ping.write(ping_server_code)
+
+    # Write te configuration file for connecting to the server
     with open(os.path.join(path_to_server, "server_config.txt"), "w") as config:
         config.write('address:' + address + ':port:' + str(port) + ':')
 

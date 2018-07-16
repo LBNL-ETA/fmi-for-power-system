@@ -1,4 +1,4 @@
-import csv_reader
+import jonathan_wrapper
 
 configuration_filename = 'data.csv'
 time = int(1.0)
@@ -8,13 +8,13 @@ output_names = ['y']
 memory = None
 
 print('Test function: ')
-value, memory = csv_reader.step(
+value, memory = jonathan_wrapper.exchange(
     configuration_filename, time, input_names,
-    input_values, output_names, memory)
+    input_values, output_names, False, memory)
 print('Success: ' + str(value))
 
 time = int(2.0)
-value, memory = csv_reader.step(
+value, memory = jonathan_wrapper.exchange(
     configuration_filename, time, input_names,
-    input_values, output_names, memory)
+    input_values, output_names, False, memory)
 print('Success: ' + str(value))
