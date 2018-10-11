@@ -4,6 +4,7 @@ import socket
 import json
 import pandas
 import cympy
+import uuid
 
 app = Flask(__name__)
 version = 'test cyme'
@@ -140,7 +141,7 @@ class Substation(object):
                 device,  # Load ID
                 cympy.enums.DeviceType.SpotLoad,
                 node,  # Node ID
-                'NEW_NODE_from' + node)
+                str(uuid.uuid4()))
 
     def _set_voltages(self, inputs, network):
         # Set the voltage at the source node from transmission grid

@@ -1,0 +1,2 @@
+python C:/Users/DRRC/Desktop/desktops/February/SimulatorToFMU/simulatortofmu/parser/SimulatorToFMU.py -i model_description.xml -s C:\Users\DRRC\Desktop\fmi-for-power-system\tests\001_load_and_simulate\ME_function\csv_reader\jonathan_wrapper.py -cf C:\Users\DRRC\Desktop\fmi-for-power-system\tests\001_load_and_simulate\ME_function\csv_reader\data.csv -x python -t jmodelica -pt C:/JModelica.org-2.1 -a me
+@pause

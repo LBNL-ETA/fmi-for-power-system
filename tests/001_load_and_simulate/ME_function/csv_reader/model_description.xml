@@ -2,7 +2,7 @@
 <SimulatorModelDescription
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   fmiVersion="2.0"
-  modelName="simulator"
+  modelName="jonathan"
   description="Input data for a Simulator FMU"
   generationTool="SimulatorToFMU">
   <ModelVariables>
@@ -10,32 +10,19 @@
       name="_configurationFileName"
       description="parameter"
       causality="parameter"
-      start="C:\\Users\\DRRC\\Desktop\\fmi-for-power-system\\tests\\003_simulate_with_cyme\\cyme\\jonathan.json2"
+      start="C:\\Users\\DRRC\\Desktop\\fmi-for-power-system\\tests\\001_load_and_simulate\\ME_function\\csv_reader\\data.csv"
       type="String">
     </ScalarVariable>
     <ScalarVariable
-      name="IEEE34NODES!828!KW"
-      description="input P"
+      name="column"
+      description="input"
       causality="input"
       type="Real"
-      unit="kW">
+      unit="V">
     </ScalarVariable>
     <ScalarVariable
-      name="IEEE34NODES!836!KW"
-      description="input P"
-      causality="input"
-      type="Real"
-      unit="kW">
-    </ScalarVariable>
-    <ScalarVariable
-      name="voltage!828!Vpu"
-      description="output voltage p.u."
-      causality="output"
-      type="Real">
-    </ScalarVariable>
-    <ScalarVariable
-      name="voltage!836!Vpu"
-      description="output voltage p.u."
+      name="y"
+      description="output"
       causality="output"
       type="Real">
     </ScalarVariable>

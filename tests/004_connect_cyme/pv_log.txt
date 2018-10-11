@@ -1,0 +1,1381 @@
+FMIL: module = FMILIB, log level = 5: Allocating FMIL context
+FMIL: module = FMILIB, log level = 5: Detecting FMI standard version
+FMIL: module = FMIZIP, log level = 5: Unpacking FMU into c:\users\drrc\appdata\local\temp\JModelica.org\jm_tmprow3gt
+FMIL: module = FMIXML, log level = 5: Parsing XML to detect FMI standard version
+FMIL: module = FMIXML, log level = 5: XML specifies FMI 2.0
+FMIL: module = FMILIB, log level = 4: XML specifies FMI standard version 2.0
+FMIL: module = FMILIB, log level = 5: Parsing model description XML
+FMIL: module = FMI2XML, log level = 5: Parsing XML element fmiModelDescription
+FMIL: module = FMI2XML, log level = 5: Parsing XML element ModelExchange
+FMIL: module = FMI2XML, log level = 5: Parsing XML element CoSimulation
+FMIL: module = FMI2XML, log level = 5: Parsing XML element UnitDefinitions
+FMIL: module = FMI2XML, log level = 5: Parsing XML element TypeDefinitions
+FMIL: module = FMI2XML, log level = 5: Parsing XML element ModelVariables
+FMIL: module = FMI2XML, log level = 5: Building alias index
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.pAtm and weaDat.weaBus.pAtm reference the same vr 16777219. Marking 'weaDat.weaBus.pAtm' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.pAtm and pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.pAtm reference the same vr 16777219. Marking 'pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.pAtm' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.pAtm and pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.pAtm reference the same vr 16777219. Marking 'pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.pAtm' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.pAtm and pV_cyder.tilted_Solar_TMY.weaBus.pAtm reference the same vr 16777219. Marking 'pV_cyder.tilted_Solar_TMY.weaBus.pAtm' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.pAtm and pV_cyder.weaBus.pAtm reference the same vr 16777219. Marking 'pV_cyder.weaBus.pAtm' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables shading.k and pV_cyder.Shading reference the same vr 16777246. Marking 'pV_cyder.Shading' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables shading.k and shading.y reference the same vr 16777246. Marking 'shading.y' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.lat and pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.lat reference the same vr 100663453. Marking 'pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.lat' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.lat and pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.lat reference the same vr 100663453. Marking 'pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.lat' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.lat and pV_cyder.tilted_Solar_TMY.weaBus.lat reference the same vr 100663453. Marking 'pV_cyder.tilted_Solar_TMY.weaBus.lat' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.lat and pV_cyder.weaBus.lat reference the same vr 100663453. Marking 'pV_cyder.weaBus.lat' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.lon and pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.lon reference the same vr 100663454. Marking 'pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.lon' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.lon and pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.lon reference the same vr 100663454. Marking 'pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.lon' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.lon and pV_cyder.tilted_Solar_TMY.weaBus.lon reference the same vr 100663454. Marking 'pV_cyder.tilted_Solar_TMY.weaBus.lon' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.lon and pV_cyder.weaBus.lon reference the same vr 100663454. Marking 'pV_cyder.weaBus.lon' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables PV_generation and pV_cyder.PV_generation reference the same vr 335544320. Marking 'pV_cyder.PV_generation' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.HGloHor and pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.HGloHor reference the same vr 369098836. Marking 'pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.HGloHor' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.HGloHor and pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.HGloHor reference the same vr 369098836. Marking 'pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.HGloHor' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.HGloHor and pV_cyder.tilted_Solar_TMY.weaBus.HGloHor reference the same vr 369098836. Marking 'pV_cyder.tilted_Solar_TMY.weaBus.HGloHor' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.HGloHor and pV_cyder.weaBus.HGloHor reference the same vr 369098836. Marking 'pV_cyder.weaBus.HGloHor' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.HDifHor and pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.HDifHor reference the same vr 369098838. Marking 'pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.HDifHor' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.HDifHor and pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.HDifHor reference the same vr 369098838. Marking 'pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.HDifHor' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.HDifHor and pV_cyder.tilted_Solar_TMY.weaBus.HDifHor reference the same vr 369098838. Marking 'pV_cyder.tilted_Solar_TMY.weaBus.HDifHor' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.HDifHor and pV_cyder.weaBus.HDifHor reference the same vr 369098838. Marking 'pV_cyder.weaBus.HDifHor' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.HDirNor and pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.HDirNor reference the same vr 369098840. Marking 'pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.HDirNor' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.HDirNor and pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.HDirNor reference the same vr 369098840. Marking 'pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.HDirNor' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.HDirNor and pV_cyder.tilted_Solar_TMY.weaBus.HDirNor reference the same vr 369098840. Marking 'pV_cyder.tilted_Solar_TMY.weaBus.HDirNor' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.HDirNor and pV_cyder.weaBus.HDirNor reference the same vr 369098840. Marking 'pV_cyder.weaBus.HDirNor' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.cloTim and pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.cloTim reference the same vr 369098856. Marking 'pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.cloTim' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.cloTim and pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.cloTim reference the same vr 369098856. Marking 'pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.cloTim' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.cloTim and pV_cyder.tilted_Solar_TMY.weaBus.cloTim reference the same vr 369098856. Marking 'pV_cyder.tilted_Solar_TMY.weaBus.cloTim' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.cloTim and pV_cyder.weaBus.cloTim reference the same vr 369098856. Marking 'pV_cyder.weaBus.cloTim' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.solTim and pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.solTim reference the same vr 369098880. Marking 'pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.solTim' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.solTim and pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.solTim reference the same vr 369098880. Marking 'pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.solTim' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.solTim and pV_cyder.tilted_Solar_TMY.weaBus.solTim reference the same vr 369098880. Marking 'pV_cyder.tilted_Solar_TMY.weaBus.solTim' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.solTim and pV_cyder.weaBus.solTim reference the same vr 369098880. Marking 'pV_cyder.weaBus.solTim' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.solZen and pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.solZen reference the same vr 369098902. Marking 'pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.solZen' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.solZen and pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.solZen reference the same vr 369098902. Marking 'pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.solZen' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.solZen and pV_cyder.tilted_Solar_TMY.weaBus.solZen reference the same vr 369098902. Marking 'pV_cyder.tilted_Solar_TMY.weaBus.solZen' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.solZen and pV_cyder.weaBus.solZen reference the same vr 369098902. Marking 'pV_cyder.weaBus.solZen' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.solHouAng and pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.solHouAng reference the same vr 369098905. Marking 'pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.solHouAng' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.solHouAng and pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.solHouAng reference the same vr 369098905. Marking 'pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.solHouAng' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.solHouAng and pV_cyder.tilted_Solar_TMY.weaBus.solHouAng reference the same vr 369098905. Marking 'pV_cyder.tilted_Solar_TMY.weaBus.solHouAng' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.solHouAng and pV_cyder.weaBus.solHouAng reference the same vr 369098905. Marking 'pV_cyder.weaBus.solHouAng' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.solDec and pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.solDec reference the same vr 369098906. Marking 'pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.solDec' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.solDec and pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.solDec reference the same vr 369098906. Marking 'pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.solDec' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.solDec and pV_cyder.tilted_Solar_TMY.weaBus.solDec reference the same vr 369098906. Marking 'pV_cyder.tilted_Solar_TMY.weaBus.solDec' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.solDec and pV_cyder.weaBus.solDec reference the same vr 369098906. Marking 'pV_cyder.weaBus.solDec' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables pV_cyder.tilted_Solar_TMY.HDifTil.H and pV_cyder.tilted_Solar_TMY.HDifTil.add.y reference the same vr 369098921. Marking 'pV_cyder.tilted_Solar_TMY.HDifTil.add.y' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables pV_cyder.tilted_Solar_TMY.HDifTil.H and pV_cyder.tilted_Solar_TMY.sum.u2 reference the same vr 369098921. Marking 'pV_cyder.tilted_Solar_TMY.sum.u2' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables pV_cyder.tilted_Solar_TMY.HDirTil.H and pV_cyder.tilted_Solar_TMY.sum.u1 reference the same vr 369098984. Marking 'pV_cyder.tilted_Solar_TMY.sum.u1' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables pV_cyder.tilted_Solar_TMY.sum.y and pV_cyder.tilted_Solar_TMY.G reference the same vr 369099004. Marking 'pV_cyder.tilted_Solar_TMY.G' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.nTot and pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.nTot reference the same vr 905969740. Marking 'pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.nTot' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.nTot and pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.nTot reference the same vr 905969740. Marking 'pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.nTot' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.nTot and pV_cyder.tilted_Solar_TMY.weaBus.nTot reference the same vr 905969740. Marking 'pV_cyder.tilted_Solar_TMY.weaBus.nTot' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.nTot and pV_cyder.weaBus.nTot reference the same vr 905969740. Marking 'pV_cyder.weaBus.nTot' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.nOpa and pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.nOpa reference the same vr 905969744. Marking 'pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.nOpa' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.nOpa and pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.nOpa reference the same vr 905969744. Marking 'pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.nOpa' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.nOpa and pV_cyder.tilted_Solar_TMY.weaBus.nOpa reference the same vr 905969744. Marking 'pV_cyder.tilted_Solar_TMY.weaBus.nOpa' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.nOpa and pV_cyder.weaBus.nOpa reference the same vr 905969744. Marking 'pV_cyder.weaBus.nOpa' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.celHei and pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.celHei reference the same vr 905969754. Marking 'pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.celHei' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.celHei and pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.celHei reference the same vr 905969754. Marking 'pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.celHei' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.celHei and pV_cyder.tilted_Solar_TMY.weaBus.celHei reference the same vr 905969754. Marking 'pV_cyder.tilted_Solar_TMY.weaBus.celHei' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.celHei and pV_cyder.weaBus.celHei reference the same vr 905969754. Marking 'pV_cyder.weaBus.celHei' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.winSpe and pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.winSpe reference the same vr 905969756. Marking 'pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.winSpe' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.winSpe and pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.winSpe reference the same vr 905969756. Marking 'pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.winSpe' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.winSpe and pV_cyder.tilted_Solar_TMY.weaBus.winSpe reference the same vr 905969756. Marking 'pV_cyder.tilted_Solar_TMY.weaBus.winSpe' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.winSpe and pV_cyder.weaBus.winSpe reference the same vr 905969756. Marking 'pV_cyder.weaBus.winSpe' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.HHorIR and pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.HHorIR reference the same vr 905969758. Marking 'pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.HHorIR' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.HHorIR and pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.HHorIR reference the same vr 905969758. Marking 'pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.HHorIR' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.HHorIR and pV_cyder.tilted_Solar_TMY.weaBus.HHorIR reference the same vr 905969758. Marking 'pV_cyder.tilted_Solar_TMY.weaBus.HHorIR' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.HHorIR and pV_cyder.weaBus.HHorIR reference the same vr 905969758. Marking 'pV_cyder.weaBus.HHorIR' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.winDir and pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.winDir reference the same vr 905969760. Marking 'pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.winDir' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.winDir and pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.winDir reference the same vr 905969760. Marking 'pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.winDir' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.winDir and pV_cyder.tilted_Solar_TMY.weaBus.winDir reference the same vr 905969760. Marking 'pV_cyder.tilted_Solar_TMY.weaBus.winDir' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.winDir and pV_cyder.weaBus.winDir reference the same vr 905969760. Marking 'pV_cyder.weaBus.winDir' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.TDryBul and pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.TDryBul reference the same vr 905969796. Marking 'pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.TDryBul' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.TDryBul and pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.TDryBul reference the same vr 905969796. Marking 'pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.TDryBul' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.TDryBul and pV_cyder.tilted_Solar_TMY.weaBus.TDryBul reference the same vr 905969796. Marking 'pV_cyder.tilted_Solar_TMY.weaBus.TDryBul' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.TDryBul and pV_cyder.weaBus.TDryBul reference the same vr 905969796. Marking 'pV_cyder.weaBus.TDryBul' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.TDewPoi and pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.TDewPoi reference the same vr 905969797. Marking 'pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.TDewPoi' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.TDewPoi and pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.TDewPoi reference the same vr 905969797. Marking 'pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.TDewPoi' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.TDewPoi and pV_cyder.tilted_Solar_TMY.weaBus.TDewPoi reference the same vr 905969797. Marking 'pV_cyder.tilted_Solar_TMY.weaBus.TDewPoi' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.TDewPoi and pV_cyder.weaBus.TDewPoi reference the same vr 905969797. Marking 'pV_cyder.weaBus.TDewPoi' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.TBlaSky and pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.TBlaSky reference the same vr 905969798. Marking 'pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.TBlaSky' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.TBlaSky and pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.TBlaSky reference the same vr 905969798. Marking 'pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.TBlaSky' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.TBlaSky and pV_cyder.tilted_Solar_TMY.weaBus.TBlaSky reference the same vr 905969798. Marking 'pV_cyder.tilted_Solar_TMY.weaBus.TBlaSky' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.TBlaSky and pV_cyder.weaBus.TBlaSky reference the same vr 905969798. Marking 'pV_cyder.weaBus.TBlaSky' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.relHum and pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.relHum reference the same vr 905969810. Marking 'pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.relHum' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.relHum and pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.relHum reference the same vr 905969810. Marking 'pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.relHum' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.relHum and pV_cyder.tilted_Solar_TMY.weaBus.relHum reference the same vr 905969810. Marking 'pV_cyder.tilted_Solar_TMY.weaBus.relHum' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.relHum and pV_cyder.weaBus.relHum reference the same vr 905969810. Marking 'pV_cyder.weaBus.relHum' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.solAlt and pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.solAlt reference the same vr 905969815. Marking 'pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.solAlt' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.solAlt and pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.solAlt reference the same vr 905969815. Marking 'pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.solAlt' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.solAlt and pV_cyder.tilted_Solar_TMY.weaBus.solAlt reference the same vr 905969815. Marking 'pV_cyder.tilted_Solar_TMY.weaBus.solAlt' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables weaDat.weaBus.solAlt and pV_cyder.weaBus.solAlt reference the same vr 905969815. Marking 'pV_cyder.weaBus.solAlt' as alias.
+FMIL: module = FMI2XML, log level = 5: Parsing XML element ModelStructure
+FMIL: module = FMI2XML, log level = 5: Parsing XML element Outputs
+FMIL: module = FMI2XML, log level = 5: Parsing XML element InitialUnknowns
+FMIL: module = FMI2XML, log level = 4: Found model identifiers for ModelExchange and CoSimulation
+FMIL: module = FMILIB, log level = 5: Parsing finished successfully
+FMIL: module = FMILIB, log level = 4: Loading 'win32' binary with 'default' platform types
+FMIL: module = FMICAPI, log level = 5: Loaded FMU binary from c:\users\drrc\appdata\local\temp\JModelica.org\jm_tmprow3gt\binaries\win32\pv.dll
+FMIL: module = FMICAPI, log level = 5: Loading functions for the model exchange interface
+FMIL: module = FMILIB, log level = 5: Successfully loaded all the interface functions
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2Instantiate completed
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetString: filNam = pv/USA_CA_San.Francisco.Intl.AP.724940_TMY3.mos
+FMIL: module = FMICAPI, log level = 5: Calling fmi2SetupExperiment
+FMIL: module = Model, log level = 3: [][FMU status:Warning] fmi2SetupExperiment: tolerance control not supported for fmuType fmi2ModelExchange, setting toleranceDefined to fmi2False
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetupExperiment: startTime is set to 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: A_PV = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetNominalsOfContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetNominalsOfContinuousStates
+FMIL: module = FMICAPI, log level = 5: Calling fmi2SetupExperiment
+FMIL: module = Model, log level = 3: [][FMU status:Warning] fmi2SetupExperiment: tolerance control not supported for fmuType fmi2ModelExchange, setting toleranceDefined to fmi2False
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetupExperiment: startTime is set to 0
+FMIL: module = FMICAPI, log level = 5: Calling fmi2EnterInitializationMode
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2EnterInitializationMode...
+FMIL: module = Model, log level = 4: [][FMU status:OK] ... loading "tab1" from "pv/USA_CA_San.Francisco.Intl.AP.724940_TMY3.mos"
+fmi2EnterInitializationMode completed
+FMIL: module = FMICAPI, log level = 5: Calling fmi2ExitInitializationMode
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2ExitInitializationMode...
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2ExitInitializationMode completed
+FMIL: module = FMICAPI, log level = 5: Calling fmi2NewDiscreteStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2NewDiscreteStates...
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2NewDiscreteStates completed
+FMIL: module = FMICAPI, log level = 5: Calling fmi2EnterContinuousTimeMode
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2EnterContinuousTimeMode...
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2EnterContinuousTimeMode done
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.pAtm = 101325
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.ceiHei = 20000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.totSkyCov = 0.5
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.opaSkyCov = 0.5
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.TDryBul = 293.15
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.TDewPoi = 283.15
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.TBlaSky = 273.15
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.relHum = 0.5
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.winSpe = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.winDir = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.HInfHor = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetBoolean: weaDat.computeWetBulbTemperature = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetInteger: weaDat.pAtmSou = 2
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetInteger: weaDat.ceiHeiSou = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetInteger: weaDat.totSkyCovSou = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetInteger: weaDat.opaSkyCovSou = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetInteger: weaDat.TDryBulSou = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetInteger: weaDat.TDewPoiSou = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetInteger: weaDat.TBlaSkySou = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetInteger: weaDat.relHumSou = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetInteger: weaDat.winSpeSou = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetInteger: weaDat.winDirSou = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetInteger: weaDat.HInfHorSou = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetInteger: weaDat.HSou = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetInteger: weaDat.calTSky = 2
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.epsCos = 1e-006
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.solCon = 1367.7
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetBoolean: pV_cyder.tilted_Solar_TMY.HDifTil.outSkyCon = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetBoolean: pV_cyder.tilted_Solar_TMY.HDifTil.outGroCon = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: A_PV = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDryBul = 280.35
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDewPoi = 278.75
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TBlaSky = 267.511
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solTim = -792.412
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.timZon = -28800
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.relHum = 0.9
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solZen = 2.88311
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solAlt = -1.31231
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.eta = 0.0972
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solHouAng = -3.19922
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solDec = -0.402886
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: PV_generation = 0.0283595
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.A = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.H = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u1 = 9.71029e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u2 = 1.51922e-007
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: shading.k = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nTot = 0.2
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nOpa = 0.2
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HGloHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDifHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDirNor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.celHei = 2000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winSpe = 1e-006
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HHorIR = 290
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winDir = 0.001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.cloTim = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.inc = 2.71088
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.H = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.rho = 0.2
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.y = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 9.42432e-007
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.0013729
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.0013729
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.000686452
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.000686452
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.000686452
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 6.8652
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 6.8652
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: A_PV = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDryBul = 280.35
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDewPoi = 278.75
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TBlaSky = 267.511
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solTim = -791.413
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.timZon = -28800
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.relHum = 0.9
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solZen = 2.88312
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solAlt = -1.31233
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.eta = 0.0972
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solHouAng = -3.19915
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solDec = -0.402886
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: PV_generation = 0.0283595
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.A = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.H = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u1 = 9.71029e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u2 = 1.51922e-007
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: shading.k = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nTot = 0.199972
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nOpa = 0.199972
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HGloHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDifHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDirNor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.celHei = 2000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winSpe = 1e-006
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HHorIR = 289.999
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winDir = 0.001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.cloTim = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.inc = 2.71089
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.H = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.rho = 0.2
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.y = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 2
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: A_PV = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDryBul = 280.35
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDewPoi = 278.75
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TBlaSky = 267.511
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solTim = -790.413
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.timZon = -28800
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.relHum = 0.9
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solZen = 2.88313
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solAlt = -1.31234
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.eta = 0.0972
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solHouAng = -3.19907
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solDec = -0.402886
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: PV_generation = 0.0283595
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.A = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.H = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u1 = 9.71029e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u2 = 1.51922e-007
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: shading.k = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nTot = 0.199944
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nOpa = 0.199944
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HGloHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDifHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDirNor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.celHei = 2000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winSpe = 1e-006
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HHorIR = 289.998
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winDir = 0.001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.cloTim = 2
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.inc = 2.71089
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.H = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.rho = 0.2
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.y = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 3
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: A_PV = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDryBul = 280.35
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDewPoi = 278.75
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TBlaSky = 267.51
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solTim = -789.413
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.timZon = -28800
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.relHum = 0.9
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solZen = 2.88315
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solAlt = -1.31235
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.eta = 0.0972
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solHouAng = -3.199
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solDec = -0.402886
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: PV_generation = 0.0283595
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.A = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.H = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u1 = 9.71029e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u2 = 1.51922e-007
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: shading.k = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nTot = 0.199917
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nOpa = 0.199917
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HGloHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDifHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDirNor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.celHei = 2000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winSpe = 1e-006
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HHorIR = 289.998
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winDir = 0.001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.cloTim = 3
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.inc = 2.7109
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.H = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.rho = 0.2
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.y = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: A_PV = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDryBul = 280.35
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDewPoi = 278.75
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TBlaSky = 267.51
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solTim = -788.414
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.timZon = -28800
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.relHum = 0.9
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solZen = 2.88316
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solAlt = -1.31236
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.eta = 0.0972
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solHouAng = -3.19893
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solDec = -0.402886
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: PV_generation = 0.0283595
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.A = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.H = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u1 = 9.71029e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u2 = 1.51922e-007
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: shading.k = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nTot = 0.199889
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nOpa = 0.199889
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HGloHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDifHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDirNor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.celHei = 2000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winSpe = 1e-006
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HHorIR = 289.997
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winDir = 0.001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.cloTim = 4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.inc = 2.71091
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.H = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.rho = 0.2
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.y = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 5
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: A_PV = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDryBul = 280.35
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDewPoi = 278.75
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TBlaSky = 267.51
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solTim = -787.414
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.timZon = -28800
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.relHum = 0.9
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solZen = 2.88317
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solAlt = -1.31237
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.eta = 0.0972
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solHouAng = -3.19886
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solDec = -0.402886
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: PV_generation = 0.0283595
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.A = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.H = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u1 = 9.71029e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u2 = 1.51922e-007
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: shading.k = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nTot = 0.199861
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nOpa = 0.199861
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HGloHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDifHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDirNor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.celHei = 2000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winSpe = 1e-006
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HHorIR = 289.996
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winDir = 0.001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.cloTim = 5
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.inc = 2.71091
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.H = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.rho = 0.2
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.y = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 6
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: A_PV = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDryBul = 280.35
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDewPoi = 278.75
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TBlaSky = 267.51
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solTim = -786.414
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.timZon = -28800
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.relHum = 0.9
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solZen = 2.88318
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solAlt = -1.31239
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.eta = 0.0972
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solHouAng = -3.19878
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solDec = -0.402886
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: PV_generation = 0.0283595
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.A = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.H = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u1 = 9.71029e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u2 = 1.51922e-007
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: shading.k = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nTot = 0.199834
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nOpa = 0.199834
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HGloHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDifHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDirNor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.celHei = 2000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winSpe = 1e-006
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HHorIR = 289.995
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winDir = 0.001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.cloTim = 6
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.inc = 2.71092
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.H = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.rho = 0.2
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.y = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 6.8652
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 20
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 20
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 7
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: A_PV = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDryBul = 280.35
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDewPoi = 278.75
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TBlaSky = 267.51
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solTim = -785.415
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.timZon = -28800
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.relHum = 0.9
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solZen = 2.88319
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solAlt = -1.3124
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.eta = 0.0972
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solHouAng = -3.19871
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solDec = -0.402886
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: PV_generation = 0.0283595
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.A = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.H = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u1 = 9.71029e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u2 = 1.51922e-007
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: shading.k = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nTot = 0.199806
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nOpa = 0.199806
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HGloHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDifHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDirNor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.celHei = 2000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winSpe = 1e-006
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HHorIR = 289.994
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winDir = 0.001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.cloTim = 7
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.inc = 2.71092
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.H = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.rho = 0.2
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.y = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 8
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: A_PV = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDryBul = 280.35
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDewPoi = 278.75
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TBlaSky = 267.509
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solTim = -784.415
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.timZon = -28800
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.relHum = 0.9
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solZen = 2.88321
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solAlt = -1.31241
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.eta = 0.0972
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solHouAng = -3.19864
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solDec = -0.402886
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: PV_generation = 0.0283595
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.A = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.H = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u1 = 9.71029e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u2 = 1.51922e-007
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: shading.k = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nTot = 0.199778
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nOpa = 0.199778
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HGloHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDifHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDirNor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.celHei = 2000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winSpe = 1e-006
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HHorIR = 289.993
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winDir = 0.001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.cloTim = 8
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.inc = 2.71093
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.H = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.rho = 0.2
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.y = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 9
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: A_PV = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDryBul = 280.35
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDewPoi = 278.75
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TBlaSky = 267.509
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solTim = -783.415
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.timZon = -28800
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.relHum = 0.9
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solZen = 2.88322
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solAlt = -1.31242
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.eta = 0.0972
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solHouAng = -3.19856
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solDec = -0.402886
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: PV_generation = 0.0283595
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.A = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.H = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u1 = 9.71029e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u2 = 1.51922e-007
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: shading.k = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nTot = 0.199751
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nOpa = 0.199751
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HGloHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDifHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDirNor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.celHei = 2000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winSpe = 1e-006
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HHorIR = 289.993
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winDir = 0.001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.cloTim = 9
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.inc = 2.71094
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.H = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.rho = 0.2
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.y = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: A_PV = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDryBul = 280.35
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDewPoi = 278.75
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TBlaSky = 267.509
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solTim = -782.416
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.timZon = -28800
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.relHum = 0.9
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solZen = 2.88323
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solAlt = -1.31243
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.eta = 0.0972
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solHouAng = -3.19849
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solDec = -0.402886
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: PV_generation = 0.0283595
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.A = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.H = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u1 = 9.71029e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u2 = 1.51922e-007
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: shading.k = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nTot = 0.199723
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nOpa = 0.199723
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HGloHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDifHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDirNor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.celHei = 2000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winSpe = 1e-006
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HHorIR = 289.992
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winDir = 0.001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.cloTim = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.inc = 2.71094
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.H = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.rho = 0.2
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.y = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 11
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: A_PV = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDryBul = 280.35
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDewPoi = 278.75
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TBlaSky = 267.509
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solTim = -781.416
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.timZon = -28800
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.relHum = 0.9
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solZen = 2.88324
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solAlt = -1.31244
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.eta = 0.0972
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solHouAng = -3.19842
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solDec = -0.402886
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: PV_generation = 0.0283595
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.A = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.H = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u1 = 9.71029e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u2 = 1.51922e-007
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: shading.k = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nTot = 0.199696
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nOpa = 0.199696
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HGloHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDifHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDirNor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.celHei = 2000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winSpe = 1e-006
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HHorIR = 289.991
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winDir = 0.001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.cloTim = 11
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.inc = 2.71095
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.H = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.rho = 0.2
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.y = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 12
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: A_PV = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDryBul = 280.35
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDewPoi = 278.75
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TBlaSky = 267.509
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solTim = -780.416
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.timZon = -28800
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.relHum = 0.9
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solZen = 2.88325
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solAlt = -1.31246
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.eta = 0.0972
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solHouAng = -3.19835
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solDec = -0.402886
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: PV_generation = 0.0283595
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.A = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.H = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u1 = 9.71029e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u2 = 1.51922e-007
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: shading.k = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nTot = 0.199668
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nOpa = 0.199668
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HGloHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDifHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDirNor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.celHei = 2000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winSpe = 1e-006
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HHorIR = 289.99
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winDir = 0.001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.cloTim = 12
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.inc = 2.71096
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.H = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.rho = 0.2
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.y = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 13
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: A_PV = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDryBul = 280.35
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDewPoi = 278.75
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TBlaSky = 267.508
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solTim = -779.416
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.timZon = -28800
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.relHum = 0.9
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solZen = 2.88326
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solAlt = -1.31247
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.eta = 0.0972
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solHouAng = -3.19827
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solDec = -0.402886
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: PV_generation = 0.0283595
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.A = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.H = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u1 = 9.71029e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u2 = 1.51922e-007
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: shading.k = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nTot = 0.19964
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nOpa = 0.19964
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HGloHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDifHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDirNor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.celHei = 2000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winSpe = 1e-006
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HHorIR = 289.989
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winDir = 0.001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.cloTim = 13
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.inc = 2.71096
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.H = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.rho = 0.2
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.y = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 14
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: A_PV = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDryBul = 280.35
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDewPoi = 278.75
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TBlaSky = 267.508
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solTim = -778.417
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.timZon = -28800
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.relHum = 0.9
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solZen = 2.88328
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solAlt = -1.31248
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.eta = 0.0972
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solHouAng = -3.1982
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solDec = -0.402886
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: PV_generation = 0.0283595
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.A = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.H = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u1 = 9.71029e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u2 = 1.51922e-007
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: shading.k = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nTot = 0.199613
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nOpa = 0.199613
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HGloHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDifHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDirNor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.celHei = 2000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winSpe = 1e-006
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HHorIR = 289.988
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winDir = 0.001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.cloTim = 14
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.inc = 2.71097
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.H = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.rho = 0.2
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.y = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 15
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: A_PV = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDryBul = 280.35
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDewPoi = 278.75
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TBlaSky = 267.508
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solTim = -777.417
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.timZon = -28800
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.relHum = 0.9
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solZen = 2.88329
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solAlt = -1.31249
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.eta = 0.0972
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solHouAng = -3.19813
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solDec = -0.402886
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: PV_generation = 0.0283595
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.A = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.H = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u1 = 9.71029e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u2 = 1.51922e-007
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: shading.k = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nTot = 0.199585
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nOpa = 0.199585
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HGloHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDifHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDirNor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.celHei = 2000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winSpe = 1e-006
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HHorIR = 289.988
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winDir = 0.001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.cloTim = 15
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.inc = 2.71097
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.H = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.rho = 0.2
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.y = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 16
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: A_PV = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDryBul = 280.35
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDewPoi = 278.75
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TBlaSky = 267.508
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solTim = -776.417
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.timZon = -28800
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.relHum = 0.9
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solZen = 2.8833
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solAlt = -1.3125
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.eta = 0.0972
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solHouAng = -3.19806
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solDec = -0.402886
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: PV_generation = 0.0283595
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.A = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.H = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u1 = 9.71029e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u2 = 1.51922e-007
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: shading.k = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nTot = 0.199558
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nOpa = 0.199558
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HGloHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDifHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDirNor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.celHei = 2000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winSpe = 1e-006
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HHorIR = 289.987
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winDir = 0.001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.cloTim = 16
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.inc = 2.71098
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.H = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.rho = 0.2
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.y = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 17
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: A_PV = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDryBul = 280.35
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDewPoi = 278.75
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TBlaSky = 267.507
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solTim = -775.418
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.timZon = -28800
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.relHum = 0.9
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solZen = 2.88331
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solAlt = -1.31252
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.eta = 0.0972
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solHouAng = -3.19798
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solDec = -0.402886
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: PV_generation = 0.0283595
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.A = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.H = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u1 = 9.71028e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u2 = 1.51922e-007
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: shading.k = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nTot = 0.19953
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nOpa = 0.19953
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HGloHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDifHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDirNor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.celHei = 2000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winSpe = 1e-006
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HHorIR = 289.986
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winDir = 0.001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.cloTim = 17
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.inc = 2.71099
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.H = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.rho = 0.2
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.y = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 18
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: A_PV = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDryBul = 280.35
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDewPoi = 278.75
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TBlaSky = 267.507
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solTim = -774.418
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.timZon = -28800
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.relHum = 0.9
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solZen = 2.88332
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solAlt = -1.31253
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.eta = 0.0972
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solHouAng = -3.19791
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solDec = -0.402886
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: PV_generation = 0.0283595
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.A = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.H = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u1 = 9.71028e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u2 = 1.51922e-007
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: shading.k = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nTot = 0.199503
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nOpa = 0.199503
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HGloHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDifHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDirNor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.celHei = 2000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winSpe = 1e-006
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HHorIR = 289.985
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winDir = 0.001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.cloTim = 18
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.inc = 2.71099
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.H = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.rho = 0.2
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.y = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 19
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: A_PV = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDryBul = 280.35
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDewPoi = 278.75
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TBlaSky = 267.507
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solTim = -773.418
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.timZon = -28800
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.relHum = 0.9
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solZen = 2.88333
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solAlt = -1.31254
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.eta = 0.0972
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solHouAng = -3.19784
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solDec = -0.402886
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: PV_generation = 0.0283595
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.A = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.H = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u1 = 9.71028e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u2 = 1.51922e-007
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: shading.k = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nTot = 0.199476
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nOpa = 0.199476
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HGloHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDifHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDirNor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.celHei = 2000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winSpe = 1e-006
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HHorIR = 289.984
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winDir = 0.001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.cloTim = 19
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.inc = 2.711
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.H = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.rho = 0.2
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.y = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 20
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: A_PV = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDryBul = 280.35
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TDewPoi = 278.75
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.TBlaSky = 267.507
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solTim = -772.419
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.timZon = -28800
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.relHum = 0.9
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solZen = 2.88335
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solAlt = -1.31255
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.eta = 0.0972
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solHouAng = -3.19776
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.solDec = -0.402886
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.lon = -2.13628
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: PV_generation = 0.0283595
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.A = 3000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.lat = 37.62
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.til = 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.azi = 180
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.H = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u1 = 9.71028e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.u2 = 1.51922e-007
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: shading.k = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nTot = 0.199448
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.nOpa = 0.199448
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HGloHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDifHor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HDirNor = 0.0001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.celHei = 2000
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.add.k1 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winSpe = 1e-006
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.HHorIR = 289.983
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.winDir = 0.001
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.til = 0.174533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: weaDat.weaBus.cloTim = 20
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.lat = 0.656593
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.azi = 3.14159
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.inc = 2.711
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.k2 = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDirTil.H = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.HDifTil.rho = 0.2
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: pV_cyder.tilted_Solar_TMY.sum.y = 9.72548e-005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2Terminate

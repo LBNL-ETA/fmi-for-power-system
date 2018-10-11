@@ -1,0 +1,5 @@
+{
+    "model_filename": "C:\\Users\\DRRC\\Desktop\\fmi-for-power-system\\tests\\003_simulate_with_cyme\\cyme\\IEEE_34_node_test_feeder.sxst",
+    "total_load_filename":"C:\\Users\\DRRC\\Desktop\\fmi-for-power-system\\tests\\003_simulate_with_cyme\\cyme\\total_load.csv",
+    "substation_network":"IEEE34NODES"
+}
