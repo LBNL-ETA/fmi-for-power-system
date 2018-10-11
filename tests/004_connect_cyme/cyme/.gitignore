@@ -1,0 +1,11 @@
+# Server configuration file
+server_config.txt
+
+# Log for FMU generation
+*.log
+
+# Save grid model named 'grid'
+!IEEE_34_node_test_feeder.sxst
+
+# Save total load demand file
+!total_load.csv

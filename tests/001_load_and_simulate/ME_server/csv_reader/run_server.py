@@ -65,9 +65,9 @@ if __name__ == '__main__':
     # Write a file with port and address
     path_to_server = os.path.dirname(__file__)
     ping_server_code = """def main():
-    import urllib.request
+    import urllib2
     try:
-        response = urllib.request.urlopen("http://localhost:""" + str(port) + """/ping").read()
+        response = urllib2.urlopen("http://localhost:""" + str(port) + """/ping").read()
         response = response.decode('utf-8')
     except:
         response = 'bad request'
