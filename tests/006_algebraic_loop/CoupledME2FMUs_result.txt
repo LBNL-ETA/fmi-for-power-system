@@ -1,0 +1,756 @@
+#1
+char Aclass(3,11)
+Atrajectory
+1.1
+
+char name(243,53)
+time
+blackbox._block_jacobian_check_tol
+blackbox._cs_rel_tol
+blackbox._cs_step_size
+blackbox._events_default_tol
+blackbox._events_tol_factor
+blackbox._nle_jacobian_finite_difference_delta
+blackbox._nle_solver_default_tol
+blackbox._nle_solver_max_residual_scaling_factor
+blackbox._nle_solver_min_residual_scaling_factor
+blackbox._nle_solver_min_tol
+blackbox._nle_solver_regularization_tolerance
+blackbox._nle_solver_step_limit_factor
+blackbox._nle_solver_tol_factor
+blackbox._time_events_default_tol
+blackbox.x
+blackbox.u
+blackbox.y
+blackbox.dblInpVal[1]
+blackbox.uR[1]
+blackbox.dblInpVal[2]
+blackbox.uR[2]
+blackbox.yR[1]
+blackbox._block_solver_experimental_mode
+blackbox._cs_experimental_mode
+blackbox._cs_solver
+blackbox._iteration_variable_scaling
+blackbox._log_level
+blackbox._nle_active_bounds_mode
+blackbox._nle_jacobian_calculation_mode
+blackbox._nle_jacobian_update_mode
+blackbox._nle_solver_exit_criterion
+blackbox._nle_solver_max_iter
+blackbox._nle_solver_max_iter_no_jacobian
+blackbox._residual_equation_scaling
+blackbox.nDblPar
+blackbox.nStrPar
+blackbox.nDblInp
+blackbox.nDblOut
+blackbox._saveToFile
+blackbox.passMemoryObject
+blackbox._block_jacobian_check
+blackbox._block_solver_profiling
+blackbox._enforce_bounds
+blackbox._nle_brent_ignore_error
+blackbox._nle_solver_check_jac_cond
+blackbox._nle_solver_use_last_integrator_step
+blackbox._nle_solver_use_nominals_as_fallback
+blackbox._rescale_after_singular_jac
+blackbox._rescale_each_step
+blackbox._runtime_log_to_file
+blackbox._use_Brent_in_1d
+blackbox._use_jacobian_equilibration
+blackbox._use_newton_for_brent
+pv.A_PV
+pv.til
+pv.azi
+pv.weaDat.pAtm
+pv.weaDat.weaBus.pAtm
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.pAtm
+pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.pAtm
+pv.pV_cyder.tilted_Solar_TMY.weaBus.pAtm
+pv.pV_cyder.weaBus.pAtm
+pv.weaDat.ceiHei
+pv.weaDat.totSkyCov
+pv.weaDat.opaSkyCov
+pv.weaDat.TDryBul
+pv.weaDat.TDewPoi
+pv.weaDat.TBlaSky
+pv.weaDat.relHum
+pv.weaDat.winSpe
+pv.weaDat.winDir
+pv.weaDat.HInfHor
+pv.pV_cyder.eta
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.rho
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.add.k1
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.add.k2
+pv.pV_cyder.tilted_Solar_TMY.sum.k1
+pv.pV_cyder.tilted_Solar_TMY.sum.k2
+pv.shading.k
+pv.pV_cyder.Shading
+pv.shading.y
+pv.weaDat.computeWetBulbTemperature
+pv.weaDat.pAtmSou
+pv.weaDat.ceiHeiSou
+pv.weaDat.totSkyCovSou
+pv.weaDat.opaSkyCovSou
+pv.weaDat.TDryBulSou
+pv.weaDat.TDewPoiSou
+pv.weaDat.TBlaSkySou
+pv.weaDat.relHumSou
+pv.weaDat.winSpeSou
+pv.weaDat.winDirSou
+pv.weaDat.HInfHorSou
+pv.weaDat.HSou
+pv.weaDat.lon
+pv.weaDat.lat
+pv.weaDat.timZon
+pv.weaDat.calTSky
+pv.weaDat.epsCos
+pv.weaDat.solCon
+pv.weaDat.weaBus.lat
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.lat
+pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.lat
+pv.pV_cyder.tilted_Solar_TMY.weaBus.lat
+pv.pV_cyder.weaBus.lat
+pv.weaDat.weaBus.lon
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.lon
+pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.lon
+pv.pV_cyder.tilted_Solar_TMY.weaBus.lon
+pv.pV_cyder.weaBus.lon
+pv.pV_cyder.A
+pv.pV_cyder.lat
+pv.pV_cyder.til
+pv.pV_cyder.azi
+pv.pV_cyder.tilted_Solar_TMY.lat
+pv.pV_cyder.tilted_Solar_TMY.til
+pv.pV_cyder.tilted_Solar_TMY.azi
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.til
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.lat
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.azi
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.outSkyCon
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.outGroCon
+pv.pV_cyder.tilted_Solar_TMY.HDirTil.til
+pv.pV_cyder.tilted_Solar_TMY.HDirTil.lat
+pv.pV_cyder.tilted_Solar_TMY.HDirTil.azi
+pv.PV_generation
+pv.pV_cyder.PV_generation
+pv.weaDat.weaBus.HGloHor
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.HGloHor
+pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.HGloHor
+pv.pV_cyder.tilted_Solar_TMY.weaBus.HGloHor
+pv.pV_cyder.weaBus.HGloHor
+pv.weaDat.weaBus.HDifHor
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.HDifHor
+pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.HDifHor
+pv.pV_cyder.tilted_Solar_TMY.weaBus.HDifHor
+pv.pV_cyder.weaBus.HDifHor
+pv.weaDat.weaBus.HDirNor
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.HDirNor
+pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.HDirNor
+pv.pV_cyder.tilted_Solar_TMY.weaBus.HDirNor
+pv.pV_cyder.weaBus.HDirNor
+pv.weaDat.weaBus.cloTim
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.cloTim
+pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.cloTim
+pv.pV_cyder.tilted_Solar_TMY.weaBus.cloTim
+pv.pV_cyder.weaBus.cloTim
+pv.weaDat.weaBus.solTim
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.solTim
+pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.solTim
+pv.pV_cyder.tilted_Solar_TMY.weaBus.solTim
+pv.pV_cyder.weaBus.solTim
+pv.weaDat.weaBus.solZen
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.solZen
+pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.solZen
+pv.pV_cyder.tilted_Solar_TMY.weaBus.solZen
+pv.pV_cyder.weaBus.solZen
+pv.weaDat.weaBus.solHouAng
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.solHouAng
+pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.solHouAng
+pv.pV_cyder.tilted_Solar_TMY.weaBus.solHouAng
+pv.pV_cyder.weaBus.solHouAng
+pv.weaDat.weaBus.solDec
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.solDec
+pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.solDec
+pv.pV_cyder.tilted_Solar_TMY.weaBus.solDec
+pv.pV_cyder.weaBus.solDec
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.H
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.add.y
+pv.pV_cyder.tilted_Solar_TMY.sum.u2
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.add.u1
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.add.u2
+pv.pV_cyder.tilted_Solar_TMY.HDirTil.H
+pv.pV_cyder.tilted_Solar_TMY.sum.u1
+pv.pV_cyder.tilted_Solar_TMY.HDirTil.inc
+pv.pV_cyder.tilted_Solar_TMY.sum.y
+pv.pV_cyder.tilted_Solar_TMY.G
+pv.weaDat.weaBus.nTot
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.nTot
+pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.nTot
+pv.pV_cyder.tilted_Solar_TMY.weaBus.nTot
+pv.pV_cyder.weaBus.nTot
+pv.weaDat.weaBus.nOpa
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.nOpa
+pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.nOpa
+pv.pV_cyder.tilted_Solar_TMY.weaBus.nOpa
+pv.pV_cyder.weaBus.nOpa
+pv.weaDat.weaBus.celHei
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.celHei
+pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.celHei
+pv.pV_cyder.tilted_Solar_TMY.weaBus.celHei
+pv.pV_cyder.weaBus.celHei
+pv.weaDat.weaBus.winSpe
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.winSpe
+pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.winSpe
+pv.pV_cyder.tilted_Solar_TMY.weaBus.winSpe
+pv.pV_cyder.weaBus.winSpe
+pv.weaDat.weaBus.HHorIR
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.HHorIR
+pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.HHorIR
+pv.pV_cyder.tilted_Solar_TMY.weaBus.HHorIR
+pv.pV_cyder.weaBus.HHorIR
+pv.weaDat.weaBus.winDir
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.winDir
+pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.winDir
+pv.pV_cyder.tilted_Solar_TMY.weaBus.winDir
+pv.pV_cyder.weaBus.winDir
+pv.weaDat.weaBus.TDryBul
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.TDryBul
+pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.TDryBul
+pv.pV_cyder.tilted_Solar_TMY.weaBus.TDryBul
+pv.pV_cyder.weaBus.TDryBul
+pv.weaDat.weaBus.TDewPoi
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.TDewPoi
+pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.TDewPoi
+pv.pV_cyder.tilted_Solar_TMY.weaBus.TDewPoi
+pv.pV_cyder.weaBus.TDewPoi
+pv.weaDat.weaBus.TBlaSky
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.TBlaSky
+pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.TBlaSky
+pv.pV_cyder.tilted_Solar_TMY.weaBus.TBlaSky
+pv.pV_cyder.weaBus.TBlaSky
+pv.weaDat.weaBus.relHum
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.relHum
+pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.relHum
+pv.pV_cyder.tilted_Solar_TMY.weaBus.relHum
+pv.pV_cyder.weaBus.relHum
+pv.weaDat.weaBus.solAlt
+pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.solAlt
+pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.solAlt
+pv.pV_cyder.tilted_Solar_TMY.weaBus.solAlt
+pv.pV_cyder.weaBus.solAlt
+control.thr
+control.hys
+control.QMaxInd
+control.QMaxCap
+control.vMaxDea
+control.vMax
+control.vMinDea
+control.vMin
+control.QCon
+control.v
+
+char description(243,83)
+Time in [s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input
+input
+output
+Value to be sent to Simulator
+Variables used to collect values to be sent to Simulator
+Value to be sent to Simulator
+Variables used to collect values to be sent to Simulator
+Variables used to collect values received from Simulator
+
+
+
+
+
+
+
+
+
+
+
+
+Number of double parameter values to sent to Simulator
+Number of string parameter values to sent to Simulator
+Number of double input values to sent to Simulator
+Number of double output values to receive from Simulator
+Flag for writing results
+Set to true if the Python function returns and receives an object, see User's Guide
+
+
+
+
+
+
+
+
+
+
+
+
+
+Area of PV system [m2]
+Surface tilt [deg]
+Surface azimuth [deg]
+Atmospheric pressure (used if pAtmSou=Parameter)
+Atmospheric pressure
+Atmospheric pressure
+Atmospheric pressure
+Atmospheric pressure
+Atmospheric pressure
+Ceiling height (used if ceiHei=Parameter)
+Total sky cover (used if totSkyCov=Parameter). Use 0 <= totSkyCov <= 1
+Opaque sky cover (used if opaSkyCov=Parameter). Use 0 <= opaSkyCov <= 1
+Dry bulb temperature (used if TDryBul=Parameter)
+Dew point temperature (used if TDewPoi=Parameter)
+Black-body sky temperature (used if TBlaSkySou=Parameter)
+Relative humidity (used if relHum=Parameter)
+Wind speed (used if winSpe=Parameter)
+Wind direction (used if winDir=Parameter)
+Infrared horizontal radiation (used if HInfHorSou=Parameter)
+Module conversion efficiency
+Ground reflectance
+Gain of upper input
+Gain of lower input
+Gain of upper input
+Gain of lower input
+Constant output value
+Shading of PV module
+Connector of Real output signal
+If true, then this model computes the wet bulb temperature
+Atmospheric pressure
+Ceiling height
+Total sky cover
+Opaque sky cover
+Dry bulb temperature
+Dew point temperature
+Black-body sky temperature
+Relative humidity
+Wind speed
+Wind direction
+Infrared horizontal radiation
+Global, diffuse, and direct normal radiation
+Longitude
+Latitude
+Time zone
+Computation of black-body sky temperature
+Small value to avoid division by 0
+Solar constant
+Latitude of the location
+Latitude of the location
+Latitude of the location
+Latitude of the location
+Latitude of the location
+Longitude of the location
+Longitude of the location
+Longitude of the location
+Longitude of the location
+Longitude of the location
+Net surface area
+Latitude [deg]
+Surface tilt [deg]
+Surface azimuth [deg]
+Latitude [deg]
+Surface tilt [deg]
+Surface azimuth [deg]
+Surface tilt
+Latitude
+Surface azimuth
+Output contribution of diffuse irradiation from sky
+Output contribution of diffuse irradiation from ground
+Surface tilt
+Latitude
+Surface azimuth
+PV generation
+PV generation
+Radiation
+Horizontal global solar radiation
+Radiation
+Radiation
+Radiation
+Radiation
+Horizontal diffuse solar radiation
+Radiation
+Radiation
+Radiation
+Radiation
+Radiation
+Direct normal radiation
+Radiation
+Radiation
+Connector of Real output signal
+Connector of Real output signal
+Connector of Real output signal
+Connector of Real output signal
+Connector of Real output signal
+Solar time
+Solar time
+Solar time
+Solar time
+Solar time
+Zenith angle
+Zenith angle of the sun beam
+Zenith angle
+Zenith angle
+Zenith angle
+Solar hour angle
+Solar hour angle
+Solar hour angle
+Solar hour angle
+Solar hour angle
+Solar declination angle
+Solar declination angle
+Solar declination angle
+Solar declination angle
+Solar declination angle
+Radiation per unit area
+Connector of Real output signal
+Connector of Real input signal 2
+Connector of Real input signal 1
+Connector of Real input signal 2
+Radiation per unit area
+Connector of Real input signal 1
+Incidence angle
+Connector of Real output signal
+Tilted Solar Radiation
+Sky cover [0, 1]
+Sky cover [0, 1]
+Sky cover [0, 1]
+Sky cover [0, 1]
+Sky cover [0, 1]
+Sky cover [0, 1]
+Sky cover [0, 1]
+Sky cover [0, 1]
+Sky cover [0, 1]
+Sky cover [0, 1]
+Ceiling height
+Ceiling height
+Ceiling height
+Ceiling height
+Ceiling height
+Wind speed
+Wind speed
+Wind speed
+Wind speed
+Wind speed
+Horizontal infrared irradiation
+Horizontal infrared irradiation
+Horizontal infrared irradiation
+Horizontal infrared irradiation
+Horizontal infrared irradiation
+Wind direction
+Wind direction
+Wind direction
+Wind direction
+Wind direction
+Output temperature
+Output temperature
+Output temperature
+Output temperature
+Output temperature
+Output temperature
+Output temperature
+Output temperature
+Output temperature
+Output temperature
+Black-body sky temperature
+Black-body sky temperature
+Black-body sky temperature
+Black-body sky temperature
+Black-body sky temperature
+Relative humidity
+Relative humidity
+Relative humidity
+Relative humidity
+Relative humidity
+Solar altitude angle
+Solar altitude angle
+Solar altitude angle
+Solar altitude angle
+Solar altitude angle
+over/undervoltage threshold
+Hysteresis
+Maximal Reactive Power (Inductive)
+Maximal Reactive Power (Capacitive)
+Upper bound of deaband [p.u.]
+Voltage maximum [p.u.]
+Upper bound of deaband [p.u.]
+Voltage minimum [p.u.]
+Q control signal
+Voltage [p.u]
+
+int dataInfo(243,4)
+0 1 0 -1 # time
+1 2 0 -1 # blackbox._block_jacobian_check_tol
+1 3 0 -1 # blackbox._cs_rel_tol
+1 4 0 -1 # blackbox._cs_step_size
+1 5 0 -1 # blackbox._events_default_tol
+1 6 0 -1 # blackbox._events_tol_factor
+1 7 0 -1 # blackbox._nle_jacobian_finite_difference_delta
+1 8 0 -1 # blackbox._nle_solver_default_tol
+1 9 0 -1 # blackbox._nle_solver_max_residual_scaling_factor
+1 10 0 -1 # blackbox._nle_solver_min_residual_scaling_factor
+1 11 0 -1 # blackbox._nle_solver_min_tol
+1 12 0 -1 # blackbox._nle_solver_regularization_tolerance
+1 13 0 -1 # blackbox._nle_solver_step_limit_factor
+1 14 0 -1 # blackbox._nle_solver_tol_factor
+1 15 0 -1 # blackbox._time_events_default_tol
+2 2 0 -1 # blackbox.x
+2 3 0 -1 # blackbox.u
+2 4 0 -1 # blackbox.y
+2 5 0 -1 # blackbox.dblInpVal[1]
+2 5 0 -1 # blackbox.uR[1]
+2 6 0 -1 # blackbox.dblInpVal[2]
+2 6 0 -1 # blackbox.uR[2]
+2 7 0 -1 # blackbox.yR[1]
+1 16 0 -1 # blackbox._block_solver_experimental_mode
+1 17 0 -1 # blackbox._cs_experimental_mode
+1 18 0 -1 # blackbox._cs_solver
+1 19 0 -1 # blackbox._iteration_variable_scaling
+1 20 0 -1 # blackbox._log_level
+1 21 0 -1 # blackbox._nle_active_bounds_mode
+1 22 0 -1 # blackbox._nle_jacobian_calculation_mode
+1 23 0 -1 # blackbox._nle_jacobian_update_mode
+1 24 0 -1 # blackbox._nle_solver_exit_criterion
+1 25 0 -1 # blackbox._nle_solver_max_iter
+1 26 0 -1 # blackbox._nle_solver_max_iter_no_jacobian
+1 27 0 -1 # blackbox._residual_equation_scaling
+1 28 0 -1 # blackbox.nDblPar
+1 28 0 -1 # blackbox.nStrPar
+1 29 0 -1 # blackbox.nDblInp
+1 30 0 -1 # blackbox.nDblOut
+1 31 0 -1 # blackbox._saveToFile
+1 32 0 -1 # blackbox.passMemoryObject
+1 33 0 -1 # blackbox._block_jacobian_check
+1 34 0 -1 # blackbox._block_solver_profiling
+1 35 0 -1 # blackbox._enforce_bounds
+1 36 0 -1 # blackbox._nle_brent_ignore_error
+1 37 0 -1 # blackbox._nle_solver_check_jac_cond
+1 38 0 -1 # blackbox._nle_solver_use_last_integrator_step
+1 39 0 -1 # blackbox._nle_solver_use_nominals_as_fallback
+1 40 0 -1 # blackbox._rescale_after_singular_jac
+1 41 0 -1 # blackbox._rescale_each_step
+1 42 0 -1 # blackbox._runtime_log_to_file
+1 43 0 -1 # blackbox._use_Brent_in_1d
+1 44 0 -1 # blackbox._use_jacobian_equilibration
+1 45 0 -1 # blackbox._use_newton_for_brent
+2 8 0 -1 # pv.A_PV
+2 9 0 -1 # pv.til
+2 10 0 -1 # pv.azi
+1 46 0 -1 # pv.weaDat.pAtm
+1 46 0 -1 # pv.weaDat.weaBus.pAtm
+1 46 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.pAtm
+1 46 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.pAtm
+1 46 0 -1 # pv.pV_cyder.tilted_Solar_TMY.weaBus.pAtm
+1 46 0 -1 # pv.pV_cyder.weaBus.pAtm
+1 47 0 -1 # pv.weaDat.ceiHei
+1 48 0 -1 # pv.weaDat.totSkyCov
+1 49 0 -1 # pv.weaDat.opaSkyCov
+1 50 0 -1 # pv.weaDat.TDryBul
+1 51 0 -1 # pv.weaDat.TDewPoi
+1 52 0 -1 # pv.weaDat.TBlaSky
+1 53 0 -1 # pv.weaDat.relHum
+1 54 0 -1 # pv.weaDat.winSpe
+1 55 0 -1 # pv.weaDat.winDir
+1 56 0 -1 # pv.weaDat.HInfHor
+2 11 0 -1 # pv.pV_cyder.eta
+2 12 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.rho
+2 13 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.add.k1
+2 14 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.add.k2
+2 15 0 -1 # pv.pV_cyder.tilted_Solar_TMY.sum.k1
+2 16 0 -1 # pv.pV_cyder.tilted_Solar_TMY.sum.k2
+2 17 0 -1 # pv.shading.k
+2 17 0 -1 # pv.pV_cyder.Shading
+2 17 0 -1 # pv.shading.y
+1 57 0 -1 # pv.weaDat.computeWetBulbTemperature
+1 58 0 -1 # pv.weaDat.pAtmSou
+1 59 0 -1 # pv.weaDat.ceiHeiSou
+1 60 0 -1 # pv.weaDat.totSkyCovSou
+1 61 0 -1 # pv.weaDat.opaSkyCovSou
+1 62 0 -1 # pv.weaDat.TDryBulSou
+1 63 0 -1 # pv.weaDat.TDewPoiSou
+1 64 0 -1 # pv.weaDat.TBlaSkySou
+1 65 0 -1 # pv.weaDat.relHumSou
+1 66 0 -1 # pv.weaDat.winSpeSou
+1 67 0 -1 # pv.weaDat.winDirSou
+1 68 0 -1 # pv.weaDat.HInfHorSou
+1 69 0 -1 # pv.weaDat.HSou
+2 18 0 -1 # pv.weaDat.lon
+2 19 0 -1 # pv.weaDat.lat
+2 20 0 -1 # pv.weaDat.timZon
+1 70 0 -1 # pv.weaDat.calTSky
+1 71 0 -1 # pv.weaDat.epsCos
+1 72 0 -1 # pv.weaDat.solCon
+2 21 0 -1 # pv.weaDat.weaBus.lat
+2 21 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.lat
+2 21 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.lat
+2 21 0 -1 # pv.pV_cyder.tilted_Solar_TMY.weaBus.lat
+2 21 0 -1 # pv.pV_cyder.weaBus.lat
+2 22 0 -1 # pv.weaDat.weaBus.lon
+2 22 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.lon
+2 22 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.lon
+2 22 0 -1 # pv.pV_cyder.tilted_Solar_TMY.weaBus.lon
+2 22 0 -1 # pv.pV_cyder.weaBus.lon
+2 23 0 -1 # pv.pV_cyder.A
+2 24 0 -1 # pv.pV_cyder.lat
+2 25 0 -1 # pv.pV_cyder.til
+2 26 0 -1 # pv.pV_cyder.azi
+2 27 0 -1 # pv.pV_cyder.tilted_Solar_TMY.lat
+2 28 0 -1 # pv.pV_cyder.tilted_Solar_TMY.til
+2 29 0 -1 # pv.pV_cyder.tilted_Solar_TMY.azi
+2 30 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.til
+2 31 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.lat
+2 32 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.azi
+1 73 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.outSkyCon
+1 74 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.outGroCon
+2 33 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDirTil.til
+2 34 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDirTil.lat
+2 35 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDirTil.azi
+2 36 0 -1 # pv.PV_generation
+2 36 0 -1 # pv.pV_cyder.PV_generation
+2 37 0 -1 # pv.weaDat.weaBus.HGloHor
+2 37 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.HGloHor
+2 37 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.HGloHor
+2 37 0 -1 # pv.pV_cyder.tilted_Solar_TMY.weaBus.HGloHor
+2 37 0 -1 # pv.pV_cyder.weaBus.HGloHor
+2 38 0 -1 # pv.weaDat.weaBus.HDifHor
+2 38 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.HDifHor
+2 38 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.HDifHor
+2 38 0 -1 # pv.pV_cyder.tilted_Solar_TMY.weaBus.HDifHor
+2 38 0 -1 # pv.pV_cyder.weaBus.HDifHor
+2 39 0 -1 # pv.weaDat.weaBus.HDirNor
+2 39 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.HDirNor
+2 39 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.HDirNor
+2 39 0 -1 # pv.pV_cyder.tilted_Solar_TMY.weaBus.HDirNor
+2 39 0 -1 # pv.pV_cyder.weaBus.HDirNor
+2 40 0 -1 # pv.weaDat.weaBus.cloTim
+2 40 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.cloTim
+2 40 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.cloTim
+2 40 0 -1 # pv.pV_cyder.tilted_Solar_TMY.weaBus.cloTim
+2 40 0 -1 # pv.pV_cyder.weaBus.cloTim
+2 41 0 -1 # pv.weaDat.weaBus.solTim
+2 41 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.solTim
+2 41 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.solTim
+2 41 0 -1 # pv.pV_cyder.tilted_Solar_TMY.weaBus.solTim
+2 41 0 -1 # pv.pV_cyder.weaBus.solTim
+2 42 0 -1 # pv.weaDat.weaBus.solZen
+2 42 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.solZen
+2 42 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.solZen
+2 42 0 -1 # pv.pV_cyder.tilted_Solar_TMY.weaBus.solZen
+2 42 0 -1 # pv.pV_cyder.weaBus.solZen
+2 43 0 -1 # pv.weaDat.weaBus.solHouAng
+2 43 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.solHouAng
+2 43 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.solHouAng
+2 43 0 -1 # pv.pV_cyder.tilted_Solar_TMY.weaBus.solHouAng
+2 43 0 -1 # pv.pV_cyder.weaBus.solHouAng
+2 44 0 -1 # pv.weaDat.weaBus.solDec
+2 44 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.solDec
+2 44 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.solDec
+2 44 0 -1 # pv.pV_cyder.tilted_Solar_TMY.weaBus.solDec
+2 44 0 -1 # pv.pV_cyder.weaBus.solDec
+2 45 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.H
+2 45 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.add.y
+2 45 0 -1 # pv.pV_cyder.tilted_Solar_TMY.sum.u2
+2 46 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.add.u1
+2 47 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.add.u2
+2 48 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDirTil.H
+2 48 0 -1 # pv.pV_cyder.tilted_Solar_TMY.sum.u1
+2 49 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDirTil.inc
+2 50 0 -1 # pv.pV_cyder.tilted_Solar_TMY.sum.y
+2 50 0 -1 # pv.pV_cyder.tilted_Solar_TMY.G
+2 51 0 -1 # pv.weaDat.weaBus.nTot
+2 51 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.nTot
+2 51 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.nTot
+2 51 0 -1 # pv.pV_cyder.tilted_Solar_TMY.weaBus.nTot
+2 51 0 -1 # pv.pV_cyder.weaBus.nTot
+2 52 0 -1 # pv.weaDat.weaBus.nOpa
+2 52 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.nOpa
+2 52 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.nOpa
+2 52 0 -1 # pv.pV_cyder.tilted_Solar_TMY.weaBus.nOpa
+2 52 0 -1 # pv.pV_cyder.weaBus.nOpa
+2 53 0 -1 # pv.weaDat.weaBus.celHei
+2 53 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.celHei
+2 53 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.celHei
+2 53 0 -1 # pv.pV_cyder.tilted_Solar_TMY.weaBus.celHei
+2 53 0 -1 # pv.pV_cyder.weaBus.celHei
+2 54 0 -1 # pv.weaDat.weaBus.winSpe
+2 54 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.winSpe
+2 54 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.winSpe
+2 54 0 -1 # pv.pV_cyder.tilted_Solar_TMY.weaBus.winSpe
+2 54 0 -1 # pv.pV_cyder.weaBus.winSpe
+2 55 0 -1 # pv.weaDat.weaBus.HHorIR
+2 55 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.HHorIR
+2 55 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.HHorIR
+2 55 0 -1 # pv.pV_cyder.tilted_Solar_TMY.weaBus.HHorIR
+2 55 0 -1 # pv.pV_cyder.weaBus.HHorIR
+2 56 0 -1 # pv.weaDat.weaBus.winDir
+2 56 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.winDir
+2 56 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.winDir
+2 56 0 -1 # pv.pV_cyder.tilted_Solar_TMY.weaBus.winDir
+2 56 0 -1 # pv.pV_cyder.weaBus.winDir
+2 57 0 -1 # pv.weaDat.weaBus.TDryBul
+2 57 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.TDryBul
+2 57 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.TDryBul
+2 57 0 -1 # pv.pV_cyder.tilted_Solar_TMY.weaBus.TDryBul
+2 57 0 -1 # pv.pV_cyder.weaBus.TDryBul
+2 58 0 -1 # pv.weaDat.weaBus.TDewPoi
+2 58 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.TDewPoi
+2 58 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.TDewPoi
+2 58 0 -1 # pv.pV_cyder.tilted_Solar_TMY.weaBus.TDewPoi
+2 58 0 -1 # pv.pV_cyder.weaBus.TDewPoi
+2 59 0 -1 # pv.weaDat.weaBus.TBlaSky
+2 59 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.TBlaSky
+2 59 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.TBlaSky
+2 59 0 -1 # pv.pV_cyder.tilted_Solar_TMY.weaBus.TBlaSky
+2 59 0 -1 # pv.pV_cyder.weaBus.TBlaSky
+2 60 0 -1 # pv.weaDat.weaBus.relHum
+2 60 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.relHum
+2 60 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.relHum
+2 60 0 -1 # pv.pV_cyder.tilted_Solar_TMY.weaBus.relHum
+2 60 0 -1 # pv.pV_cyder.weaBus.relHum
+2 61 0 -1 # pv.weaDat.weaBus.solAlt
+2 61 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDifTil.weaBus.solAlt
+2 61 0 -1 # pv.pV_cyder.tilted_Solar_TMY.HDirTil.weaBus.solAlt
+2 61 0 -1 # pv.pV_cyder.tilted_Solar_TMY.weaBus.solAlt
+2 61 0 -1 # pv.pV_cyder.weaBus.solAlt
+2 62 0 -1 # control.thr
+2 63 0 -1 # control.hys
+2 64 0 -1 # control.QMaxInd
+2 65 0 -1 # control.QMaxCap
+2 66 0 -1 # control.vMaxDea
+2 67 0 -1 # control.vMax
+2 68 0 -1 # control.vMinDea
+2 69 0 -1 # control.vMin
+2 70 0 -1 # control.QCon
+2 71 0 -1 # control.v
+
+float data_1(2,74)
+0.00000000000000E+00 1.00000000000000E-06 1.00000000000000E-06 1.00000000000000E-03 1.00000000000000E-10 1.00000000000000E-04 1.49011611938477E-08 1.00000000000000E-10 1.00000000000000E+10 1.00000000000000E-10 1.00000000000000E-12 -1.00000000000000E+00 1.00000000000000E+01 1.00000000000000E-04 2.22044604925031E-14 0.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 3.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 2.00000000000000E+00 3.00000000000000E+00 1.00000000000000E+02 1.00000000000000E+01 1.00000000000000E+00 0.00000000000000E+00 2.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 1.01325000000000E+05 2.00000000000000E+04 5.00000000000000E-01 5.00000000000000E-01 2.93150000000000E+02 2.83150000000000E+02 2.73150000000000E+02 5.00000000000000E-01 1.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 2.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 2.00000000000000E+00 1.00000000000000E-06 1.36770000000000E+03 0.00000000000000E+00 0.00000000000000E+00
+1.00000000000000E+01         1.00000000000000E-06 1.00000000000000E-06 1.00000000000000E-03 1.00000000000000E-10 1.00000000000000E-04 1.49011611938477E-08 1.00000000000000E-10 1.00000000000000E+10 1.00000000000000E-10 1.00000000000000E-12 -1.00000000000000E+00 1.00000000000000E+01 1.00000000000000E-04 2.22044604925031E-14 0.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 3.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 2.00000000000000E+00 3.00000000000000E+00 1.00000000000000E+02 1.00000000000000E+01 1.00000000000000E+00 0.00000000000000E+00 2.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 1.01325000000000E+05 2.00000000000000E+04 5.00000000000000E-01 5.00000000000000E-01 2.93150000000000E+02 2.83150000000000E+02 2.73150000000000E+02 5.00000000000000E-01 1.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 2.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 2.00000000000000E+00 1.00000000000000E-06 1.36770000000000E+03 0.00000000000000E+00 0.00000000000000E+00
+
+float data_2(11,71)                          
+ 0.00000000000000E+00 2.83595127352411E-02 9.38334328797691E-01 9.66693841532932E-01 2.83595127352411E-02 9.38334328797691E-01 9.66693841532932E-01 3.00000000000000E+03 1.00000000000000E+01 1.80000000000000E+02 9.72000000000000E-02 2.00000000000000E-01 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 -2.13628300444106E+00 6.56592864600267E-01 -2.88000000000000E+04 6.56592864600267E-01 -2.13628300444106E+00 3.00000000000000E+03 3.76200000000000E+01 1.00000000000000E+01 1.80000000000000E+02 3.76200000000000E+01 1.00000000000000E+01 1.80000000000000E+02 1.74532925199433E-01 6.56592864600267E-01 3.14159265358979E+00 1.74532925199433E-01 6.56592864600267E-01 3.14159265358979E+00 2.83595127352411E-02 1.00000000000000E-04 1.00000000000000E-04 1.00000000000000E-04 0.00000000000000E+00 -7.92412398939304E+02 2.88311099994721E+00 -3.19921850940278E+00 -4.02886133720508E-01 9.72548447710602E-05 9.71029223011823E-05 1.51922469877920E-07 0.00000000000000E+00 2.71088113051043E+00 9.72548447710602E-05 2.00000000000000E-01 2.00000000000000E-01 2.00000000000000E+03 1.00000000000000E-06 2.90000000000000E+02 1.00000000000000E-03 2.80350000000000E+02 2.78750000000000E+02 2.67511066805393E+02 9.00000000000000E-01 -1.31231467315232E+00 7.00000000000000E-02 3.30000000000000E-02 1.13400000000000E+02 1.13400000000000E+02 1.03300000000000E+00 1.07000000000000E+00 9.67000000000000E-01 9.30000000000000E-01 9.38334328797758E-01 9.66693841532932E-01
+ 1.00000000000000E+00 2.83595114067381E-02 9.38334330125761E-01 9.66693841532499E-01 2.83595114067381E-02 9.38334330125761E-01 9.66693841532499E-01 3.00000000000000E+03 1.00000000000000E+01 1.80000000000000E+02 9.72000000000000E-02 2.00000000000000E-01 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 -2.13628300444106E+00 6.56592864600267E-01 -2.88000000000000E+04 6.56592864600267E-01 -2.13628300444106E+00 3.00000000000000E+03 3.76200000000000E+01 1.00000000000000E+01 1.80000000000000E+02 3.76200000000000E+01 1.00000000000000E+01 1.80000000000000E+02 1.74532925199433E-01 6.56592864600267E-01 3.14159265358979E+00 1.74532925199433E-01 6.56592864600267E-01 3.14159265358979E+00 2.83595114067381E-02 1.00000000000000E-04 1.00000000000000E-04 1.00000000000000E-04 1.00000000000000E+00 -7.91412710742143E+02 2.88312291390131E+00 -3.19914581002556E+00 -4.02886118977285E-01 9.72548402151514E-05 9.71029177452734E-05 1.51922469877920E-07 0.00000000000000E+00 2.71088733034533E+00 9.72548402151514E-05 1.99972231481053E-01 1.99972231481053E-01 2.00000000000000E+03 1.00000000000000E-06 2.89999166966212E+02 1.00000000000000E-03 2.80350000000000E+02 2.78750000000000E+02 2.67510855386477E+02 9.00000000000000E-01 -1.31232658710641E+00 7.00000000000000E-02 3.30000000000000E-02 1.13400000000000E+02 1.13400000000000E+02 1.03300000000000E+00 1.07000000000000E+00 9.67000000000000E-01 9.30000000000000E-01 9.38334330125825E-01 9.66693841532499E-01
+ 2.00000000000000E+00 2.83595100798526E-02 9.38334331452213E-01 9.66693841532066E-01 2.83595100798526E-02 9.38334331452213E-01 9.66693841532066E-01 3.00000000000000E+03 1.00000000000000E+01 1.80000000000000E+02 9.72000000000000E-02 2.00000000000000E-01 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 -2.13628300444106E+00 6.56592864600267E-01 -2.88000000000000E+04 6.56592864600267E-01 -2.13628300444106E+00 3.00000000000000E+03 3.76200000000000E+01 1.00000000000000E+01 1.80000000000000E+02 3.76200000000000E+01 1.00000000000000E+01 1.80000000000000E+02 1.74532925199433E-01 6.56592864600267E-01 3.14159265358979E+00 1.74532925199433E-01 6.56592864600267E-01 3.14159265358979E+00 2.83595100798526E-02 1.00000000000000E-04 1.00000000000000E-04 1.00000000000000E-04 2.00000000000000E+00 -7.90413022544946E+02 2.88313481334989E+00 -3.19907311064833E+00 -4.02886104234046E-01 9.72548356647895E-05 9.71029131949116E-05 1.51922469877920E-07 0.00000000000000E+00 2.71089352242743E+00 9.72548356647895E-05 1.99944481478052E-01 1.99944481478052E-01 2.00000000000000E+03 1.00000000000000E-06 2.89998334531439E+02 1.00000000000000E-03 2.80350000000000E+02 2.78750000000000E+02 2.67510644089879E+02 9.00000000000000E-01 -1.31233848655500E+00 7.00000000000000E-02 3.30000000000000E-02 1.13400000000000E+02 1.13400000000000E+02 1.03300000000000E+00 1.07000000000000E+00 9.67000000000000E-01 9.30000000000000E-01 9.38334331452191E-01 9.66693841532066E-01
+ 3.00000000000000E+00 2.83595087545848E-02 9.38334332777049E-01 9.66693841531634E-01 2.83595087545848E-02 9.38334332777049E-01 9.66693841531634E-01 3.00000000000000E+03 1.00000000000000E+01 1.80000000000000E+02 9.72000000000000E-02 2.00000000000000E-01 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 -2.13628300444106E+00 6.56592864600267E-01 -2.88000000000000E+04 6.56592864600267E-01 -2.13628300444106E+00 3.00000000000000E+03 3.76200000000000E+01 1.00000000000000E+01 1.80000000000000E+02 3.76200000000000E+01 1.00000000000000E+01 1.80000000000000E+02 1.74532925199433E-01 6.56592864600267E-01 3.14159265358979E+00 1.74532925199433E-01 6.56592864600267E-01 3.14159265358979E+00 2.83595087545848E-02 1.00000000000000E-04 1.00000000000000E-04 1.00000000000000E-04 3.00000000000000E+00 -7.89413334347715E+02 2.88314669829094E+00 -3.19900041127110E+00 -4.02886089490791E-01 9.72548311199753E-05 9.71029086500974E-05 1.51922469877920E-07 0.00000000000000E+00 2.71089970675637E+00 9.72548311199753E-05 1.99916749988426E-01 1.99916749988426E-01 2.00000000000000E+03 1.00000000000000E-06 2.89997502695568E+02 1.00000000000000E-03 2.80350000000000E+02 2.78750000000000E+02 2.67510432915614E+02 9.00000000000000E-01 -1.31235037149604E+00 7.00000000000000E-02 3.30000000000000E-02 1.13400000000000E+02 1.13400000000000E+02 1.03300000000000E+00 1.07000000000000E+00 9.67000000000000E-01 9.30000000000000E-01 9.38334332777196E-01 9.66693841531634E-01
+ 4.00000000000000E+00 2.83595074309349E-02 9.38334334100267E-01 9.66693841531202E-01 2.83595074309349E-02 9.38334334100267E-01 9.66693841531202E-01 3.00000000000000E+03 1.00000000000000E+01 1.80000000000000E+02 9.72000000000000E-02 2.00000000000000E-01 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 -2.13628300444106E+00 6.56592864600267E-01 -2.88000000000000E+04 6.56592864600267E-01 -2.13628300444106E+00 3.00000000000000E+03 3.76200000000000E+01 1.00000000000000E+01 1.80000000000000E+02 3.76200000000000E+01 1.00000000000000E+01 1.80000000000000E+02 1.74532925199433E-01 6.56592864600267E-01 3.14159265358979E+00 1.74532925199433E-01 6.56592864600267E-01 3.14159265358979E+00 2.83595074309349E-02 1.00000000000000E-04 1.00000000000000E-04 1.00000000000000E-04 4.00000000000000E+00 -7.88413646150448E+02 2.88315856872244E+00 -3.19892771189387E+00 -4.02886074747518E-01 9.72548265807096E-05 9.71029041108317E-05 1.51922469877920E-07 0.00000000000000E+00 2.71090588333180E+00 9.72548265807096E-05 1.99889037009602E-01 1.99889037009602E-01 2.00000000000000E+03 1.00000000000000E-06 2.89996671458485E+02 1.00000000000000E-03 2.80350000000000E+02 2.78750000000000E+02 2.67510221863697E+02 9.00000000000000E-01 -1.31236224192754E+00 7.00000000000000E-02 3.30000000000000E-02 1.13400000000000E+02 1.13400000000000E+02 1.03300000000000E+00 1.07000000000000E+00 9.67000000000000E-01 9.30000000000000E-01 9.38334334100159E-01 9.66693841531202E-01
+ 5.00000000000000E+00 2.83595061089032E-02 9.38334335421868E-01 9.66693841530771E-01 2.83595061089032E-02 9.38334335421868E-01 9.66693841530771E-01 3.00000000000000E+03 1.00000000000000E+01 1.80000000000000E+02 9.72000000000000E-02 2.00000000000000E-01 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 -2.13628300444106E+00 6.56592864600267E-01 -2.88000000000000E+04 6.56592864600267E-01 -2.13628300444106E+00 3.00000000000000E+03 3.76200000000000E+01 1.00000000000000E+01 1.80000000000000E+02 3.76200000000000E+01 1.00000000000000E+01 1.80000000000000E+02 1.74532925199433E-01 6.56592864600267E-01 3.14159265358979E+00 1.74532925199433E-01 6.56592864600267E-01 3.14159265358979E+00 2.83595061089032E-02 1.00000000000000E-04 1.00000000000000E-04 1.00000000000000E-04 5.00000000000000E+00 -7.87413957953147E+02 2.88317042464236E+00 -3.19885501251664E+00 -4.02886060004228E-01 9.72548220469931E-05 9.71028995771152E-05 1.51922469877920E-07 0.00000000000000E+00 2.71091205215339E+00 9.72548220469931E-05 1.99861342539009E-01 1.99861342539009E-01 2.00000000000000E+03 1.00000000000000E-06 2.89995840820076E+02 1.00000000000000E-03 2.80350000000000E+02 2.78750000000000E+02 2.67510010934143E+02 9.00000000000000E-01 -1.31237409784746E+00 7.00000000000000E-02 3.30000000000000E-02 1.13400000000000E+02 1.13400000000000E+02 1.03300000000000E+00 1.07000000000000E+00 9.67000000000000E-01 9.30000000000000E-01 9.38334335421762E-01 9.66693841530771E-01
+ 6.00000000000000E+00 2.83595047884898E-02 9.38334336741850E-01 9.66693841530340E-01 2.83595047884898E-02 9.38334336741850E-01 9.66693841530340E-01 3.00000000000000E+03 1.00000000000000E+01 1.80000000000000E+02 9.72000000000000E-02 2.00000000000000E-01 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 -2.13628300444106E+00 6.56592864600267E-01 -2.88000000000000E+04 6.56592864600267E-01 -2.13628300444106E+00 3.00000000000000E+03 3.76200000000000E+01 1.00000000000000E+01 1.80000000000000E+02 3.76200000000000E+01 1.00000000000000E+01 1.80000000000000E+02 1.74532925199433E-01 6.56592864600267E-01 3.14159265358979E+00 1.74532925199433E-01 6.56592864600267E-01 3.14159265358979E+00 2.83595047884898E-02 1.00000000000000E-04 1.00000000000000E-04 1.00000000000000E-04 6.00000000000000E+00 -7.86414269755811E+02 2.88318226604870E+00 -3.19878231313940E+00 -4.02886045260922E-01 9.72548175188266E-05 9.71028950489487E-05 1.51922469877920E-07 0.00000000000000E+00 2.71091821322079E+00 9.72548175188266E-05 1.99833666574074E-01 1.99833666574074E-01 2.00000000000000E+03 1.00000000000000E-06 2.89995010780229E+02 1.00000000000000E-03 2.80350000000000E+02 2.78750000000000E+02 2.67509800126968E+02 9.00000000000000E-01 -1.31238593925381E+00 7.00000000000000E-02 3.30000000000000E-02 1.13400000000000E+02 1.13400000000000E+02 1.03300000000000E+00 1.07000000000000E+00 9.67000000000000E-01 9.30000000000000E-01 9.38334336742003E-01 9.66693841530340E-01
+ 7.00000000000000E+00 2.83595034696951E-02 9.38334338060215E-01 9.66693841529910E-01 2.83595034696951E-02 9.38334338060215E-01 9.66693841529910E-01 3.00000000000000E+03 1.00000000000000E+01 1.80000000000000E+02 9.72000000000000E-02 2.00000000000000E-01 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 -2.13628300444106E+00 6.56592864600267E-01 -2.88000000000000E+04 6.56592864600267E-01 -2.13628300444106E+00 3.00000000000000E+03 3.76200000000000E+01 1.00000000000000E+01 1.80000000000000E+02 3.76200000000000E+01 1.00000000000000E+01 1.80000000000000E+02 1.74532925199433E-01 6.56592864600267E-01 3.14159265358979E+00 1.74532925199433E-01 6.56592864600267E-01 3.14159265358979E+00 2.83595034696951E-02 1.00000000000000E-04 1.00000000000000E-04 1.00000000000000E-04 7.00000000000000E+00 -7.85414581558440E+02 2.88319409293945E+00 -3.19870961376216E+00 -4.02886030517599E-01 9.72548129962109E-05 9.71028905263330E-05 1.51922469877920E-07 0.00000000000000E+00 2.71092436653365E+00 9.72548129962109E-05 1.99806009112226E-01 1.99806009112226E-01 2.00000000000000E+03 1.00000000000000E-06 2.89994181338829E+02 1.00000000000000E-03 2.80350000000000E+02 2.78750000000000E+02 2.67509589442187E+02 9.00000000000000E-01 -1.31239776614455E+00 7.00000000000000E-02 3.30000000000000E-02 1.13400000000000E+02 1.13400000000000E+02 1.03300000000000E+00 1.07000000000000E+00 9.67000000000000E-01 9.30000000000000E-01 9.38334338060202E-01 9.66693841529910E-01
+ 8.00000000000000E+00 2.83595021525192E-02 9.38334339376961E-01 9.66693841529480E-01 2.83595021525192E-02 9.38334339376961E-01 9.66693841529480E-01 3.00000000000000E+03 1.00000000000000E+01 1.80000000000000E+02 9.72000000000000E-02 2.00000000000000E-01 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 -2.13628300444106E+00 6.56592864600267E-01 -2.88000000000000E+04 6.56592864600267E-01 -2.13628300444106E+00 3.00000000000000E+03 3.76200000000000E+01 1.00000000000000E+01 1.80000000000000E+02 3.76200000000000E+01 1.00000000000000E+01 1.80000000000000E+02 1.74532925199433E-01 6.56592864600267E-01 3.14159265358979E+00 1.74532925199433E-01 6.56592864600267E-01 3.14159265358979E+00 2.83595021525192E-02 1.00000000000000E-04 1.00000000000000E-04 1.00000000000000E-04 8.00000000000000E+00 -7.84414893361034E+02 2.88320590531259E+00 -3.19863691438492E+00 -4.02886015774259E-01 9.72548084791468E-05 9.71028860092689E-05 1.51922469877920E-07 0.00000000000000E+00 2.71093051209163E+00 9.72548084791468E-05 1.99778370150892E-01 1.99778370150892E-01 2.00000000000000E+03 1.00000000000000E-06 2.89993352495764E+02 1.00000000000000E-03 2.80350000000000E+02 2.78750000000000E+02 2.67509378879815E+02 9.00000000000000E-01 -1.31240957851769E+00 7.00000000000000E-02 3.30000000000000E-02 1.13400000000000E+02 1.13400000000000E+02 1.03300000000000E+00 1.07000000000000E+00 9.67000000000000E-01 9.30000000000000E-01 9.38334339377041E-01 9.66693841529480E-01
+ 9.00000000000000E+00 2.83595008369624E-02 9.38334340692089E-01 9.66693841529051E-01 2.83595008369624E-02 9.38334340692089E-01 9.66693841529051E-01 3.00000000000000E+03 1.00000000000000E+01 1.80000000000000E+02 9.72000000000000E-02 2.00000000000000E-01 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 -2.13628300444106E+00 6.56592864600267E-01 -2.88000000000000E+04 6.56592864600267E-01 -2.13628300444106E+00 3.00000000000000E+03 3.76200000000000E+01 1.00000000000000E+01 1.80000000000000E+02 3.76200000000000E+01 1.00000000000000E+01 1.80000000000000E+02 1.74532925199433E-01 6.56592864600267E-01 3.14159265358979E+00 1.74532925199433E-01 6.56592864600267E-01 3.14159265358979E+00 2.83595008369624E-02 1.00000000000000E-04 1.00000000000000E-04 1.00000000000000E-04 9.00000000000000E+00 -7.83415205163593E+02 2.88321770316612E+00 -3.19856421500767E+00 -4.02886001030903E-01 9.72548039676350E-05 9.71028814977571E-05 1.51922469877920E-07 0.00000000000000E+00 2.71093664989438E+00 9.72548039676350E-05 1.99750749687500E-01 1.99750749687500E-01 2.00000000000000E+03 1.00000000000000E-06 2.89992524250919E+02 1.00000000000000E-03 2.80350000000000E+02 2.78750000000000E+02 2.67509168439867E+02 9.00000000000000E-01 -1.31242137637122E+00 7.00000000000000E-02 3.30000000000000E-02 1.13400000000000E+02 1.13400000000000E+02 1.03300000000000E+00 1.07000000000000E+00 9.67000000000000E-01 9.30000000000000E-01 9.38334340692178E-01 9.66693841529051E-01
+ 1.00000000000000E+01 2.83594995230248E-02 9.38334342005598E-01 9.66693841528622E-01 2.83594995230248E-02 9.38334342005598E-01 9.66693841528622E-01 3.00000000000000E+03 1.00000000000000E+01 1.80000000000000E+02 9.72000000000000E-02 2.00000000000000E-01 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 -2.13628300444106E+00 6.56592864600267E-01 -2.88000000000000E+04 6.56592864600267E-01 -2.13628300444106E+00 3.00000000000000E+03 3.76200000000000E+01 1.00000000000000E+01 1.80000000000000E+02 3.76200000000000E+01 1.00000000000000E+01 1.80000000000000E+02 1.74532925199433E-01 6.56592864600267E-01 3.14159265358979E+00 1.74532925199433E-01 6.56592864600267E-01 3.14159265358979E+00 2.83594995230248E-02 1.00000000000000E-04 1.00000000000000E-04 1.00000000000000E-04 1.00000000000000E+01 -7.82415516966117E+02 2.88322948649803E+00 -3.19849151563043E+00 -4.02885986287529E-01 9.72547994616762E-05 9.71028769917983E-05 1.51922469877920E-07 0.00000000000000E+00 2.71094277994157E+00 9.72547994616762E-05 1.99723147719479E-01 1.99723147719479E-01 2.00000000000000E+03 1.00000000000000E-06 2.89991696604182E+02 1.00000000000000E-03 2.80350000000000E+02 2.78750000000000E+02 2.67508958122358E+02 9.00000000000000E-01 -1.31243315970313E+00 7.00000000000000E-02 3.30000000000000E-02 1.13400000000000E+02 1.13400000000000E+02 1.03300000000000E+00 1.07000000000000E+00 9.67000000000000E-01 9.30000000000000E-01 9.38334342005614E-01 9.66693841528622E-01

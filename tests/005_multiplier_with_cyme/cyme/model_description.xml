@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimulatorModelDescription
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  fmiVersion="2.0"
+  modelName="simulator"
+  description="Input data for a Simulator FMU"
+  generationTool="SimulatorToFMU">
+  <ModelVariables>
+    <ScalarVariable
+      name="_configurationFileName"
+      description="parameter"
+      causality="parameter"
+      start="C:\\Users\\DRRC\\Desktop\\fmi-for-power-system\\tests\\005_multiplier_with_cyme\\cyme\\jonathan.json2"
+      type="String">
+    </ScalarVariable>
+    <ScalarVariable
+      name="IEEE34NODES!836!KW"
+      description="input P"
+      causality="input"
+      type="Real"
+      unit="kW">
+    </ScalarVariable>
+    <ScalarVariable
+      name="IEEE34NODES!836!KVAR"
+      description="input Q"
+      causality="input"
+      type="Real"
+      unit="kW">
+    </ScalarVariable>
+    <ScalarVariable
+      name="voltage!836!Vpu"
+      description="output voltage p.u."
+      causality="output"
+      type="Real">
+    </ScalarVariable>
+  </ModelVariables>
+</SimulatorModelDescription>

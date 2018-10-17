@@ -1,0 +1,35 @@
+10/17/2018 03:45:30 PM FMI version not specified. Version 2.0 will be used.
+10/17/2018 03:45:30 PM No configuration file was provided. JModelica does not allow to set the path to a configuration file at runtime. Hence if the exported simulation program/script needs a configuration file to run, then the path to the configuration file must be provided when creating the FMU. Otherwise the FMU will fail to run.
+10/17/2018 03:45:30 PM Print Modelica model
+10/17/2018 03:45:30 PM model_description.xml is a valid XML document.
+10/17/2018 03:45:30 PM Invalid characters will be removed from the model name=blackbox.
+10/17/2018 03:45:30 PM The new model name is blackbox.
+10/17/2018 03:45:30 PM Declare the Python module name as blackbox_wrapper.
+10/17/2018 03:45:30 PM Invalid characters will be removed from the variable name x.
+10/17/2018 03:45:30 PM The new variable name is x.
+10/17/2018 03:45:30 PM Invalid characters will be removed from the variable name u.
+10/17/2018 03:45:30 PM The new variable name is u.
+10/17/2018 03:45:30 PM Invalid characters will be removed from the variable name y.
+10/17/2018 03:45:30 PM The new variable name is y.
+10/17/2018 03:45:30 PM Check for duplicates in input, output and parameter variable names.
+10/17/2018 03:45:30 PM Parsing of model_description.xml was successfull.
+10/17/2018 03:45:31 PM The output file blackbox.mo exists and will be overwritten.
+10/17/2018 03:45:31 PM The Modelica model blackbox.mo of blackbox is successfully created.
+10/17/2018 03:45:31 PM The Modelica model blackbox.mo of blackbox is in C:\Users\DRRC\Desktop\fmi-for-power-system\tests\006_algebraic_loop\blackbox.
+10/17/2018 03:45:31 PM Generate FMU
+10/17/2018 03:45:34 PM The FMU blackbox.fmu is successfully created.
+10/17/2018 03:45:34 PM The FMU blackbox.fmu is in C:\Users\DRRC\Desktop\fmi-for-power-system\tests\006_algebraic_loop\blackbox.
+10/17/2018 03:45:34 PM Create scripts folder
+10/17/2018 03:45:34 PM Create the folder Simulator.scripts with scripts to be added to the PYTHONPATH.
+10/17/2018 03:45:34 PM Create binaries folder
+10/17/2018 03:45:34 PM Create the folder Simulator.binaries with binaries to be added to the system PATH.
+10/17/2018 03:45:34 PM C:\Users\DRRC\Desktop\desktops\February\SimulatorToFMU\simulatortofmu\parser\libraries\modelica\SimulatorToFMU\Resources\Library\win32\SimulatorToFMUPython27.dll will be copied to the binaries folder blackbox.binaries\win32.
+10/17/2018 03:45:34 PM C:\Users\DRRC\Desktop\desktops\February\SimulatorToFMU\simulatortofmu\parser\libraries\modelica\SimulatorToFMU\Resources\Library\win32\python27.dll will be copied to the binaries folder blackbox.binaries\win32.
+10/17/2018 03:45:34 PM C:\Users\DRRC\Desktop\desktops\February\SimulatorToFMU\simulatortofmu\parser\libraries\modelica\SimulatorToFMU\Resources\Library\win64\SimulatorToFMUPython27.dll will be copied to the binaries folder blackbox.binaries\win64.
+10/17/2018 03:45:34 PM C:\Users\DRRC\Desktop\desktops\February\SimulatorToFMU\simulatortofmu\parser\libraries\modelica\SimulatorToFMU\Resources\Library\win64\python27.dll will be copied to the binaries folder blackbox.binaries\win64.
+10/17/2018 03:45:34 PM Clean temporary files
+10/17/2018 03:45:34 PM Rewrite FMU
+10/17/2018 03:45:34 PM The model description file will be rewritten to include the attribute needsExecutionTool set to true.
+10/17/2018 03:45:35 PM The FMU blackbox.fmu is successfully re-created.
+10/17/2018 03:45:35 PM The FMU blackbox.fmu is in C:\Users\DRRC\Desktop\fmi-for-power-system\tests\006_algebraic_loop\blackbox.
+10/17/2018 03:45:35 PM Export Simulator as an FMU in 4.217 seconds.

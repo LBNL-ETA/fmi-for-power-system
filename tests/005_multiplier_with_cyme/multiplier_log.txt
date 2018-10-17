@@ -1,29 +1,32 @@
 FMIL: module = FMILIB, log level = 5: Allocating FMIL context
 FMIL: module = FMILIB, log level = 5: Detecting FMI standard version
-FMIL: module = FMIZIP, log level = 5: Unpacking FMU into c:\users\drrc\appdata\local\temp\JModelica.org\jm_tmprpnp6z
+FMIL: module = FMIZIP, log level = 5: Unpacking FMU into c:\users\drrc\appdata\local\temp\JModelica.org\jm_tmp4cyiss
 FMIL: module = FMIXML, log level = 5: Parsing XML to detect FMI standard version
 FMIL: module = FMIXML, log level = 5: XML specifies FMI 2.0
 FMIL: module = FMILIB, log level = 4: XML specifies FMI standard version 2.0
 FMIL: module = FMILIB, log level = 5: Parsing model description XML
 FMIL: module = FMI2XML, log level = 5: Parsing XML element fmiModelDescription
+FMIL: module = FMI2XML, log level = 3: Attribute 'needsExecutionTool' not processed by element 'fmiModelDescription' handle
 FMIL: module = FMI2XML, log level = 5: Parsing XML element ModelExchange
 FMIL: module = FMI2XML, log level = 5: Parsing XML element UnitDefinitions
-FMIL: module = FMI2XML, log level = 5: Parsing XML element TypeDefinitions
+FMIL: module = FMI2XML, log level = 5: Parsing XML element LogCategories
+FMIL: module = FMI2XML, log level = 5: Parsing XML element VendorAnnotations
 FMIL: module = FMI2XML, log level = 5: Parsing XML element ModelVariables
 FMIL: module = FMI2XML, log level = 5: Building alias index
+FMIL: module = FMI2XML, log level = 5: Variables dblInpVal[1] and uR[1] reference the same vr 45. Marking 'uR[1]' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables nDblPar and nStrPar reference the same vr 268435482. Marking 'nStrPar' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables nDblInp and nDblOut reference the same vr 268435483. Marking 'nDblOut' as alias.
 FMIL: module = FMI2XML, log level = 5: Parsing XML element ModelStructure
 FMIL: module = FMI2XML, log level = 5: Parsing XML element Outputs
 FMIL: module = FMI2XML, log level = 5: Parsing XML element InitialUnknowns
 FMIL: module = FMILIB, log level = 5: Parsing finished successfully
 FMIL: module = FMILIB, log level = 4: Loading 'win32' binary with 'default' platform types
-FMIL: module = FMICAPI, log level = 5: Loaded FMU binary from c:\users\drrc\appdata\local\temp\JModelica.org\jm_tmprpnp6z\binaries\win32\controls.dll
+FMIL: module = FMICAPI, log level = 5: Loaded FMU binary from c:\users\drrc\appdata\local\temp\JModelica.org\jm_tmp4cyiss\binaries\win32\multiplier.dll
 FMIL: module = FMICAPI, log level = 5: Loading functions for the model exchange interface
 FMIL: module = FMILIB, log level = 5: Successfully loaded all the interface functions
-FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2Instantiate completed
 FMIL: module = FMICAPI, log level = 5: Calling fmi2SetupExperiment
-FMIL: module = Model, log level = 3: [][FMU status:Warning] fmi2SetupExperiment: tolerance control not supported for fmuType fmi2ModelExchange, setting toleranceDefined to fmi2False
-FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetupExperiment: startTime is set to 0
-FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: QMaxCap = 15.12
-FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: QMaxInd = 15.12
-FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: thr = 0.07
-FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: hys = 0.033
+FMIL: module = FMICAPI, log level = 5: Calling fmi2SetupExperiment
+FMIL: module = FMICAPI, log level = 5: Calling fmi2EnterInitializationMode
+FMIL: module = FMICAPI, log level = 5: Calling fmi2ExitInitializationMode
+FMIL: module = FMICAPI, log level = 5: Calling fmi2NewDiscreteStates
+FMIL: module = FMICAPI, log level = 5: Calling fmi2EnterContinuousTimeMode

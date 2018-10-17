@@ -1,0 +1,340 @@
+#1
+char Aclass(3,11)
+Atrajectory
+1.1
+
+char name(100,50)
+time
+csv_reader._block_jacobian_check_tol
+csv_reader._cs_rel_tol
+csv_reader._cs_step_size
+csv_reader._events_default_tol
+csv_reader._events_tol_factor
+csv_reader._nle_jacobian_finite_difference_delta
+csv_reader._nle_solver_default_tol
+csv_reader._nle_solver_max_residual_scaling_factor
+csv_reader._nle_solver_min_residual_scaling_factor
+csv_reader._nle_solver_min_tol
+csv_reader._nle_solver_regularization_tolerance
+csv_reader._nle_solver_step_limit_factor
+csv_reader._nle_solver_tol_factor
+csv_reader._time_events_default_tol
+csv_reader.column
+csv_reader.y
+csv_reader.dblInpVal[1]
+csv_reader.uR[1]
+csv_reader.yR[1]
+csv_reader._block_solver_experimental_mode
+csv_reader._cs_experimental_mode
+csv_reader._cs_solver
+csv_reader._iteration_variable_scaling
+csv_reader._log_level
+csv_reader._nle_active_bounds_mode
+csv_reader._nle_jacobian_calculation_mode
+csv_reader._nle_jacobian_update_mode
+csv_reader._nle_solver_exit_criterion
+csv_reader._nle_solver_max_iter
+csv_reader._nle_solver_max_iter_no_jacobian
+csv_reader._residual_equation_scaling
+csv_reader.nDblPar
+csv_reader.nDblInp
+csv_reader.nDblOut
+csv_reader.nStrPar
+csv_reader._saveToFile
+csv_reader._block_jacobian_check
+csv_reader._block_solver_profiling
+csv_reader._enforce_bounds
+csv_reader._nle_brent_ignore_error
+csv_reader._nle_solver_check_jac_cond
+csv_reader._nle_solver_use_last_integrator_step
+csv_reader._nle_solver_use_nominals_as_fallback
+csv_reader._rescale_after_singular_jac
+csv_reader._rescale_each_step
+csv_reader._runtime_log_to_file
+csv_reader._use_Brent_in_1d
+csv_reader._use_jacobian_equilibration
+csv_reader._use_newton_for_brent
+multiplier._block_jacobian_check_tol
+multiplier._cs_rel_tol
+multiplier._cs_step_size
+multiplier._events_default_tol
+multiplier._events_tol_factor
+multiplier._nle_jacobian_finite_difference_delta
+multiplier._nle_solver_default_tol
+multiplier._nle_solver_max_residual_scaling_factor
+multiplier._nle_solver_min_residual_scaling_factor
+multiplier._nle_solver_min_tol
+multiplier._nle_solver_regularization_tolerance
+multiplier._nle_solver_step_limit_factor
+multiplier._nle_solver_tol_factor
+multiplier._time_events_default_tol
+multiplier.x
+multiplier.y
+multiplier.dblInpVal[1]
+multiplier.uR[1]
+multiplier.yR[1]
+multiplier._block_solver_experimental_mode
+multiplier._cs_experimental_mode
+multiplier._cs_solver
+multiplier._iteration_variable_scaling
+multiplier._log_level
+multiplier._nle_active_bounds_mode
+multiplier._nle_jacobian_calculation_mode
+multiplier._nle_jacobian_update_mode
+multiplier._nle_solver_exit_criterion
+multiplier._nle_solver_max_iter
+multiplier._nle_solver_max_iter_no_jacobian
+multiplier._residual_equation_scaling
+multiplier.nDblPar
+multiplier.nStrPar
+multiplier.nDblInp
+multiplier.nDblOut
+multiplier._saveToFile
+multiplier.passMemoryObject
+multiplier._block_jacobian_check
+multiplier._block_solver_profiling
+multiplier._enforce_bounds
+multiplier._nle_brent_ignore_error
+multiplier._nle_solver_check_jac_cond
+multiplier._nle_solver_use_last_integrator_step
+multiplier._nle_solver_use_nominals_as_fallback
+multiplier._rescale_after_singular_jac
+multiplier._rescale_each_step
+multiplier._runtime_log_to_file
+multiplier._use_Brent_in_1d
+multiplier._use_jacobian_equilibration
+multiplier._use_newton_for_brent
+
+char description(100,83)
+Time in [s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input
+output
+Value to be sent to Simulator
+Variables used to collect values to be sent to Simulator
+Variables used to collect values received from Simulator
+
+
+
+
+
+
+
+
+
+
+
+
+Number of double parameter values to sent to Simulator
+Number of double input values to sent to Simulator
+Number of double output values to receive from Simulator
+Number of string parameter values to sent to Simulator
+Flag for writing results
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input
+output
+Value to be sent to Simulator
+Variables used to collect values to be sent to Simulator
+Variables used to collect values received from Simulator
+
+
+
+
+
+
+
+
+
+
+
+
+Number of double parameter values to sent to Simulator
+Number of string parameter values to sent to Simulator
+Number of double input values to sent to Simulator
+Number of double output values to receive from Simulator
+Flag for writing results
+Set to true if the Python function returns and receives an object, see User's Guide
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int dataInfo(100,4)
+0 1 0 -1 # time
+1 2 0 -1 # csv_reader._block_jacobian_check_tol
+1 3 0 -1 # csv_reader._cs_rel_tol
+1 4 0 -1 # csv_reader._cs_step_size
+1 5 0 -1 # csv_reader._events_default_tol
+1 6 0 -1 # csv_reader._events_tol_factor
+1 7 0 -1 # csv_reader._nle_jacobian_finite_difference_delta
+1 8 0 -1 # csv_reader._nle_solver_default_tol
+1 9 0 -1 # csv_reader._nle_solver_max_residual_scaling_factor
+1 10 0 -1 # csv_reader._nle_solver_min_residual_scaling_factor
+1 11 0 -1 # csv_reader._nle_solver_min_tol
+1 12 0 -1 # csv_reader._nle_solver_regularization_tolerance
+1 13 0 -1 # csv_reader._nle_solver_step_limit_factor
+1 14 0 -1 # csv_reader._nle_solver_tol_factor
+1 15 0 -1 # csv_reader._time_events_default_tol
+2 2 0 -1 # csv_reader.column
+2 3 0 -1 # csv_reader.y
+2 4 0 -1 # csv_reader.dblInpVal[1]
+2 4 0 -1 # csv_reader.uR[1]
+2 5 0 -1 # csv_reader.yR[1]
+1 16 0 -1 # csv_reader._block_solver_experimental_mode
+1 17 0 -1 # csv_reader._cs_experimental_mode
+1 18 0 -1 # csv_reader._cs_solver
+1 19 0 -1 # csv_reader._iteration_variable_scaling
+1 20 0 -1 # csv_reader._log_level
+1 21 0 -1 # csv_reader._nle_active_bounds_mode
+1 22 0 -1 # csv_reader._nle_jacobian_calculation_mode
+1 23 0 -1 # csv_reader._nle_jacobian_update_mode
+1 24 0 -1 # csv_reader._nle_solver_exit_criterion
+1 25 0 -1 # csv_reader._nle_solver_max_iter
+1 26 0 -1 # csv_reader._nle_solver_max_iter_no_jacobian
+1 27 0 -1 # csv_reader._residual_equation_scaling
+1 28 0 -1 # csv_reader.nDblPar
+1 29 0 -1 # csv_reader.nDblInp
+1 29 0 -1 # csv_reader.nDblOut
+1 29 0 -1 # csv_reader.nStrPar
+1 30 0 -1 # csv_reader._saveToFile
+1 31 0 -1 # csv_reader._block_jacobian_check
+1 32 0 -1 # csv_reader._block_solver_profiling
+1 33 0 -1 # csv_reader._enforce_bounds
+1 34 0 -1 # csv_reader._nle_brent_ignore_error
+1 35 0 -1 # csv_reader._nle_solver_check_jac_cond
+1 36 0 -1 # csv_reader._nle_solver_use_last_integrator_step
+1 37 0 -1 # csv_reader._nle_solver_use_nominals_as_fallback
+1 38 0 -1 # csv_reader._rescale_after_singular_jac
+1 39 0 -1 # csv_reader._rescale_each_step
+1 40 0 -1 # csv_reader._runtime_log_to_file
+1 41 0 -1 # csv_reader._use_Brent_in_1d
+1 42 0 -1 # csv_reader._use_jacobian_equilibration
+1 43 0 -1 # csv_reader._use_newton_for_brent
+1 44 0 -1 # multiplier._block_jacobian_check_tol
+1 45 0 -1 # multiplier._cs_rel_tol
+1 46 0 -1 # multiplier._cs_step_size
+1 47 0 -1 # multiplier._events_default_tol
+1 48 0 -1 # multiplier._events_tol_factor
+1 49 0 -1 # multiplier._nle_jacobian_finite_difference_delta
+1 50 0 -1 # multiplier._nle_solver_default_tol
+1 51 0 -1 # multiplier._nle_solver_max_residual_scaling_factor
+1 52 0 -1 # multiplier._nle_solver_min_residual_scaling_factor
+1 53 0 -1 # multiplier._nle_solver_min_tol
+1 54 0 -1 # multiplier._nle_solver_regularization_tolerance
+1 55 0 -1 # multiplier._nle_solver_step_limit_factor
+1 56 0 -1 # multiplier._nle_solver_tol_factor
+1 57 0 -1 # multiplier._time_events_default_tol
+2 6 0 -1 # multiplier.x
+2 7 0 -1 # multiplier.y
+2 8 0 -1 # multiplier.dblInpVal[1]
+2 8 0 -1 # multiplier.uR[1]
+2 9 0 -1 # multiplier.yR[1]
+1 58 0 -1 # multiplier._block_solver_experimental_mode
+1 59 0 -1 # multiplier._cs_experimental_mode
+1 60 0 -1 # multiplier._cs_solver
+1 61 0 -1 # multiplier._iteration_variable_scaling
+1 62 0 -1 # multiplier._log_level
+1 63 0 -1 # multiplier._nle_active_bounds_mode
+1 64 0 -1 # multiplier._nle_jacobian_calculation_mode
+1 65 0 -1 # multiplier._nle_jacobian_update_mode
+1 66 0 -1 # multiplier._nle_solver_exit_criterion
+1 67 0 -1 # multiplier._nle_solver_max_iter
+1 68 0 -1 # multiplier._nle_solver_max_iter_no_jacobian
+1 69 0 -1 # multiplier._residual_equation_scaling
+1 70 0 -1 # multiplier.nDblPar
+1 70 0 -1 # multiplier.nStrPar
+1 71 0 -1 # multiplier.nDblInp
+1 71 0 -1 # multiplier.nDblOut
+1 72 0 -1 # multiplier._saveToFile
+1 73 0 -1 # multiplier.passMemoryObject
+1 74 0 -1 # multiplier._block_jacobian_check
+1 75 0 -1 # multiplier._block_solver_profiling
+1 76 0 -1 # multiplier._enforce_bounds
+1 77 0 -1 # multiplier._nle_brent_ignore_error
+1 78 0 -1 # multiplier._nle_solver_check_jac_cond
+1 79 0 -1 # multiplier._nle_solver_use_last_integrator_step
+1 80 0 -1 # multiplier._nle_solver_use_nominals_as_fallback
+1 81 0 -1 # multiplier._rescale_after_singular_jac
+1 82 0 -1 # multiplier._rescale_each_step
+1 83 0 -1 # multiplier._runtime_log_to_file
+1 84 0 -1 # multiplier._use_Brent_in_1d
+1 85 0 -1 # multiplier._use_jacobian_equilibration
+1 86 0 -1 # multiplier._use_newton_for_brent
+
+float data_1(2,86)
+0.00000000000000E+00 1.00000000000000E-06 1.00000000000000E-06 1.00000000000000E-03 1.00000000000000E-10 1.00000000000000E-04 1.49011611938477E-08 1.00000000000000E-10 1.00000000000000E+10 1.00000000000000E-10 1.00000000000000E-12 -1.00000000000000E+00 1.00000000000000E+01 1.00000000000000E-04 2.22044604925031E-14 0.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 3.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 2.00000000000000E+00 3.00000000000000E+00 1.00000000000000E+02 1.00000000000000E+01 1.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 1.00000000000000E-06 1.00000000000000E-06 1.00000000000000E-03 1.00000000000000E-10 1.00000000000000E-04 1.49011611938477E-08 1.00000000000000E-10 1.00000000000000E+10 1.00000000000000E-10 1.00000000000000E-12 -1.00000000000000E+00 1.00000000000000E+01 1.00000000000000E-04 2.22044604925031E-14 0.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 3.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 2.00000000000000E+00 3.00000000000000E+00 1.00000000000000E+02 1.00000000000000E+01 1.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00
+2.30000000000000E+01         1.00000000000000E-06 1.00000000000000E-06 1.00000000000000E-03 1.00000000000000E-10 1.00000000000000E-04 1.49011611938477E-08 1.00000000000000E-10 1.00000000000000E+10 1.00000000000000E-10 1.00000000000000E-12 -1.00000000000000E+00 1.00000000000000E+01 1.00000000000000E-04 2.22044604925031E-14 0.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 3.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 2.00000000000000E+00 3.00000000000000E+00 1.00000000000000E+02 1.00000000000000E+01 1.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 1.00000000000000E-06 1.00000000000000E-06 1.00000000000000E-03 1.00000000000000E-10 1.00000000000000E-04 1.49011611938477E-08 1.00000000000000E-10 1.00000000000000E+10 1.00000000000000E-10 1.00000000000000E-12 -1.00000000000000E+00 1.00000000000000E+01 1.00000000000000E-04 2.22044604925031E-14 0.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 3.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 2.00000000000000E+00 3.00000000000000E+00 1.00000000000000E+02 1.00000000000000E+01 1.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00 0.00000000000000E+00 1.00000000000000E+00
+
+float data_2(24,9)                           
+ 0.00000000000000E+00 0.00000000000000E+00 3.27652340000000E+01 0.00000000000000E+00 3.27652340000000E+01 3.27652340000000E+01 6.55304680000000E+01 3.27652340000000E+01 6.55304680000000E+01
+ 1.00000000000000E+00 0.00000000000000E+00 3.77652340000000E+01 0.00000000000000E+00 3.77652340000000E+01 3.77652340000000E+01 7.55304680000000E+01 3.77652340000000E+01 7.55304680000000E+01
+ 2.00000000000000E+00 0.00000000000000E+00 3.83829320000000E+01 0.00000000000000E+00 3.83829320000000E+01 3.83829320000000E+01 7.67658640000000E+01 3.83829320000000E+01 7.67658640000000E+01
+ 3.00000000000000E+00 0.00000000000000E+00 3.52018330000000E+01 0.00000000000000E+00 3.52018330000000E+01 3.52018330000000E+01 7.04036660000000E+01 3.52018330000000E+01 7.04036660000000E+01
+ 4.00000000000000E+00 0.00000000000000E+00 3.54893810000000E+01 0.00000000000000E+00 3.54893810000000E+01 3.54893810000000E+01 7.09787620000000E+01 3.54893810000000E+01 7.09787620000000E+01
+ 5.00000000000000E+00 0.00000000000000E+00 4.07024700000000E+01 0.00000000000000E+00 4.07024700000000E+01 4.07024700000000E+01 8.14049400000000E+01 4.07024700000000E+01 8.14049400000000E+01
+ 6.00000000000000E+00 0.00000000000000E+00 3.42612290000000E+01 0.00000000000000E+00 3.42612290000000E+01 3.42612290000000E+01 6.85224580000000E+01 3.42612290000000E+01 6.85224580000000E+01
+ 7.00000000000000E+00 0.00000000000000E+00 3.47523220000000E+01 0.00000000000000E+00 3.47523220000000E+01 3.47523220000000E+01 6.95046440000000E+01 3.47523220000000E+01 6.95046440000000E+01
+ 8.00000000000000E+00 0.00000000000000E+00 3.53701830000000E+01 0.00000000000000E+00 3.53701830000000E+01 3.53701830000000E+01 7.07403660000000E+01 3.53701830000000E+01 7.07403660000000E+01
+ 9.00000000000000E+00 0.00000000000000E+00 3.74333060000000E+01 0.00000000000000E+00 3.74333060000000E+01 3.74333060000000E+01 7.48666120000000E+01 3.74333060000000E+01 7.48666120000000E+01
+ 1.00000000000000E+01 0.00000000000000E+00 3.97485870000000E+01 0.00000000000000E+00 3.97485870000000E+01 3.97485870000000E+01 7.94971740000000E+01 3.97485870000000E+01 7.94971740000000E+01
+ 1.10000000000000E+01 0.00000000000000E+00 3.84484810000000E+01 0.00000000000000E+00 3.84484810000000E+01 3.84484810000000E+01 7.68969620000000E+01 3.84484810000000E+01 7.68969620000000E+01
+ 1.20000000000000E+01 0.00000000000000E+00 3.38629100000000E+01 0.00000000000000E+00 3.38629100000000E+01 3.38629100000000E+01 6.77258200000000E+01 3.38629100000000E+01 6.77258200000000E+01
+ 1.30000000000000E+01 0.00000000000000E+00 3.62125840000000E+01 0.00000000000000E+00 3.62125840000000E+01 3.62125840000000E+01 7.24251680000000E+01 3.62125840000000E+01 7.24251680000000E+01
+ 1.40000000000000E+01 0.00000000000000E+00 3.73800760000000E+01 0.00000000000000E+00 3.73800760000000E+01 3.73800760000000E+01 7.47601520000000E+01 3.73800760000000E+01 7.47601520000000E+01
+ 1.50000000000000E+01 0.00000000000000E+00 3.91456780000000E+01 0.00000000000000E+00 3.91456780000000E+01 3.91456780000000E+01 7.82913560000000E+01 3.91456780000000E+01 7.82913560000000E+01
+ 1.60000000000000E+01 0.00000000000000E+00 3.95117800000000E+01 0.00000000000000E+00 3.95117800000000E+01 3.95117800000000E+01 7.90235600000000E+01 3.95117800000000E+01 7.90235600000000E+01
+ 1.70000000000000E+01 0.00000000000000E+00 3.92672440000000E+01 0.00000000000000E+00 3.92672440000000E+01 3.92672440000000E+01 7.85344880000000E+01 3.92672440000000E+01 7.85344880000000E+01
+ 1.80000000000000E+01 0.00000000000000E+00 3.66783700000000E+01 0.00000000000000E+00 3.66783700000000E+01 3.66783700000000E+01 7.33567400000000E+01 3.66783700000000E+01 7.33567400000000E+01
+ 1.90000000000000E+01 0.00000000000000E+00 3.65708420000000E+01 0.00000000000000E+00 3.65708420000000E+01 3.65708420000000E+01 7.31416840000000E+01 3.65708420000000E+01 7.31416840000000E+01
+ 2.00000000000000E+01 0.00000000000000E+00 3.76538230000000E+01 0.00000000000000E+00 3.76538230000000E+01 3.76538230000000E+01 7.53076460000000E+01 3.76538230000000E+01 7.53076460000000E+01
+ 2.10000000000000E+01 0.00000000000000E+00 3.79581160000000E+01 0.00000000000000E+00 3.79581160000000E+01 3.79581160000000E+01 7.59162320000000E+01 3.79581160000000E+01 7.59162320000000E+01
+ 2.20000000000000E+01 0.00000000000000E+00 3.63279880000000E+01 0.00000000000000E+00 3.63279880000000E+01 3.63279880000000E+01 7.26559760000000E+01 3.63279880000000E+01 7.26559760000000E+01
+ 2.30000000000000E+01 0.00000000000000E+00 3.41472850000000E+01 0.00000000000000E+00 3.41472850000000E+01 3.41472850000000E+01 6.82945700000000E+01 3.41472850000000E+01 6.82945700000000E+01
