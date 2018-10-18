@@ -5,6 +5,7 @@ import json
 import pandas
 import cympy
 import uuid
+import sys
 
 app = Flask(__name__)
 version = 'test cyme'
@@ -102,7 +103,9 @@ class Substation(object):
         self._run_powerflow(self.substation_and_feeders)
 
         # Return the right outputs [units from CYME]
-        return self._output_values(inputs['outputnames'])
+        output_values = self._output_values(inputs['outputnames'])
+        print('Output values: ' + str(output_values), file=sys.stderr)
+        return output_values
 
     def _baseload_allocation(self, feeder_loads):
         # Allocate load with respect to the total demand recorded

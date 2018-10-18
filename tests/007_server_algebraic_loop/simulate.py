@@ -2,10 +2,10 @@
 from pyfmi import load_fmu
 from pyfmi.fmi_coupled import CoupledFMUModelME2
 
-# Load blackbox FMU
-print('Loading blackbox (function ME FMU) ...')
-blackbox = load_fmu('blackbox/blackbox.fmu', log_level=7)
-blackbox.setup_experiment(start_time=0, stop_time=10)
+# Load bbq FMU
+print('Loading bbq (function ME FMU) ...')
+bbq = load_fmu('bbq/bbq.fmu', log_level=7)
+bbq.setup_experiment(start_time=0, stop_time=10)
 
 # Load PV
 print('Loading the PV (Modelica FMU) ...')
@@ -33,10 +33,10 @@ print('Done loading FMUs')
 
 # Connect FMUs and create Master
 print('Create master')
-models = [("blackbox", blackbox), ("pv", pv), ("control", control)]
-connections = [(pv, "PV_generation", blackbox, "x"),
-                (control, "QCon", blackbox, "u"),
-                (blackbox, "y", control, "v")]
+models = [("bbq", bbq), ("pv", pv), ("control", control)]
+connections = [(pv, "PV_generation", bbq, "x"),
+                (control, "QCon", bbq, "u"),
+                (bbq, "y", control, "v")]
 master = CoupledFMUModelME2(models, connections)
 options = master.simulate_options()
 options['ncp'] = 10
@@ -44,14 +44,14 @@ print('Run simulation')
 results = master.simulate(options=options, final_time=10.0)
 
 print('Done terminate FMUs')
-blackbox.terminate()
+bbq.terminate()
 pv.terminate()
 control.terminate()
 
 # Plot the results
 import matplotlib.pyplot as plt
 plt.figure(figsize=(10, 3))
-plt.plot(results["time"], results["blackbox.y"])
+plt.plot(results["time"], results["bbq.y"])
 plt.ylabel("Voltage [p.u.]")
 plt.xlabel("Time")
 plt.show()
