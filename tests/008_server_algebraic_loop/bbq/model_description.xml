@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimulatorModelDescription
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  fmiVersion="2.0"
+  modelName="bbq"
+  description="Input data for a Simulator FMU"
+  generationTool="SimulatorToFMU">
+  <ModelVariables>
+    <ScalarVariable
+      name="x"
+      description="input"
+      causality="input"
+      type="Real"
+      unit="V">
+    </ScalarVariable>
+    <ScalarVariable
+      name="u"
+      description="input"
+      causality="input"
+      type="Real"
+      unit="V">
+    </ScalarVariable>
+    <ScalarVariable
+      name="y"
+      description="output"
+      causality="output"
+      type="Real">
+    </ScalarVariable>
+  </ModelVariables>
+</SimulatorModelDescription>

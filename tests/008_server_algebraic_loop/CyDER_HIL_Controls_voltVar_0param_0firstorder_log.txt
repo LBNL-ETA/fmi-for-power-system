@@ -1,0 +1,1143 @@
+FMIL: module = FMILIB, log level = 5: Allocating FMIL context
+FMIL: module = FMILIB, log level = 5: Detecting FMI standard version
+FMIL: module = FMIZIP, log level = 5: Unpacking FMU into c:\users\drrc\appdata\local\temp\JModelica.org\jm_tmpblemco
+FMIL: module = FMIXML, log level = 5: Parsing XML to detect FMI standard version
+FMIL: module = FMIXML, log level = 5: XML specifies FMI 2.0
+FMIL: module = FMILIB, log level = 4: XML specifies FMI standard version 2.0
+FMIL: module = FMILIB, log level = 5: Parsing model description XML
+FMIL: module = FMI2XML, log level = 5: Parsing XML element fmiModelDescription
+FMIL: module = FMI2XML, log level = 5: Parsing XML element ModelExchange
+FMIL: module = FMI2XML, log level = 5: Parsing XML element CoSimulation
+FMIL: module = FMI2XML, log level = 5: Parsing XML element UnitDefinitions
+FMIL: module = FMI2XML, log level = 5: Parsing XML element TypeDefinitions
+FMIL: module = FMI2XML, log level = 5: Parsing XML element ModelVariables
+FMIL: module = FMI2XML, log level = 5: Building alias index
+FMIL: module = FMI2XML, log level = 5: Variables v and voltVar_param1.v reference the same vr 352321536. Marking 'voltVar_param1.v' as alias.
+FMIL: module = FMI2XML, log level = 5: Variables voltVar_param1.QCon and firstOrder.u reference the same vr 637534212. Marking 'firstOrder.u' as alias.
+FMIL: module = FMI2XML, log level = 5: Parsing XML element ModelStructure
+FMIL: module = FMI2XML, log level = 5: Parsing XML element Outputs
+FMIL: module = FMI2XML, log level = 5: Parsing XML element Derivatives
+FMIL: module = FMI2XML, log level = 5: Parsing XML element InitialUnknowns
+FMIL: module = FMI2XML, log level = 4: Found model identifiers for ModelExchange and CoSimulation
+FMIL: module = FMILIB, log level = 5: Parsing finished successfully
+FMIL: module = FMILIB, log level = 4: Loading 'win32' binary with 'default' platform types
+FMIL: module = FMICAPI, log level = 5: Loaded FMU binary from c:\users\drrc\appdata\local\temp\JModelica.org\jm_tmpblemco\binaries\win32\CyDER_HIL_Controls_voltVar_0param_0firstorder.dll
+FMIL: module = FMICAPI, log level = 5: Loading functions for the model exchange interface
+FMIL: module = FMILIB, log level = 5: Successfully loaded all the interface functions
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2Instantiate completed
+FMIL: module = FMICAPI, log level = 5: Calling fmi2SetupExperiment
+FMIL: module = Model, log level = 3: [][FMU status:Warning] fmi2SetupExperiment: tolerance control not supported for fmuType fmi2ModelExchange, setting toleranceDefined to fmi2False
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetupExperiment: startTime is set to 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetNominalsOfContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetNominalsOfContinuousStates
+FMIL: module = FMICAPI, log level = 5: Calling fmi2SetupExperiment
+FMIL: module = Model, log level = 3: [][FMU status:Warning] fmi2SetupExperiment: tolerance control not supported for fmuType fmi2ModelExchange, setting toleranceDefined to fmi2False
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetupExperiment: startTime is set to 0
+FMIL: module = FMICAPI, log level = 5: Calling fmi2EnterInitializationMode
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2EnterInitializationMode...
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2EnterInitializationMode completed
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = FMICAPI, log level = 5: Calling fmi2ExitInitializationMode
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2ExitInitializationMode...
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2ExitInitializationMode completed
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0
+FMIL: module = FMICAPI, log level = 5: Calling fmi2NewDiscreteStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2NewDiscreteStates...
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2NewDiscreteStates completed
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0
+FMIL: module = FMICAPI, log level = 5: Calling fmi2EnterContinuousTimeMode
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2EnterContinuousTimeMode...
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2EnterContinuousTimeMode done
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.y_start = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetInteger: firstOrder.initType = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: Tfirstorder = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QCon = -55.1676
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.k = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.y = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: der(firstOrder.y) = -55.1676
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.T = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 6.34422e-11
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -3.49995e-09
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 1.07238e-09
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -5.91604e-08
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 1.07238e-09
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -5.91604e-08
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 5.36188e-10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -2.95802e-08
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 5.36188e-10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -2.95802e-08
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 5.36188e-10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -2.95802e-08
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 5.36242e-06
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -0.000295832
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 5.36242e-06
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -0.00029583
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 5.89812e-05
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -0.00325383
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 5.89812e-05
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -0.00325373
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.000159539
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -0.00880073
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.000159539
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -0.0088006
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.000357832
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -0.0197372
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.000357832
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -0.0197371
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.000760569
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -0.0419429
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.000760569
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -0.0419427
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.00161947
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -0.0892702
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.00161947
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -0.0892699
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.00357217
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -0.196716
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.00357217
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -0.196716
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.00890749
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -0.489221
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.00890749
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -0.489224
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.0179909
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -0.983624
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.0179909
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -0.983648
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.0179909
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -0.983648
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.0270742
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -1.47357
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.0270742
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -1.47361
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.043712
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -2.35946
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.043712
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -2.35959
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.043712
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -2.35959
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.0603497
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -3.23085
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.0603497
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -3.23095
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.0769874
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -4.08788
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.0769874
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -4.08791
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.106762
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -5.58636
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.106762
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -5.58638
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.178609
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -9.02396
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.178609
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -9.0235
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.178609
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -9.02352
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.250456
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -12.2234
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.250456
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -12.2222
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.322303
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -15.2003
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.322303
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -15.1991
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.39415
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -17.9708
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.39415
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -17.9696
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.558113
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -23.6019
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.558113
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -23.5919
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.558113
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -23.5927
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.722076
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -28.3826
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.722076
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -28.3629
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.722076
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -28.3644
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.886038
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -32.4307
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.886038
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -32.4147
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 1.05
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -35.8539
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 1.05
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -35.8545
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -34.8644
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -34.8644
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: Tfirstorder = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QCon = -55.1676
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.k = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.y = -34.8644
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: der(firstOrder.y) = -20.3032
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.T = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 1.05
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -35.8545
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 1.30669
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -40.2262
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 1.30669
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -40.2293
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 1.82913
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -46.1538
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 1.82913
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -46.4029
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 1.82913
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -46.3459
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 1.61399
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -44.1502
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 1.61399
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -44.1937
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 1.61399
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -44.1878
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 1.92128
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -47.0438
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 1.92128
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -47.1056
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 1.92128
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -47.0973
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 2.22858
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -49.2061
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 2.22858
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -49.2364
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 2
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -47.709
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -47.709
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: Tfirstorder = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QCon = -55.1676
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.k = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.y = -47.709
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: der(firstOrder.y) = -7.45856
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.T = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 2.22858
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -49.2364
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 2.53587
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -50.832
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 2.53587
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -50.8049
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 2.84317
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -51.9351
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 2.84317
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -51.9581
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 3.15046
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -52.8421
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 3.15046
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -52.8036
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 3
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -52.4233
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -52.4233
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: Tfirstorder = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QCon = -55.1676
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.k = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.y = -52.4233
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: der(firstOrder.y) = -2.74427
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.T = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 3.15046
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -52.8036
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 3.45776
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -53.3969
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 3.45776
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -53.4284
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 3.76506
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -53.9274
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 3.76506
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -53.8863
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 4.07235
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -54.1836
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 4.07235
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -54.2263
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -54.1536
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -54.1536
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: Tfirstorder = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QCon = -55.1676
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.k = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.y = -54.1536
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: der(firstOrder.y) = -1.01398
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.T = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 4.07235
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -54.2263
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 4.37965
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -54.5228
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 4.37965
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -54.4731
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 4.68694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -54.6062
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 4.68694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -54.6581
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 4.99424
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -54.8509
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 4.99424
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -54.7902
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 4.99424
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -54.7984
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 5.30153
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -54.876
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 5.30153
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -54.9033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 5
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -54.8007
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -54.8007
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: Tfirstorder = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QCon = -55.1676
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.k = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.y = -54.8007
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: der(firstOrder.y) = -0.366901
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.T = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 5.30153
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -54.9033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 5.60883
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -54.9805
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 5.60883
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -54.9765
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 5.91613
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.018
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 5.91613
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.027
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 6.22342
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.0809
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 6.22342
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.0616
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 6
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.0379
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.0379
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: Tfirstorder = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QCon = -55.1676
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.k = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.y = -55.0379
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: der(firstOrder.y) = -0.129626
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.T = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 6.22342
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.0616
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 6.53072
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.0764
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 6.53072
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.089
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 6.83801
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1243
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 6.83801
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1096
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 7.14531
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1055
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 7.14531
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1266
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 7
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1184
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1184
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: Tfirstorder = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QCon = -55.1676
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.k = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.y = -55.1184
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: der(firstOrder.y) = -0.0492044
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.T = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 7.14531
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1266
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 7.4526
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1566
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 7.4526
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1372
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 7.7599
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1243
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 7.7599
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1458
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 7.7599
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1429
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 8.0672
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1591
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 8.0672
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1462
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 8
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1456
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1456
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: Tfirstorder = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QCon = -55.1676
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.k = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.y = -55.1456
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: der(firstOrder.y) = -0.0220148
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.T = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 8.0672
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1462
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 8.37449
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1477
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 8.37449
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1504
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 8.68179
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1598
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 8.68179
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.155
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 8.98908
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1498
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 8.98908
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1595
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 9.29638
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1688
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 9.29638
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1619
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 9
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1597
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1597
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: Tfirstorder = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QCon = -55.1676
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.k = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.y = -55.1597
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: der(firstOrder.y) = -0.00791438
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.T = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 9.29638
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1619
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 9.60367
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1558
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 9.60367
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1634
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 9.91097
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1746
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 9.91097
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1637
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1627
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1627
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1635
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 1.051
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -55.1635
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: Tfirstorder = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.QCon = -55.1676
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.k = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: voltVar_param1.vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.y = -55.1635
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: der(firstOrder.y) = -0.00407187
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: firstOrder.T = 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2Terminate

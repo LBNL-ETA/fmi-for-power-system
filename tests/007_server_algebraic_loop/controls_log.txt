@@ -1,6 +1,6 @@
 FMIL: module = FMILIB, log level = 5: Allocating FMIL context
 FMIL: module = FMILIB, log level = 5: Detecting FMI standard version
-FMIL: module = FMIZIP, log level = 5: Unpacking FMU into c:\users\drrc\appdata\local\temp\JModelica.org\jm_tmpalwl68
+FMIL: module = FMIZIP, log level = 5: Unpacking FMU into c:\users\drrc\appdata\local\temp\JModelica.org\jm_tmpsmqpy_
 FMIL: module = FMIXML, log level = 5: Parsing XML to detect FMI standard version
 FMIL: module = FMIXML, log level = 5: XML specifies FMI 2.0
 FMIL: module = FMILIB, log level = 4: XML specifies FMI standard version 2.0
@@ -16,7 +16,7 @@ FMIL: module = FMI2XML, log level = 5: Parsing XML element Outputs
 FMIL: module = FMI2XML, log level = 5: Parsing XML element InitialUnknowns
 FMIL: module = FMILIB, log level = 5: Parsing finished successfully
 FMIL: module = FMILIB, log level = 4: Loading 'win32' binary with 'default' platform types
-FMIL: module = FMICAPI, log level = 5: Loaded FMU binary from c:\users\drrc\appdata\local\temp\JModelica.org\jm_tmpalwl68\binaries\win32\controls.dll
+FMIL: module = FMICAPI, log level = 5: Loaded FMU binary from c:\users\drrc\appdata\local\temp\JModelica.org\jm_tmpsmqpy_\binaries\win32\controls.dll
 FMIL: module = FMICAPI, log level = 5: Loading functions for the model exchange interface
 FMIL: module = FMILIB, log level = 5: Successfully loaded all the interface functions
 FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2Instantiate completed
@@ -27,3 +27,841 @@ FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: QMaxCap = 113
 FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: QMaxInd = 113.4
 FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: thr = 0.07
 FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetNominalsOfContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetNominalsOfContinuousStates
+FMIL: module = FMICAPI, log level = 5: Calling fmi2SetupExperiment
+FMIL: module = Model, log level = 3: [][FMU status:Warning] fmi2SetupExperiment: tolerance control not supported for fmuType fmi2ModelExchange, setting toleranceDefined to fmi2False
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetupExperiment: startTime is set to 0
+FMIL: module = FMICAPI, log level = 5: Calling fmi2EnterInitializationMode
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2EnterInitializationMode...
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2EnterInitializationMode completed
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.49012e-008
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 9.64395
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 29.4744
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.49012e-008
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 9.64395
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 29.4744
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 12.8602
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 6.09731
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 2.97839
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.47888
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.743337
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.39653
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.050979
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = -0.637533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = -2.00367
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = -4.68775
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = -9.81533
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = -18.4333
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = -4.28969
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 65.1118
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 28.1436
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = -4.28969
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = -4.28969
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 13.9069
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.22616
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = -4.19067
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = -2.01558
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = -0.879681
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.39025
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = -0.21406
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = -0.21406
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = -0.21406
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.352911
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.48617
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.695005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.695005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.695005
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.97781
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.903254
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.94983
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 52.6238
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 52.6238
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 1.13951
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = -113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.878989
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.94983
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 52.6238
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 52.6238
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.94983
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 52.6238
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 52.6238
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.949829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 52.6257
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 52.6257
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.949828
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 52.6286
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 52.6286
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.949828
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 52.6313
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 52.6313
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.94983
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 52.6242
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 52.6242
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.949851
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 52.558
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 52.558
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.949967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 52.2046
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 52.2046
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.950519
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 50.5135
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 50.5135
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.953089
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 42.6347
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 42.6347
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.962657
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 13.3095
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 13.3095
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938448
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938448
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = FMICAPI, log level = 5: Calling fmi2ExitInitializationMode
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2ExitInitializationMode...
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2ExitInitializationMode completed
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = FMICAPI, log level = 5: Calling fmi2NewDiscreteStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2NewDiscreteStates...
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2NewDiscreteStates completed
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = FMICAPI, log level = 5: Calling fmi2EnterContinuousTimeMode
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2EnterContinuousTimeMode...
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2EnterContinuousTimeMode done
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetContinuousStates
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 4.71216e-007
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.000686452
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.000686452
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.000343226
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.000343226
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 0.000343226
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 3.4326
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 3.4326
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 1
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 2
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 3
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 3.4326
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetEventIndicators
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 5
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 6
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 7
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 8
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 9
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2SetTime to 10
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.93829
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiSetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2GetDerivatives
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: v = 0.966694
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QCon = 0.938334
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMinDea = 0.967
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMin = 0.93
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: hys = 0.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMaxDea = 1.033
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: vMax = 1.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxInd = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: QMaxCap = 113.4
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmiGetReal: thr = 0.07
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2CompletedIntegratorStep
+FMIL: module = Model, log level = 4: [][FMU status:OK] fmi2Terminate
