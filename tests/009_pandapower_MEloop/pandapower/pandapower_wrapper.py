@@ -18,10 +18,10 @@ def exchange(configuration_filename, time, input_names,
     # Change loading
     for name in input_names:
         if 'KW' in name:
-            bus_index = int(name.split('_')[0])
-            memory['load'].loc[bus_index, 'p_kw'] += inputs[name]
+            bus_index = int(name.split('_')[1])
+            memory['load'].loc[bus_index, 'p_kw'] += inputs[name] / -1000
         if 'KVAR' in name:
-            bus_index = int(name.split('_')[0])
+            bus_index = int(name.split('_')[1])
             memory['load'].loc[bus_index, 'q_kvar'] += inputs[name]
 
     # Run powerflow
@@ -30,18 +30,17 @@ def exchange(configuration_filename, time, input_names,
     # Revert loading changes
     for name in input_names:
         if 'KW' in name:
-            bus_index = int(name.split('_')[0])
-            memory['load'].loc[bus_index, 'p_kw'] -= inputs[name]
+            bus_index = int(name.split('_')[1])
+            memory['load'].loc[bus_index, 'p_kw'] -= inputs[name] / -1000
         if 'KVAR' in name:
-            bus_index = int(name.split('_')[0])
+            bus_index = int(name.split('_')[1])
             memory['load'].loc[bus_index, 'q_kvar'] -= inputs[name]
 
     # Get outputs
     outputs = []
     for name in output_names:
         if 'Vpu' in name:
-            bus_index = int(name.split('_')[0])
+            bus_index = int(name.split('_')[1])
             outputs.append(
                 memory['res_bus'].loc[bus_index, 'vm_pu'])
-    outputs.append(memory)
-    return outputs
+    return [outputs, memory]
