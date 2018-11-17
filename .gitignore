@@ -8,3 +8,36 @@ __pycache__/
 
 # CYME files
 *.sxst
+
+# Ignore any FMU/Dymola output, log and temporary files (in alphabetical order)
+#######################################################################
+models/~FMUOutput/*
+models/.FMUOutput/*
+
+*.
+*_log.txt
+*_result.txt
+*.bak-mo
+#*.fmu
+*.mat
+*.mof
+*.mop
+*.pts
+*.h
+buildlog.txt
+dsfinal.txt
+dsin.txt
+dslog.txt
+dsmodel.c
+dsmodelext[0-9].c
+dsres.txt
+dymosim.exe
+dymosim.exp
+dymosim.lib
+dymosim
+unitTests.log
+empty.txt
+request
+stat
+status
+stop
