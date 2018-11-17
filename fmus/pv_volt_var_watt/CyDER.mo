@@ -530,15 +530,15 @@ changed to parameters.
     package Model
       model Pv_Inv_VoltVarWatt_simple
         // Weather data
-        parameter String weather_file "Path to weather file";
+        parameter String weather_file = "" "Path to weather file";
         // PV generation
         parameter Real n(min=0, unit="1") = 14 "Number of PV modules";
-        parameter Modelica.SIunits.Area A(min=0) = 1.65 "Net surface area per module [m2]";
+        parameter Real A(min=0, unit="m2") = 1.65 "Net surface area per module";
         parameter Real eta(min=0, max=1, unit="1") = 0.158
           "Module conversion efficiency";
-        parameter Real lat(unit="deg") = 37.9 "Latitude [deg]";
-        parameter Real til(unit="deg") = 10 "Surface tilt [deg]";
-        parameter Real azi(unit="deg") = 0 "Surface azimuth [deg] 0-S, 90-W, 180-N, 270-E ";
+        parameter Real lat(unit="deg") = 37.9 "Latitude";
+        parameter Real til(unit="deg") = 10 "Surface tilt";
+        parameter Real azi(unit="deg") = 0 "Surface azimuth 0-S, 90-W, 180-N, 270-E ";
         // VoltVarWatt
         parameter Real thrP = 0.05 "P: over/undervoltage threshold";
         parameter Real hysP= 0.04 "P: Hysteresis";
@@ -564,10 +564,16 @@ changed to parameters.
           annotation (Placement(transformation(extent={{-50,-10},{-30,10}})));
         Modelica.Blocks.Interfaces.RealInput v(start=1, unit="1") "Voltage [p.u]"
           annotation (Placement(transformation(extent={{-140,-20},{-100,20}})));
-        Modelica.Blocks.Interfaces.RealOutput Q(start=0, unit="var") "Reactive power"
+        Modelica.Blocks.Interfaces.RealOutput Q(start=0, unit="kvar")
+                                                                     "Reactive power"
           annotation (Placement(transformation(extent={{100,-60},{120,-40}})));
-        Modelica.Blocks.Interfaces.RealOutput P(start=1, unit="1") "Active power"
+        Modelica.Blocks.Interfaces.RealOutput P(start=1, unit="kW")
+                                                                   "Active power"
           annotation (Placement(transformation(extent={{100,40},{120,60}})));
+        Modelica.Blocks.Math.Gain WtokW(k=1/1e3)
+          annotation (Placement(transformation(extent={{60,40},{80,60}})));
+        Modelica.Blocks.Math.Gain varTokvar(k=1/1e3)
+          annotation (Placement(transformation(extent={{60,-60},{80,-40}})));
       equation
         connect(weaDatInpCon.weaBus, pVModule_simple.weaBus) annotation (Line(
             points={{-60,70},{-40,70},{-40,54},{-10,54}},
@@ -577,10 +583,14 @@ changed to parameters.
           annotation (Line(points={{-52,0},{-120,0}}, color={0,0,127}));
         connect(pVModule_simple.scale, voltVarWatt_param_firstorder.Plim) annotation (
            Line(points={{-12,46},{-20,46},{-20,5},{-29,5}}, color={0,0,127}));
-        connect(voltVarWatt_param_firstorder.Qctrl, Q) annotation (Line(points={{-29,-5},
-                {-20,-5},{-20,-50},{110,-50}}, color={0,0,127}));
-        connect(pVModule_simple.P, P)
-          annotation (Line(points={{11,50},{110,50}}, color={0,0,127}));
+        connect(pVModule_simple.P, WtokW.u)
+          annotation (Line(points={{11,50},{58,50}}, color={0,0,127}));
+        connect(WtokW.y, P)
+          annotation (Line(points={{81,50},{110,50}}, color={0,0,127}));
+        connect(voltVarWatt_param_firstorder.Qctrl, varTokvar.u) annotation (Line(
+              points={{-29,-5},{-20,-5},{-20,-50},{58,-50}}, color={0,0,127}));
+        connect(varTokvar.y, Q)
+          annotation (Line(points={{81,-50},{110,-50}}, color={0,0,127}));
         annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
               coordinateSystem(preserveAspectRatio=false)));
       end Pv_Inv_VoltVarWatt_simple;
