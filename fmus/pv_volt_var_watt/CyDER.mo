@@ -560,7 +560,14 @@ changed to parameters.
             computeWetBulbTemperature=false, filNam=weather_file)
           "Weather data reader with radiation data obtained from the inputs' connectors"
           annotation (Placement(transformation(extent={{-80,60},{-60,80}})));
-        Controls.Model.voltVarWatt_param_firstorder voltVarWatt_param_firstorder
+        Controls.Model.voltVarWatt_param_firstorder voltVarWatt_param_firstorder(
+          thrP=thrP,
+          hysP=hysP,
+          thrQ=thrQ,
+          hysQ=hysQ,
+          QMaxInd=QMaxInd,
+          QMaxCap=QMaxCap,
+          Tfirstorder=Tfirstorder)
           annotation (Placement(transformation(extent={{-50,-10},{-30,10}})));
         Modelica.Blocks.Interfaces.RealInput v(start=1, unit="1") "Voltage [p.u]"
           annotation (Placement(transformation(extent={{-140,-20},{-100,20}})));
@@ -571,9 +578,9 @@ changed to parameters.
                                                                    "Active power"
           annotation (Placement(transformation(extent={{100,40},{120,60}})));
         Modelica.Blocks.Math.Gain WtokW(k=1/1e3)
-          annotation (Placement(transformation(extent={{60,40},{80,60}})));
+          annotation (Placement(transformation(extent={{20,40},{40,60}})));
         Modelica.Blocks.Math.Gain varTokvar(k=1/1e3)
-          annotation (Placement(transformation(extent={{60,-60},{80,-40}})));
+          annotation (Placement(transformation(extent={{20,-60},{40,-40}})));
       equation
         connect(weaDatInpCon.weaBus, pVModule_simple.weaBus) annotation (Line(
             points={{-60,70},{-40,70},{-40,54},{-10,54}},
@@ -584,21 +591,214 @@ changed to parameters.
         connect(pVModule_simple.scale, voltVarWatt_param_firstorder.Plim) annotation (
            Line(points={{-12,46},{-20,46},{-20,5},{-29,5}}, color={0,0,127}));
         connect(pVModule_simple.P, WtokW.u)
-          annotation (Line(points={{11,50},{58,50}}, color={0,0,127}));
+          annotation (Line(points={{11,50},{18,50}}, color={0,0,127}));
         connect(WtokW.y, P)
-          annotation (Line(points={{81,50},{110,50}}, color={0,0,127}));
+          annotation (Line(points={{41,50},{110,50}}, color={0,0,127}));
         connect(voltVarWatt_param_firstorder.Qctrl, varTokvar.u) annotation (Line(
-              points={{-29,-5},{-20,-5},{-20,-50},{58,-50}}, color={0,0,127}));
+              points={{-29,-5},{-20,-5},{-20,-50},{18,-50}}, color={0,0,127}));
         connect(varTokvar.y, Q)
-          annotation (Line(points={{81,-50},{110,-50}}, color={0,0,127}));
+          annotation (Line(points={{41,-50},{110,-50}}, color={0,0,127}));
         annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
               coordinateSystem(preserveAspectRatio=false)));
       end Pv_Inv_VoltVarWatt_simple;
+
+      model Pv_Inv_VoltVarWatt_simple_Slim
+        // Weather data
+        parameter String weather_file = "" "Path to weather file";
+        // PV generation
+        parameter Real n(min=0, unit="1") = 26 "Number of PV modules";
+        parameter Real A(min=0, unit="m2") = 1.65 "Net surface area per module";
+        parameter Real eta(min=0, max=1, unit="1") = 0.158
+          "Module conversion efficiency";
+        parameter Real lat(unit="deg") = 37.9 "Latitude";
+        parameter Real til(unit="deg") = 10 "Surface tilt";
+        parameter Real azi(unit="deg") = 0 "Surface azimuth 0-S, 90-W, 180-N, 270-E ";
+        // VoltVarWatt
+        parameter Real thrP = 0.05 "P: over/undervoltage threshold";
+        parameter Real hysP= 0.04 "P: Hysteresis";
+        parameter Real thrQ = 0.04 "Q: over/undervoltage threshold";
+        parameter Real hysQ = 0.01 "Q: Hysteresis";
+        parameter Real SMax(unit="kVA") = 7.6 "Maximal Apparent Power";
+        parameter Real QMaxInd(unit="kvar") = 3.3 "Maximal Reactive Power (Inductive)";
+        parameter Real QMaxCap(unit="kvar") = 3.3 "Maximal Reactive Power (Capacitive)";
+        parameter Real Tfirstorder(unit="s") = 1 "Time constant of first order";
+
+        SmartInverter.Components.Photovoltaics.PVModule_simple pVModule_simple(
+          n=n,
+          A=A,
+          eta=eta,
+          lat=lat,
+          til=til,
+          azi=azi)
+          annotation (Placement(transformation(extent={{-10,40},{10,60}})));
+        Buildings.BoundaryConditions.WeatherData.ReaderTMY3 weaDatInpCon(
+            computeWetBulbTemperature=false, filNam=weather_file)
+          "Weather data reader with radiation data obtained from the inputs' connectors"
+          annotation (Placement(transformation(extent={{-80,60},{-60,80}})));
+        Modelica.Blocks.Interfaces.RealInput v(start=1, unit="1") "Voltage [p.u]"
+          annotation (Placement(transformation(extent={{-140,-20},{-100,20}})));
+        Modelica.Blocks.Interfaces.RealOutput Q(start=0, unit="kvar")
+                                                                     "Reactive power"
+          annotation (Placement(transformation(extent={{100,-60},{120,-40}})));
+        Modelica.Blocks.Interfaces.RealOutput P(start=1, unit="kW")
+                                                                   "Active power"
+          annotation (Placement(transformation(extent={{100,40},{120,60}})));
+        Modelica.Blocks.Math.Gain WtokW(k=1/1e3)
+          annotation (Placement(transformation(extent={{20,40},{40,60}})));
+        Modelica.Blocks.Math.Gain varTokvar(k=1/1e3)
+          annotation (Placement(transformation(extent={{20,-60},{40,-40}})));
+        Modelica.Blocks.Sources.RealExpression S_curtail_P(y=min(sqrt(SMax^2 - Q^2),
+              WtokW.y)) annotation (Placement(transformation(extent={{0,0},{80,20}})));
+        Controls.Model.voltVarWatt_param_firstorder voltVarWatt_param_firstorder(
+          thrP=thrP,
+          hysP=hysP,
+          thrQ=thrQ,
+          hysQ=hysQ,
+          QMaxInd=QMaxInd*1000,
+          QMaxCap=QMaxCap*1000,
+          Tfirstorder=Tfirstorder)
+          annotation (Placement(transformation(extent={{-50,-10},{-30,10}})));
+      equation
+        connect(weaDatInpCon.weaBus, pVModule_simple.weaBus) annotation (Line(
+            points={{-60,70},{-40,70},{-40,54},{-10,54}},
+            color={255,204,51},
+            thickness=0.5));
+        connect(pVModule_simple.P, WtokW.u)
+          annotation (Line(points={{11,50},{18,50}}, color={0,0,127}));
+        connect(varTokvar.y, Q)
+          annotation (Line(points={{41,-50},{110,-50}}, color={0,0,127}));
+        connect(P, S_curtail_P.y) annotation (Line(points={{110,50},{90,50},{90,10},{84,
+                10}}, color={0,0,127}));
+        connect(pVModule_simple.scale, voltVarWatt_param_firstorder.Plim) annotation (
+           Line(points={{-12,46},{-20,46},{-20,5},{-29,5}}, color={0,0,127}));
+        connect(voltVarWatt_param_firstorder.Qctrl, varTokvar.u) annotation (Line(
+              points={{-29,-5},{-20,-5},{-20,-50},{18,-50}}, color={0,0,127}));
+        connect(voltVarWatt_param_firstorder.v, v)
+          annotation (Line(points={{-52,0},{-120,0}}, color={0,0,127}));
+        annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
+              coordinateSystem(preserveAspectRatio=false)));
+      end Pv_Inv_VoltVarWatt_simple_Slim;
     end Model;
 
     package Examples
+      model Test_Pv_Inv_VoltVarWatt_simple_Slim
+        extends Modelica.Icons.Example;
+        Model.Pv_Inv_VoltVarWatt_simple_Slim VVW(weather_file="C:/Users/Christoph/Documents/SmartInverter/smartinverter_simulation/ExampleData/USA_CA_San.Francisco.Intl.AP.724940_TMY3.mos")
+                  annotation (Placement(transformation(extent={{-80,50},{-60,70}})));
+        SmartInverter.Components.Inverter.Model.InverterLoad_PQ load_VVW(V_start=120)
+          annotation (Placement(transformation(extent={{20,70},{0,50}})));
+        Buildings.Electrical.AC.OnePhase.Sensors.GeneralizedSensor sens_VVW
+          annotation (Placement(transformation(extent={{80,60},{60,80}})));
+        Buildings.Electrical.AC.OnePhase.Sensors.Probe ref_VVW(V_nominal=120)
+          annotation (Placement(transformation(
+              extent={{-10,10},{10,-10}},
+              rotation=-90,
+              origin={20,30})));
+        Buildings.Electrical.AC.OnePhase.Sources.FixedVoltage fixVol(f=60, V=120)
+          annotation (Placement(transformation(extent={{100,80},{80,100}})));
+        Modelica.Blocks.Math.Gain kW_to_W(k=1000)
+          annotation (Placement(transformation(extent={{-40,70},{-20,90}})));
+        Modelica.Blocks.Math.Gain kvar_to_var(k=1000)
+          annotation (Placement(transformation(extent={{-40,30},{-20,50}})));
+        Buildings.Electrical.AC.OnePhase.Lines.Line line_VVW(
+          V_nominal=120,
+          P_nominal=1000,
+          l=500) annotation (Placement(transformation(extent={{60,60},{40,80}})));
+        Model.Pv_Inv_VoltVarWatt_simple_Slim base(
+          weather_file="C:/Users/Christoph/Documents/SmartInverter/smartinverter_simulation/ExampleData/USA_CA_San.Francisco.Intl.AP.724940_TMY3.mos",
+          thrP=1,
+          hysP=1,
+          QMaxInd=0,
+          QMaxCap=0)
+          annotation (Placement(transformation(extent={{-80,-50},{-60,-30}})));
+
+        SmartInverter.Components.Inverter.Model.InverterLoad_PQ load_base(V_start=120)
+          annotation (Placement(transformation(extent={{20,-30},{0,-50}})));
+        Buildings.Electrical.AC.OnePhase.Sensors.Probe ref_base(V_nominal=120)
+          annotation (Placement(transformation(
+              extent={{-10,10},{10,-10}},
+              rotation=-90,
+              origin={20,-70})));
+        Modelica.Blocks.Math.Gain kW_to_W1(k=1000)
+          annotation (Placement(transformation(extent={{-40,-30},{-20,-10}})));
+        Modelica.Blocks.Math.Gain kvar_to_var1(k=1000)
+          annotation (Placement(transformation(extent={{-40,-70},{-20,-50}})));
+        Buildings.Electrical.AC.OnePhase.Sensors.GeneralizedSensor sens_base
+          annotation (Placement(transformation(extent={{80,-40},{60,-20}})));
+        Buildings.Electrical.AC.OnePhase.Lines.Line line_base(
+          V_nominal=120,
+          P_nominal=1000,
+          l=500) annotation (Placement(transformation(extent={{60,-40},{40,-20}})));
+      equation
+        connect(kW_to_W.u, VVW.P) annotation (Line(points={{-42,80},{-50,80},{-50,65},
+                {-59,65}}, color={0,0,127}));
+        connect(kvar_to_var.u, VVW.Q) annotation (Line(points={{-42,40},{-50,40},{-50,
+                55},{-59,55}}, color={0,0,127}));
+        connect(kW_to_W.y, load_VVW.Pow) annotation (Line(points={{-19,80},{-10,80},{-10,
+                60},{-2,60}}, color={0,0,127}));
+        connect(load_VVW.Q, kvar_to_var.y) annotation (Line(points={{-2,54},{-10,54},{
+                -10,40},{-19,40}}, color={0,0,127}));
+        connect(ref_VVW.V, VVW.v) annotation (Line(points={{17,23},{-90,23},{-90,60},{
+                -82,60}}, color={0,0,127}));
+        connect(ref_VVW.term, load_VVW.terminal) annotation (Line(points={{29,30},{40,
+                30},{40,60},{20,60}}, color={0,120,120}));
+        connect(kW_to_W1.u, base.P) annotation (Line(points={{-42,-20},{-50,-20},{-50,
+                -35},{-59,-35}}, color={0,0,127}));
+        connect(kvar_to_var1.u, base.Q) annotation (Line(points={{-42,-60},{-50,-60},{
+                -50,-45},{-59,-45}}, color={0,0,127}));
+        connect(kW_to_W1.y, load_base.Pow) annotation (Line(points={{-19,-20},{-10,-20},
+                {-10,-40},{-2,-40}}, color={0,0,127}));
+        connect(load_base.Q, kvar_to_var1.y) annotation (Line(points={{-2,-46},{-10,-46},
+                {-10,-60},{-19,-60}}, color={0,0,127}));
+        connect(ref_base.V, base.v) annotation (Line(points={{17,-77},{-90,-77},{-90,-40},
+                {-82,-40}}, color={0,0,127}));
+        connect(ref_base.term, load_base.terminal) annotation (Line(points={{29,-70},{
+                40,-70},{40,-40},{20,-40}}, color={0,120,120}));
+        connect(line_VVW.terminal_n, sens_VVW.terminal_p)
+          annotation (Line(points={{60,70},{60,70}}, color={0,120,120}));
+        connect(line_base.terminal_n, sens_base.terminal_p)
+          annotation (Line(points={{60,-30},{60,-30}}, color={0,120,120}));
+        connect(fixVol.terminal, sens_VVW.terminal_n)
+          annotation (Line(points={{80,90},{80,70}}, color={0,120,120}));
+        connect(fixVol.terminal, sens_base.terminal_n)
+          annotation (Line(points={{80,90},{80,-30}}, color={0,120,120}));
+        connect(line_base.terminal_p, load_base.terminal)
+          annotation (Line(points={{40,-30},{40,-40},{20,-40}}, color={0,120,120}));
+        connect(line_VVW.terminal_p, load_VVW.terminal)
+          annotation (Line(points={{40,70},{40,60},{20,60}}, color={0,120,120}));
+        annotation (Icon(coordinateSystem(preserveAspectRatio=false)),
+        experiment(StartTime=0, StopTime=86400),
+        Diagram(
+              coordinateSystem(preserveAspectRatio=false)));
+      end Test_Pv_Inv_VoltVarWatt_simple_Slim;
+
+      model Test_Pv_Inv_VoltVarWatt_simple_Slim_curtail
+        extends Modelica.Icons.Example;
+        Model.Pv_Inv_VoltVarWatt_simple_Slim VVW(
+          weather_file="C:/Users/Christoph/Documents/SmartInverter/smartinverter_simulation/ExampleData/USA_CA_San.Francisco.Intl.AP.724940_TMY3.mos",
+          thrP=1,
+          hysP=1,
+          n=75) annotation (Placement(transformation(extent={{-10,-10},{10,10}})));
+
+        Modelica.Blocks.Sources.Ramp ramp(
+          height=0.5,
+          offset=1,
+          startTime=43200,
+          duration=3600*2)
+          annotation (Placement(transformation(extent={{-60,-10},{-40,10}})));
+      equation
+        connect(ramp.y, VVW.v)
+          annotation (Line(points={{-39,0},{-12,0}}, color={0,0,127}));
+        annotation (Icon(coordinateSystem(preserveAspectRatio=false)),
+          experiment(StartTime=0, StopTime=86400),
+          Diagram(
+              coordinateSystem(preserveAspectRatio=false)));
+      end Test_Pv_Inv_VoltVarWatt_simple_Slim_curtail;
     end Examples;
   end Simulation;
-  annotation (uses(Modelica(version="3.2.2"), Buildings(version="4.0.0"),
-      SmartInverter(version="5")));
+  annotation (uses(Modelica(version="3.2.2"),
+      SmartInverter(version="5"),
+      Buildings(version="6.0.0")),
+    version="1",
+    conversion(noneFromVersion=""));
 end CyDER;

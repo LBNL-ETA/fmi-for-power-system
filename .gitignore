@@ -11,8 +11,8 @@ __pycache__/
 
 # Ignore any FMU/Dymola output, log and temporary files (in alphabetical order)
 #######################################################################
-models/~FMUOutput/*
-models/.FMUOutput/*
+fmus/pv_volt_var_watt/~FMUOutput/*
+fmus/pv_volt_var_watt/.FMUOutput/*
 
 *.
 *_log.txt
