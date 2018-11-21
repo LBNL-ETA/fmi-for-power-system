@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimulatorModelDescription
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  fmiVersion="2.0"
+  modelName="pandapower"
+  description="distribution grid simulator"
+  generationTool="SimulatorToFMU">
+  <ModelVariables>
+    <!-- PARAMETERS -->
+    <ScalarVariable
+      name="_configurationFileName"
+      description="parameter"
+      causality="parameter"
+      start="Not used here"
+      type="String">
+    </ScalarVariable>
+
+    <!-- INPUTS -->
+    <ScalarVariable
+      name="KW_7"
+      description="input"
+      causality="input"
+      type="Real"
+      unit="kW">
+    </ScalarVariable>
+    <ScalarVariable
+      name="KVAR_7"
+      description="input"
+      causality="input"
+      type="Real"
+      unit="kVAR">
+    </ScalarVariable>
+    <ScalarVariable
+      name="KW_8"
+      description="input"
+      causality="input"
+      type="Real"
+      unit="kW">
+    </ScalarVariable>
+    <ScalarVariable
+      name="KVAR_8"
+      description="input"
+      causality="input"
+      type="Real"
+      unit="kVAR">
+    </ScalarVariable>
+    <ScalarVariable
+      name="KW_9"
+      description="input"
+      causality="input"
+      type="Real"
+      unit="kW">
+    </ScalarVariable>
+    <ScalarVariable
+      name="KVAR_9"
+      description="input"
+      causality="input"
+      type="Real"
+      unit="kVAR">
+    </ScalarVariable>
+
+    <!-- OUTPUTS -->
+    <ScalarVariable
+      name="Vpu_7"
+      description="output"
+      causality="output"
+      type="Real">
+    </ScalarVariable>
+    <ScalarVariable
+      name="Vpu_8"
+      description="output"
+      causality="output"
+      type="Real">
+    </ScalarVariable>
+    <ScalarVariable
+      name="Vpu_9"
+      description="output"
+      causality="output"
+      type="Real">
+    </ScalarVariable>
+    <ScalarVariable
+      name="Vpu_16"
+      description="output"
+      causality="output"
+      type="Real">
+    </ScalarVariable>
+    <ScalarVariable
+      name="Vpu_17"
+      description="output"
+      causality="output"
+      type="Real">
+    </ScalarVariable>
+    <ScalarVariable
+      name="Vpu_30"
+      description="output"
+      causality="output"
+      type="Real">
+    </ScalarVariable>
+    <ScalarVariable
+      name="Vpu_31"
+      description="output"
+      causality="output"
+      type="Real">
+    </ScalarVariable>
+    <ScalarVariable
+      name="Vpu_32"
+      description="output"
+      causality="output"
+      type="Real">
+    </ScalarVariable>
+  </ModelVariables>
+</SimulatorModelDescription>
