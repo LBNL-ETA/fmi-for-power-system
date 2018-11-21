@@ -4,7 +4,46 @@ from pyfmi import load_fmu
 from pyfmi.fmi_coupled import CoupledFMUModelME2
 import datetime as dt
 import json
+from lxml import etree
+import shlex, subprocess
 
+# Read FMU structure
+fmu_path = 'pandapower/'
+df = pandas.read_excel(fmu_path + 'pandapower.xlsx')
+model_name = 'pandapower'
+
+# Create the XML file
+NSMAP = {"xsi" : 'http://www.w3.org/2001/XMLSchema-instance'}
+root = etree.Element("SimulatorModelDescription", nsmap={'xsi': NSMAP['xsi']})
+root.set("fmiVersion", "2.0")
+root.set("modelName", model_name)
+root.set("description", model_name)
+root.set("generationTool", "SimulatorToFMU")
+model_variables = etree.SubElement(root, "ModelVariables")
+for index, row in df.iterrows():
+    variable = etree.SubElement(model_variables, "ScalarVariable")
+    variable.set("name", row['name'])
+    variable.set("description", row['description'])
+    variable.set("causality", row['causality'])
+    variable.set("start", str(row['start']))
+    variable.set("type", row['type'])
+    variable.set("unit", row['unit'])
+my_tree = etree.ElementTree(root)
+with open(fmu_path + 'model_description.xml', 'wb') as f:
+    f.write(etree.tostring(my_tree, xml_declaration=True,
+                           encoding='UTF-8'))
+
+# Compile the FMU
+cmd = ("python C:/Users/DRRC/Desktop/desktops/February/SimulatorToFMU" +
+       "/simulatortofmu/parser/SimulatorToFMU.py " +
+       "-i " + fmu_path + 'model_description.xml' + " -s "  + fmu_path +
+       model_name + "_wrapper.py " +
+       "-x python -t jmodelica -pt C:/JModelica.org-2.1 " + "-a me")
+args = shlex.split(cmd)
+process = subprocess.Popen(args)
+process.wait()
+
+# Read simulation inputs
 df = pandas.read_excel('connections.xlsx')
 start = dt.datetime(2018, 6, 17, 3, 0, 0)
 end = dt.datetime(2018, 6, 17, 22, 5, 0)
