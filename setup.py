@@ -5,29 +5,16 @@ with open('requirements.txt') as f:
 
 setup(
     name='cydertool',
-    description='',
-    author='',
-    author_email='',
+    description='Functions to compile and launch simulations for PyFMI',
+    author='Jonathan Coignard',
+    author_email='JCoignard@lbl.gov',
     version='0.1',
     packages=find_packages(),
     include_package_data=True,
     install_requires=required
     entry_points='''
         [console_scripts]
-        utility=cydertool.scripts.utility:cli
+        cyderc=cydertool.compile:cli
+        cyders=cydertool.simulate:cli
     ''',
 )
-
-
-config = {
-    'description': 'Clustering event on the grid',
-    'author': 'Armando Domingos, Jonathan Coignard',
-    'author_email': 'armando.domingos@berkeley.edu, jcoignard@lbl.gov',
-    'version': '0.0.1',
-    'install_requires': required,
-    'packages': ['gridevent', 'gridevent.utility'],
-    'name': 'gridevent',
-    'include_package_data': False,
-}
-
-setup(**config)

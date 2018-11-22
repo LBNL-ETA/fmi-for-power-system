@@ -1,4 +1,5 @@
 # coding: utf-8
+import click
 import json
 import pandas
 from pyfmi import load_fmu
@@ -6,7 +7,13 @@ from pyfmi.fmi_coupled import CoupledFMUModelME2
 
 
 # Load FMUs, connect them and launch the simulation
-def simulate(start, end, connections, me=True, nb_steps=500):
+@click.command()
+@click.option('--start', required=True, type=int)
+@click.option('--end', required=True, type=int)
+@click.option('--connections', required=True, type=str)
+@click.option('--fmutype', required=False, type=str)
+@click.option('--steps', required=False, type=int)
+def simulate(start, end, connections, fmu_type='me', nb_steps=500):
     """
     1) Load and parametrize unique FMUs
     2) Connect FMUs through the Master

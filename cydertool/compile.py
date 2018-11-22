@@ -1,9 +1,16 @@
 # coding: utf-8
+import click
 import pandas
 from lxml import etree
 import shlex, subprocess
 
 # Compile FMU
+@click.command()
+@click.option('--path', required=True, type=str)
+@click.option('--name', required=True, type=str)
+@click.option('--type', required=False, type=str)
+@click.option('--struct', required=False, type=str)
+@click.option('--simulatortofmu', required=False, type=str)
 def compile(path, name, fmu_type='me', fmu_struc='python',
             path_to_simulatortofmu=(
             'C:/Users/DRRC/Desktop/desktops/February/SimulatorToFMU' +
