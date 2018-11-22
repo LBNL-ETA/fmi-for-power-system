@@ -9,11 +9,12 @@ __pycache__/
 # CYME files
 *.sxst
 
+# Ignore pip install files
+cydertool.egg-info/*
+
 # Ignore any FMU/Dymola output, log and temporary files (in alphabetical order)
-#######################################################################
 fmus/pv_volt_var_watt/~FMUOutput/*
 fmus/pv_volt_var_watt/.FMUOutput/*
-
 *.
 *_log.txt
 *_result.txt

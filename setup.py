@@ -11,10 +11,10 @@ setup(
     version='0.1',
     packages=find_packages(),
     include_package_data=True,
-    install_requires=required
+    install_requires=required,
     entry_points='''
         [console_scripts]
-        cyderc=cydertool.compile:cli
-        cyders=cydertool.simulate:cli
+        cyderc=cydertool.utility:compile_cmd
+        cyders=cydertool.utility:simulate_cmd
     ''',
 )
