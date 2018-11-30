@@ -62,7 +62,7 @@ connections = [(pv, "PV_generation", pp, "KW_7"),
                (pp, "Vpu_9", controls[2], "v")]
 master = CoupledFMUModelME2(models, connections)
 options = master.simulate_options()
-options['ncp'] = 200
+options['ncp'] = 500
 print('Run simulation')
 results = master.simulate(options=options,
     start_time=start_s, final_time=end_s)

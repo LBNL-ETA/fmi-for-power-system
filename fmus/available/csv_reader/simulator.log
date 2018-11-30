@@ -1,0 +1,32 @@
+05/17/2018 05:25:54 PM FMI version not specified. Version 2.0 will be used.
+05/17/2018 05:25:54 PM Print Modelica model
+05/17/2018 05:25:54 PM model_description.xml is a valid XML document.
+05/17/2018 05:25:54 PM Invalid characters will be removed from the model name=simulator.
+05/17/2018 05:25:54 PM The new model name is simulator.
+05/17/2018 05:25:54 PM Declare the server module name as start_server.bat.
+05/17/2018 05:25:54 PM Invalid characters will be removed from the input variable name column.
+05/17/2018 05:25:54 PM The new input variable name is column.
+05/17/2018 05:25:54 PM Invalid characters will be removed from the output variable name y.
+05/17/2018 05:25:54 PM The new output variable name is y.
+05/17/2018 05:25:54 PM Check for duplicates in input, output and parameter variable names.
+05/17/2018 05:25:54 PM Parsing of model_description.xml was successfull.
+05/17/2018 05:25:54 PM The output file simulator.mo exists and will be overwritten.
+05/17/2018 05:25:54 PM The Modelica model simulator.mo of simulator is successfully created.
+05/17/2018 05:25:54 PM The Modelica model simulator.mo of simulator is in C:\Users\DRRC\Desktop\fmi-for-power-system\tests\001_load_and_simulate\csv_reader.
+05/17/2018 05:25:54 PM Generate FMU
+05/17/2018 05:26:04 PM The FMU simulator.fmu is successfully created.
+05/17/2018 05:26:04 PM The FMU simulator.fmu is in C:\Users\DRRC\Desktop\fmi-for-power-system\tests\001_load_and_simulate\csv_reader.
+05/17/2018 05:26:04 PM Create scripts folder
+05/17/2018 05:26:04 PM Create the folder Simulator.scripts with scripts to be added to the PYTHONPATH.
+05/17/2018 05:26:04 PM Create binaries folder
+05/17/2018 05:26:04 PM Create the folder Simulator.binaries with binaries to be added to the system PATH.
+05/17/2018 05:26:04 PM C:\Users\DRRC\Desktop\desktops\February\SimulatorToFMU\simulatortofmu\parser\libraries\modelica\SimulatorToFMU\Resources\Library\win32\simulatortofmuserver.dll will be copied to the binaries folder simulator.binaries\win32.
+05/17/2018 05:26:04 PM C:\Users\DRRC\Desktop\desktops\February\SimulatorToFMU\simulatortofmu\parser\libraries\modelica\SimulatorToFMU\Resources\Library\win32\curl.dll will be copied to the binaries folder simulator.binaries\win32.
+05/17/2018 05:26:04 PM C:\Users\DRRC\Desktop\desktops\February\SimulatorToFMU\simulatortofmu\parser\libraries\modelica\SimulatorToFMU\Resources\Library\win64\simulatortofmuserver.dll will be copied to the binaries folder simulator.binaries\win64.
+05/17/2018 05:26:04 PM C:\Users\DRRC\Desktop\desktops\February\SimulatorToFMU\simulatortofmu\parser\libraries\modelica\SimulatorToFMU\Resources\Library\win64\curl.dll will be copied to the binaries folder simulator.binaries\win64.
+05/17/2018 05:26:06 PM Clean temporary files
+05/17/2018 05:26:06 PM Rewrite FMU
+05/17/2018 05:26:08 PM The model description file will be rewritten to include the attribute needsExecutionTool set to true.
+05/17/2018 05:26:08 PM The FMU simulator.fmu is successfully re-created.
+05/17/2018 05:26:08 PM The FMU simulator.fmu is in C:\Users\DRRC\Desktop\fmi-for-power-system\tests\001_load_and_simulate\csv_reader.
+05/17/2018 05:26:08 PM Export Simulator as an FMU in 14.278817 seconds.
