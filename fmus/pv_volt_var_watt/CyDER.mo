@@ -678,6 +678,86 @@ changed to parameters.
         annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
               coordinateSystem(preserveAspectRatio=false)));
       end Pv_Inv_VoltVarWatt_simple_Slim;
+
+      model Pv_Inv_VoltVarWatt_simple_Slim_weabus
+        // Weather data
+        //parameter String weather_file = "" "Path to weather file";
+        // PV generation
+        parameter Real n(min=0, unit="1") = 26 "Number of PV modules";
+        parameter Real A(min=0, unit="m2") = 1.65 "Net surface area per module";
+        parameter Real eta(min=0, max=1, unit="1") = 0.158
+          "Module conversion efficiency";
+        parameter Real lat(unit="deg") = 37.9 "Latitude";
+        parameter Real til(unit="deg") = 10 "Surface tilt";
+        parameter Real azi(unit="deg") = 0 "Surface azimuth 0-S, 90-W, 180-N, 270-E ";
+        // VoltVarWatt
+        parameter Real thrP = 0.05 "P: over/undervoltage threshold";
+        parameter Real hysP= 0.04 "P: Hysteresis";
+        parameter Real thrQ = 0.04 "Q: over/undervoltage threshold";
+        parameter Real hysQ = 0.01 "Q: Hysteresis";
+        parameter Real SMax(unit="kVA") = 7.6 "Maximal Apparent Power";
+        parameter Real QMaxInd(unit="kvar") = 3.3 "Maximal Reactive Power (Inductive)";
+        parameter Real QMaxCap(unit="kvar") = 3.3 "Maximal Reactive Power (Capacitive)";
+        parameter Real Tfirstorder(unit="s") = 1 "Time constant of first order";
+
+        SmartInverter.Components.Photovoltaics.PVModule_simple pVModule_simple(
+          n=n,
+          A=A,
+          eta=eta,
+          lat=lat,
+          til=til,
+          azi=azi)
+          annotation (Placement(transformation(extent={{-10,40},{10,60}})));
+        Modelica.Blocks.Interfaces.RealInput v(start=1, unit="1") "Voltage [p.u]"
+          annotation (Placement(transformation(extent={{-140,-20},{-100,20}})));
+        Modelica.Blocks.Interfaces.RealOutput Q(start=0, unit="kvar")
+                                                                     "Reactive power"
+          annotation (Placement(transformation(extent={{100,-60},{120,-40}})));
+        Modelica.Blocks.Interfaces.RealOutput P(start=1, unit="kW")
+                                                                   "Active power"
+          annotation (Placement(transformation(extent={{100,40},{120,60}})));
+        Modelica.Blocks.Math.Gain WtokW(k=1/1e3)
+          annotation (Placement(transformation(extent={{20,40},{40,60}})));
+        Modelica.Blocks.Math.Gain varTokvar(k=1/1e3)
+          annotation (Placement(transformation(extent={{20,-60},{40,-40}})));
+        Modelica.Blocks.Sources.RealExpression S_curtail_P(y=min(sqrt(SMax^2 - Q^2),
+              WtokW.y)) annotation (Placement(transformation(extent={{0,0},{80,20}})));
+        Controls.Model.voltVarWatt_param_firstorder voltVarWatt_param_firstorder(
+          thrP=thrP,
+          hysP=hysP,
+          thrQ=thrQ,
+          hysQ=hysQ,
+          QMaxInd=QMaxInd*1000,
+          QMaxCap=QMaxCap*1000,
+          Tfirstorder=Tfirstorder)
+          annotation (Placement(transformation(extent={{-50,-10},{-30,10}})));
+        Buildings.BoundaryConditions.WeatherData.Bus
+                        weaBus "Bus with weather data"
+          annotation (Placement(transformation(extent={{-110,60},{-90,80}})));
+      equation
+        connect(pVModule_simple.P, WtokW.u)
+          annotation (Line(points={{11,50},{18,50}}, color={0,0,127}));
+        connect(varTokvar.y, Q)
+          annotation (Line(points={{41,-50},{110,-50}}, color={0,0,127}));
+        connect(P, S_curtail_P.y) annotation (Line(points={{110,50},{90,50},{90,10},{84,
+                10}}, color={0,0,127}));
+        connect(pVModule_simple.scale, voltVarWatt_param_firstorder.Plim) annotation (
+           Line(points={{-12,46},{-20,46},{-20,5},{-29,5}}, color={0,0,127}));
+        connect(voltVarWatt_param_firstorder.Qctrl, varTokvar.u) annotation (Line(
+              points={{-29,-5},{-20,-5},{-20,-50},{18,-50}}, color={0,0,127}));
+        connect(voltVarWatt_param_firstorder.v, v)
+          annotation (Line(points={{-52,0},{-120,0}}, color={0,0,127}));
+        connect(weaBus, pVModule_simple.weaBus) annotation (Line(
+            points={{-100,70},{-72,70},{-72,54},{-10,54}},
+            color={255,204,51},
+            thickness=0.5), Text(
+            string="%first",
+            index=-1,
+            extent={{-6,3},{-6,3}},
+            horizontalAlignment=TextAlignment.Right));
+        annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
+              coordinateSystem(preserveAspectRatio=false)));
+      end Pv_Inv_VoltVarWatt_simple_Slim_weabus;
     end Model;
 
     package Examples
