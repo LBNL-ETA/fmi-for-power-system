@@ -100,6 +100,9 @@ for index, row in df.iterrows():
 # Create master and run simulation
 master = CoupledFMUModelME2(models, connections)
 options = master.simulate_options()
+print(options)
+import pdb
+pdb.set_trace()
 options['ncp'] = 500
 pyfmi_results = master.simulate(options=options,
     start_time=start_s, final_time=end_s)
