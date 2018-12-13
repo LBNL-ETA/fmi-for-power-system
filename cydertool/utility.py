@@ -12,17 +12,18 @@ from pyfmi.fmi_coupled import CoupledFMUModelME2
 @click.command()
 @click.option('--path', required=True, type=str)
 @click.option('--name', required=True, type=str)
+@click.option('--io', required=True, type=str)
 @click.option('--fmu_type', required=False, type=str, default='me')
 @click.option('--fmu_struc', required=False, type=str, default='python')
 @click.option('--path_to_simulatortofmu', required=False, type=str,
               default=(
               'C:/Users/DRRC/Desktop/desktops/February/SimulatorToFMU' +
               '/simulatortofmu/parser/SimulatorToFMU.py'))
-def compile_cmd(path, name, fmu_type, fmu_struc, path_to_simulatortofmu):
-    compile(path, name, fmu_type, fmu_struc, path_to_simulatortofmu)
+def compile_cmd(path, name, io, fmu_type, fmu_struc, path_to_simulatortofmu):
+    compile(path, name, io, fmu_type, fmu_struc, path_to_simulatortofmu)
 
 # Compile FMU
-def compile(path, name, fmu_type='me', fmu_struc='python',
+def compile(path, name, io, fmu_type='me', fmu_struc='python',
             path_to_simulatortofmu=(
             'C:/Users/DRRC/Desktop/desktops/February/SimulatorToFMU' +
             '/simulatortofmu/parser/SimulatorToFMU.py')):
@@ -31,7 +32,7 @@ def compile(path, name, fmu_type='me', fmu_struc='python',
     2) Compile the FMU using SimulatorToFMU
     """
     # Create the XML
-    structure = pandas.read_excel(path + 'structure.xlsx')
+    structure = pandas.read_excel(io)
     NSMAP = {"xsi" : 'http://www.w3.org/2001/XMLSchema-instance'}
     root = etree.Element("SimulatorModelDescription",
                          nsmap={'xsi': NSMAP['xsi']})
@@ -45,7 +46,7 @@ def compile(path, name, fmu_type='me', fmu_struc='python',
         variable.set("name", row['name'])
         variable.set("description", row['description'])
         variable.set("causality", row['causality'])
-        variable.set("start", str(row['start']))
+        variable.set("start", str(row['start']).replace('\\', '\\\\'))
         variable.set("type", row['type'])
         variable.set("unit", row['unit'])
     my_tree = etree.ElementTree(root)
@@ -54,13 +55,22 @@ def compile(path, name, fmu_type='me', fmu_struc='python',
                                encoding='UTF-8'))
 
     # Compile the FMU
-    cmd = ("python " + path_to_simulatortofmu +
-           " -i " + path + 'model_description.xml' +
-           " -s " + path + name + "_wrapper.py" +
-           " -x " + fmu_struc +
-           " -t jmodelica" +
-           " -pt C:/JModelica.org-2.1" +
-           " -a " + fmu_type)
+    if 'python' in fmu_struc:
+        cmd = ("python " + path_to_simulatortofmu +
+               " -i " + path + 'model_description.xml' +
+               " -s " + path + name + "_wrapper.py" +
+               " -x " + fmu_struc +
+               " -t jmodelica" +
+               " -pt C:/JModelica.org-2.1" +
+               " -a " + fmu_type)
+    else:
+        cmd = ("python " + path_to_simulatortofmu +
+               " -i " + path + 'model_description.xml' +
+               " -s " + path + 'start_server.bat' +
+               # " -c " + path + 'conf.json2' +
+               " -t jmodelica" +
+               " -pt C:/JModelica.org-2.1" +
+               " -a " + fmu_type)        
     args = shlex.split(cmd)
     process = subprocess.Popen(args)
     process.wait()
@@ -73,10 +83,13 @@ def compile(path, name, fmu_type='me', fmu_struc='python',
 @click.option('--connections', required=True, type=str)
 @click.option('--fmu_type', required=False, type=str, default='me')
 @click.option('--nb_steps', required=False, type=int, default=500)
-def simulate_cmd(start, end, connections, fmu_type, nb_steps):
-    simulate(start, end, connections, fmu_type, nb_steps)
+@click.option('--rtol', required=False, type=float, default=0.001)
+@click.option('--atol', required=False, type=float, default=0.001)
+def simulate_cmd(start, end, connections, fmu_type, nb_steps, rtol, atol):
+    simulate(start, end, connections, fmu_type, nb_steps, rtol, atol)
 
-def simulate(start, end, connections, fmu_type='me', nb_steps=500):
+def simulate(start, end, connections, fmu_type='me', nb_steps=500,
+             rtol=0.001, atol=0.001):
     """
     1) Load and parametrize unique FMUs
     2) Connect FMUs through the Master
@@ -95,6 +108,7 @@ def simulate(start, end, connections, fmu_type='me', nb_steps=500):
                                   'path': fmu_paths,
                                   'parameter': fmu_parameters})
     fmus = fmus.drop_duplicates(['id'])
+    fmus['parameter'] = fmus['parameter'].apply(lambda x: x.replace("'", '"'))
     fmus['parameter'] = fmus['parameter'].apply(lambda x: json.loads(x))
 
     # Load FMUs and set parameters
@@ -111,6 +125,7 @@ def simulate(start, end, connections, fmu_type='me', nb_steps=500):
             fmus.loc[index, 'fmu'].set(key, value)
         models.append((fmus.loc[index, 'name'],
                        fmus.loc[index, 'fmu']))
+    print(fmus['parameter'].iloc[0]['weather_file'])
 
     # Create connection list
     connections = []
@@ -122,7 +137,7 @@ def simulate(start, end, connections, fmu_type='me', nb_steps=500):
              fmus[fmus['id'] == row['fmu2_id']]['fmu'].iloc[0],
              row['fmu2_input']))
 
-        # Save variable names to retrive later
+        # Save variable names to retrive <-- Overwritten later to include more
         variables.append(
             str(fmus[fmus['id'] == row['fmu1_id']]['name'].iloc[0]) +
             '.' + row['fmu1_output'])
@@ -134,6 +149,12 @@ def simulate(start, end, connections, fmu_type='me', nb_steps=500):
     master = CoupledFMUModelME2(models, connections)
     options = master.simulate_options()
     options['ncp'] = nb_steps
+    options['CVode_options']['rtol'] = rtol
+    options['CVode_options']['atol'] = atol
+    print('SOLVER OPTIONS=')
+    print(options)
+    # print(json.dumps(options, sort_keys=True, indent=4))
+    print('')
     pyfmi_results = master.simulate(options=options,
         start_time=start, final_time=end)
 
@@ -142,6 +163,7 @@ def simulate(start, end, connections, fmu_type='me', nb_steps=500):
         fmus.loc[index, 'fmu'].terminate()
 
     # Retrieve results and save
+    variables = pyfmi_results._result_data.name
     results = pandas.DataFrame(
         index=pyfmi_results['time'],
         data={key: pyfmi_results[key]
