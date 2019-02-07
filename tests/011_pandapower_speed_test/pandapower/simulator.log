@@ -1,0 +1,47 @@
+01/24/2019 08:37:22 AM FMI version not specified. Version 2.0 will be used.
+01/24/2019 08:37:22 AM No configuration file was provided. JModelica does not allow to set the path to a configuration file at runtime. Hence if the exported simulation program/script needs a configuration file to run, then the path to the configuration file must be provided when creating the FMU. Otherwise the FMU will fail to run.
+01/24/2019 08:37:22 AM Print Modelica model
+01/24/2019 08:37:22 AM ./model_description.xml is a valid XML document.
+01/24/2019 08:37:22 AM Invalid characters will be removed from the model name=pandapower.
+01/24/2019 08:37:22 AM The new model name is pandapower.
+01/24/2019 08:37:22 AM Declare the Python module name as pandapower_wrapper.
+01/24/2019 08:37:22 AM Invalid characters will be removed from the variable name KW_7.
+01/24/2019 08:37:22 AM The new variable name is KW_7.
+01/24/2019 08:37:22 AM Invalid characters will be removed from the variable name KW_9.
+01/24/2019 08:37:22 AM The new variable name is KW_9.
+01/24/2019 08:37:22 AM Invalid characters will be removed from the variable name KW_24.
+01/24/2019 08:37:22 AM The new variable name is KW_24.
+01/24/2019 08:37:22 AM Invalid characters will be removed from the variable name KVAR_7.
+01/24/2019 08:37:22 AM The new variable name is KVAR_7.
+01/24/2019 08:37:22 AM Invalid characters will be removed from the variable name KVAR_9.
+01/24/2019 08:37:22 AM The new variable name is KVAR_9.
+01/24/2019 08:37:22 AM Invalid characters will be removed from the variable name KVAR_24.
+01/24/2019 08:37:22 AM The new variable name is KVAR_24.
+01/24/2019 08:37:22 AM Invalid characters will be removed from the variable name Vpu_7.
+01/24/2019 08:37:22 AM The new variable name is Vpu_7.
+01/24/2019 08:37:22 AM Invalid characters will be removed from the variable name Vpu_9.
+01/24/2019 08:37:22 AM The new variable name is Vpu_9.
+01/24/2019 08:37:22 AM Invalid characters will be removed from the variable name Vpu_24.
+01/24/2019 08:37:22 AM The new variable name is Vpu_24.
+01/24/2019 08:37:22 AM Check for duplicates in input, output and parameter variable names.
+01/24/2019 08:37:22 AM Parsing of ./model_description.xml was successfull.
+01/24/2019 08:37:22 AM The output file pandapower.mo exists and will be overwritten.
+01/24/2019 08:37:22 AM The Modelica model pandapower.mo of pandapower is successfully created.
+01/24/2019 08:37:22 AM The Modelica model pandapower.mo of pandapower is in C:\Users\DRRC\Desktop\fmi-for-power-system\tests\011_pandapower_speed_test\pandapower.
+01/24/2019 08:37:22 AM Generate FMU
+01/24/2019 08:37:35 AM The FMU pandapower.fmu is successfully created.
+01/24/2019 08:37:35 AM The FMU pandapower.fmu is in C:\Users\DRRC\Desktop\fmi-for-power-system\tests\011_pandapower_speed_test\pandapower.
+01/24/2019 08:37:35 AM Create scripts folder
+01/24/2019 08:37:35 AM Create the folder Simulator.scripts with scripts to be added to the PYTHONPATH.
+01/24/2019 08:37:35 AM Create binaries folder
+01/24/2019 08:37:35 AM Create the folder Simulator.binaries with binaries to be added to the system PATH.
+01/24/2019 08:37:35 AM C:\Users\DRRC\Desktop\desktops\February\SimulatorToFMU\simulatortofmu\parser\libraries\modelica\SimulatorToFMU\Resources\Library\win32\SimulatorToFMUPython27.dll will be copied to the binaries folder pandapower.binaries\win32.
+01/24/2019 08:37:35 AM C:\Users\DRRC\Desktop\desktops\February\SimulatorToFMU\simulatortofmu\parser\libraries\modelica\SimulatorToFMU\Resources\Library\win32\python27.dll will be copied to the binaries folder pandapower.binaries\win32.
+01/24/2019 08:37:35 AM C:\Users\DRRC\Desktop\desktops\February\SimulatorToFMU\simulatortofmu\parser\libraries\modelica\SimulatorToFMU\Resources\Library\win64\SimulatorToFMUPython27.dll will be copied to the binaries folder pandapower.binaries\win64.
+01/24/2019 08:37:35 AM C:\Users\DRRC\Desktop\desktops\February\SimulatorToFMU\simulatortofmu\parser\libraries\modelica\SimulatorToFMU\Resources\Library\win64\python27.dll will be copied to the binaries folder pandapower.binaries\win64.
+01/24/2019 08:37:35 AM Clean temporary files
+01/24/2019 08:37:35 AM Rewrite FMU
+01/24/2019 08:37:36 AM The model description file will be rewritten to include the attribute needsExecutionTool set to true.
+01/24/2019 08:37:36 AM The FMU pandapower.fmu is successfully re-created.
+01/24/2019 08:37:36 AM The FMU pandapower.fmu is in C:\Users\DRRC\Desktop\fmi-for-power-system\tests\011_pandapower_speed_test\pandapower.
+01/24/2019 08:37:36 AM Export Simulator as an FMU in 14.474 seconds.

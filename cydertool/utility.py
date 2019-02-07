@@ -46,7 +46,8 @@ def compile(path, name, io, fmu_type='me', fmu_struc='python',
         variable.set("name", row['name'])
         variable.set("description", row['description'])
         variable.set("causality", row['causality'])
-        variable.set("start", str(row['start']).replace('\\', '\\\\'))
+        if '_configurationFileName' in row['name']:
+            variable.set("start", str(row['start']).replace('\\', '\\\\'))
         variable.set("type", row['type'])
         variable.set("unit", row['unit'])
     my_tree = etree.ElementTree(root)
@@ -83,13 +84,17 @@ def compile(path, name, io, fmu_type='me', fmu_struc='python',
 @click.option('--connections', required=True, type=str)
 @click.option('--fmu_type', required=False, type=str, default='me')
 @click.option('--nb_steps', required=False, type=int, default=500)
+@click.option('--solver', required=False, type=str, default='CVode')
 @click.option('--rtol', required=False, type=float, default=0.001)
 @click.option('--atol', required=False, type=float, default=0.001)
-def simulate_cmd(start, end, connections, fmu_type, nb_steps, rtol, atol):
-    simulate(start, end, connections, fmu_type, nb_steps, rtol, atol)
+@click.option('--result', required=False, type=str, default='results.csv')
+def simulate_cmd(start, end, connections, fmu_type,
+                 nb_steps, solver, rtol, atol, result):
+    simulate(start, end, connections, fmu_type, nb_steps,
+             solver, rtol, atol, result)
 
 def simulate(start, end, connections, fmu_type='me', nb_steps=500,
-             rtol=0.001, atol=0.001):
+             solver='CVode', rtol=0.001, atol=0.001, result_filename='result.csv'):
     """
     1) Load and parametrize unique FMUs
     2) Connect FMUs through the Master
@@ -149,11 +154,13 @@ def simulate(start, end, connections, fmu_type='me', nb_steps=500,
     master = CoupledFMUModelME2(models, connections)
     options = master.simulate_options()
     options['ncp'] = nb_steps
+    options['solver'] = solver
     options['CVode_options']['rtol'] = rtol
     options['CVode_options']['atol'] = atol
     print('SOLVER OPTIONS=')
     print(options)
-    # print(json.dumps(options, sort_keys=True, indent=4))
+    with open('solver_config.json', 'w') as outfile:
+        json.dump(options, outfile)
     print('')
     pyfmi_results = master.simulate(options=options,
         start_time=start, final_time=end)
@@ -169,5 +176,5 @@ def simulate(start, end, connections, fmu_type='me', nb_steps=500,
         data={key: pyfmi_results[key]
               for key in variables})
     results.index.name = 'time'
-    results.to_csv('results.csv')
+    results.to_csv(result_filename)
     return results
