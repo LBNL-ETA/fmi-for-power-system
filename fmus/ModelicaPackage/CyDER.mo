@@ -906,6 +906,140 @@ changed to parameters.
         annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
               coordinateSystem(preserveAspectRatio=false)));
       end Pv_Inv_VoltVarWatt_simple_Slim_zerohold;
+
+      model Pv_Inv_VoltVarWatt_simple_Slim_uStoarge
+        // Weather data
+        parameter String weather_file = "" "Path to weather file";
+        // PV generation
+        parameter Real n(min=0, unit="1") = 26 "Number of PV modules";
+        parameter Real A(min=0, unit="m2") = 1.65 "Net surface area per module";
+        parameter Real eta(min=0, max=1, unit="1") = 0.158
+          "Module conversion efficiency";
+        parameter Real lat(unit="deg") = 37.9 "Latitude";
+        parameter Real til(unit="deg") = 10 "Surface tilt";
+        parameter Real azi(unit="deg") = 0 "Surface azimuth 0-S, 90-W, 180-N, 270-E ";
+        // VoltVarWatt
+        parameter Real thrP = 0.05 "P: over/undervoltage threshold";
+        parameter Real hysP= 0.04 "P: Hysteresis";
+        parameter Real thrQ = 0.04 "Q: over/undervoltage threshold";
+        parameter Real hysQ = 0.01 "Q: Hysteresis";
+        parameter Real SMax(unit="kVA") = 7.6 "Maximal Apparent Power";
+        parameter Real QMaxInd(unit="kvar") = 3.3 "Maximal Reactive Power (Inductive)";
+        parameter Real QMaxCap(unit="kvar") = 3.3 "Maximal Reactive Power (Capacitive)";
+        parameter Real Tfirstorder(unit="s") = 1 "Time constant of first order";
+        // Battery
+        parameter Real P_discharge(unit="kW", min=0) = 1 "Battery Maximal Discharge";
+        parameter Real EMax(unit="kWh", min=0) = 1 "Battery Capacity";
+        parameter Real SOC_start(min=0, max=1, unit="1") = 0.1 "Initial SOC value";
+        parameter Real SOC_min(min=0, max=1, unit="1") = 0.1 "Minimum SOC value";
+        parameter Real SOC_max(min=0, max=1, unit="1") = 1 "Maximum SOC value";
+        parameter Real etaCha(min=0, max=1, unit="1") = 0.96 "Charging efficiency";
+        parameter Real etaDis(min=0, max=1, unit="1") = 0.96 "Discharging efficiency";
+
+        SCooDER.Components.Photovoltaics.PVModule_simple PV(
+          n=n,
+          A=A,
+          eta=eta,
+          lat=lat,
+          til=til,
+          azi=azi) annotation (Placement(transformation(extent={{-10,70},{10,90}})));
+        Buildings.BoundaryConditions.WeatherData.ReaderTMY3 Weather(
+            computeWetBulbTemperature=false, filNam=weather_file)
+          "Weather data reader with radiation data obtained from the inputs' connectors"
+          annotation (Placement(transformation(extent={{-80,74},{-60,94}})));
+        Modelica.Blocks.Interfaces.RealInput v(start=1, unit="1") "Voltage [p.u]"
+          annotation (Placement(transformation(extent={{-140,-20},{-100,20}})));
+        Modelica.Blocks.Interfaces.RealOutput Q(start=0, unit="kvar")
+                                                                     "Reactive power"
+          annotation (Placement(transformation(extent={{100,-20},{120,0}})));
+        Modelica.Blocks.Interfaces.RealOutput P(start=1, unit="kW")
+                                                                   "Active power"
+          annotation (Placement(transformation(extent={{100,20},{120,40}})));
+        Modelica.Blocks.Math.Gain PV_scaled(k=1/1e3)
+          annotation (Placement(transformation(extent={{20,70},{40,90}})));
+        Modelica.Blocks.Math.Gain Q_curtailed(k=1/1e3)
+          annotation (Placement(transformation(extent={{20,-20},{40,0}})));
+        Modelica.Blocks.Sources.RealExpression P_feedin(y=min(sqrt(SMax^2 - Q^2),
+              PV_scaled.y))
+          annotation (Placement(transformation(extent={{-26,30},{54,50}})));
+        Controls.Model.voltVarWatt_param_firstorder VVW(
+          thrP=thrP,
+          hysP=hysP,
+          thrQ=thrQ,
+          hysQ=hysQ,
+          QMaxInd=QMaxInd*1000,
+          QMaxCap=QMaxCap*1000,
+          Tfirstorder=Tfirstorder)
+          annotation (Placement(transformation(extent={{-70,-10},{-50,10}})));
+        SCooDER.Components.Battery.Model.Battery battery(
+          SOC_start=SOC_start,
+          SOC_min=SOC_min,
+          etaCha=etaCha,
+          etaDis=etaDis,
+          SOC_max=SOC_max,
+          EMax=EMax*1000)
+          annotation (Placement(transformation(extent={{40,-90},{60,-70}})));
+        Modelica.Blocks.Sources.RealExpression P_battery_control(y=if (PV_scaled.y -
+              P) > 0.1 then (PV_scaled.y - P) else -1*min(sqrt(SMax^2 - Q^2) -
+              P_feedin.y, P_discharge))
+          annotation (Placement(transformation(extent={{-80,-90},{0,-70}})));
+        Modelica.Blocks.Interfaces.RealOutput SOC(start=SOC_min, unit="1") "State of Charge"
+          annotation (Placement(transformation(extent={{100,-60},{120,-40}})));
+        Modelica.Blocks.Interfaces.RealOutput P_batt(start=0, unit="kW") "Power demand Battery"
+          annotation (Placement(transformation(extent={{100,-100},{120,-80}})));
+        Modelica.Blocks.Interfaces.RealOutput SOE(unit="kWh") "State of Energy"
+          annotation (Placement(transformation(extent={{100,-80},{120,-60}})));
+        Modelica.Blocks.Math.Add Sum_P
+          annotation (Placement(transformation(extent={{70,20},{90,40}})));
+        Modelica.Blocks.Sources.RealExpression P_battery(y=if P_batt < 0 then -1*
+              P_batt else 0)
+          annotation (Placement(transformation(extent={{-26,10},{54,30}})));
+        Modelica.Blocks.Math.Gain WtokW(k=1/1e3)
+          annotation (Placement(transformation(extent={{84,-96},{96,-84}})));
+        Modelica.Blocks.Math.Gain WhtokWh(k=1/1e3)
+          annotation (Placement(transformation(extent={{84,-76},{96,-64}})));
+        Modelica.Blocks.Math.Gain kWtoW(k=1e3)
+          annotation (Placement(transformation(extent={{16,-86},{28,-74}})));
+        Modelica.Blocks.Sources.RealExpression P_curtailed(y=PV_scaled.y - P_feedin.y)
+          annotation (Placement(transformation(extent={{-80,-60},{0,-40}})));
+      equation
+        connect(Weather.weaBus, PV.weaBus) annotation (Line(
+            points={{-60,84},{-10,84}},
+            color={255,204,51},
+            thickness=0.5));
+        connect(PV.P, PV_scaled.u)
+          annotation (Line(points={{11,80},{18,80}}, color={0,0,127}));
+        connect(Q_curtailed.y, Q)
+          annotation (Line(points={{41,-10},{110,-10}}, color={0,0,127}));
+        connect(PV.scale, VVW.Plim) annotation (Line(points={{-12,76},{-40,76},{-40,5},
+                {-49,5}}, color={0,0,127}));
+        connect(VVW.Qctrl, Q_curtailed.u) annotation (Line(points={{-49,-5},{-40,-5},{
+                -40,-10},{18,-10}}, color={0,0,127}));
+        connect(VVW.v, v)
+          annotation (Line(points={{-72,0},{-120,0}}, color={0,0,127}));
+        connect(SOC, battery.SOC) annotation (Line(points={{110,-50},{70,-50},{70,-72},
+                {61,-72}}, color={0,0,127}));
+        connect(Sum_P.y, P)
+          annotation (Line(points={{91,30},{110,30}}, color={0,0,127}));
+        connect(P_feedin.y, Sum_P.u1) annotation (Line(points={{58,40},{64,40},{64,36},
+                {68,36}}, color={0,0,127}));
+        connect(Sum_P.u2, P_battery.y) annotation (Line(points={{68,24},{64,24},{64,20},
+                {58,20}}, color={0,0,127}));
+        connect(P_batt, WtokW.y)
+          annotation (Line(points={{110,-90},{96.6,-90}}, color={0,0,127}));
+        connect(WtokW.u, battery.P_batt) annotation (Line(points={{82.8,-90},{80,-90},
+                {80,-80},{61,-80}}, color={0,0,127}));
+        connect(battery.SOE, WhtokWh.u) annotation (Line(points={{61,-75},{80,-75},{80,
+                -70},{82.8,-70}}, color={0,0,127}));
+        connect(WhtokWh.y, SOE)
+          annotation (Line(points={{96.6,-70},{110,-70}}, color={0,0,127}));
+        connect(battery.P_ctrl, kWtoW.y)
+          annotation (Line(points={{38,-80},{28.6,-80}}, color={0,0,127}));
+        connect(kWtoW.u, P_battery_control.y)
+          annotation (Line(points={{14.8,-80},{4,-80}}, color={0,0,127}));
+        annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
+              coordinateSystem(preserveAspectRatio=false)));
+      end Pv_Inv_VoltVarWatt_simple_Slim_uStoarge;
     end Model;
 
     package Examples
@@ -1003,10 +1137,12 @@ changed to parameters.
       model Test_Pv_Inv_VoltVarWatt_simple_Slim_curtail
         extends Modelica.Icons.Example;
         Model.Pv_Inv_VoltVarWatt_simple_Slim VVW(
-          weather_file="C:/Users/Christoph/Documents/SCooDER/SCooDER_simulation/ExampleData/USA_CA_San.Francisco.Intl.AP.724940_TMY3.mos",
           thrP=1,
           hysP=1,
-          n=75) annotation (Placement(transformation(extent={{-10,-10},{10,10}})));
+          n=75,
+          weather_file=
+              "C:/Users/Christoph/Documents/SmartInverter/smartinverter_simulation/ExampleData/USA_CA_San.Francisco.Intl.AP.724940_TMY3.mos")
+                annotation (Placement(transformation(extent={{-10,-10},{10,10}})));
 
         Modelica.Blocks.Sources.Ramp ramp(
           height=0.5,
@@ -1022,6 +1158,35 @@ changed to parameters.
           Diagram(
               coordinateSystem(preserveAspectRatio=false)));
       end Test_Pv_Inv_VoltVarWatt_simple_Slim_curtail;
+
+      model Test_Pv_Inv_VoltVarWatt_simple_Slim_uStorage
+        extends Modelica.Icons.Example;
+        Model.Pv_Inv_VoltVarWatt_simple_Slim_uStoarge
+                                             VVW(
+          thrP=1,
+          hysP=1,
+          n=75,
+          weather_file=
+              "C:/Users/Christoph/Documents/SmartInverter/smartinverter_simulation/ExampleData/USA_CA_San.Francisco.Intl.AP.724940_TMY3.mos",
+
+          P_discharge=1.5,
+          EMax=10)
+                annotation (Placement(transformation(extent={{-10,-10},{10,10}})));
+
+        Modelica.Blocks.Sources.Ramp ramp(
+          height=0.5,
+          offset=1,
+          startTime=43200,
+          duration=3600*2)
+          annotation (Placement(transformation(extent={{-60,-10},{-40,10}})));
+      equation
+        connect(ramp.y, VVW.v)
+          annotation (Line(points={{-39,0},{-12,0}}, color={0,0,127}));
+        annotation (Icon(coordinateSystem(preserveAspectRatio=false)),
+          experiment(StartTime=0, StopTime=86400),
+          Diagram(
+              coordinateSystem(preserveAspectRatio=false)));
+      end Test_Pv_Inv_VoltVarWatt_simple_Slim_uStorage;
     end Examples;
   end Simulation;
   annotation (uses(Modelica(version="3.2.2"),
