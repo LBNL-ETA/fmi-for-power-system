@@ -1040,6 +1040,86 @@ changed to parameters.
         annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
               coordinateSystem(preserveAspectRatio=false)));
       end Pv_Inv_VoltVarWatt_simple_Slim_uStoarge;
+
+      model Pv_Inv_VoltVarWatt_simple_Slim_zerohold_onlyPv
+        // Weather data
+        parameter String weather_file = "" "Path to weather file";
+        // PV generation
+        parameter Real n(min=0, unit="1") = 26 "Number of PV modules";
+        parameter Real A(min=0, unit="m2") = 1.65 "Net surface area per module";
+        parameter Real eta(min=0, max=1, unit="1") = 0.158
+          "Module conversion efficiency";
+        parameter Real lat(unit="deg") = 37.9 "Latitude";
+        parameter Real til(unit="deg") = 10 "Surface tilt";
+        parameter Real azi(unit="deg") = 0 "Surface azimuth 0-S, 90-W, 180-N, 270-E ";
+        // VoltVarWatt
+        parameter Real thrP = 0.05 "P: over/undervoltage threshold";
+        parameter Real hysP= 0.04 "P: Hysteresis";
+        parameter Real thrQ = 0.04 "Q: over/undervoltage threshold";
+        parameter Real hysQ = 0.01 "Q: Hysteresis";
+        parameter Real SMax(unit="kVA") = 7.6 "Maximal Apparent Power";
+        parameter Real QMaxInd(unit="kvar") = 3.3 "Maximal Reactive Power (Inductive)";
+        parameter Real QMaxCap(unit="kvar") = 3.3 "Maximal Reactive Power (Capacitive)";
+        parameter Real Ts(unit="s") = 60 "Time constant of zero order hold";
+
+        SCooDER.Components.Photovoltaics.PVModule_simple_ZeroOrder
+                                                         pVModule_simple_ZeroOrder(
+          n=n,
+          A=A,
+          eta=eta,
+          lat=lat,
+          til=til,
+          azi=azi,
+          Ts=Ts)
+          annotation (Placement(transformation(extent={{-10,40},{10,60}})));
+        Buildings.BoundaryConditions.WeatherData.ReaderTMY3 weaDatInpCon(
+            computeWetBulbTemperature=false, filNam=weather_file)
+          "Weather data reader with radiation data obtained from the inputs' connectors"
+          annotation (Placement(transformation(extent={{-80,60},{-60,80}})));
+        Modelica.Blocks.Interfaces.RealInput v(start=1, unit="1") "Voltage [p.u]"
+          annotation (Placement(transformation(extent={{-140,-20},{-100,20}})));
+        Modelica.Blocks.Interfaces.RealOutput Q(start=0, unit="kvar")
+                                                                     "Reactive power"
+          annotation (Placement(transformation(extent={{100,-60},{120,-40}})));
+        Modelica.Blocks.Interfaces.RealOutput P(start=1, unit="kW")
+                                                                   "Active power"
+          annotation (Placement(transformation(extent={{100,40},{120,60}})));
+        Modelica.Blocks.Math.Gain WtokW(k=1/1e3)
+          annotation (Placement(transformation(extent={{20,40},{40,60}})));
+        Modelica.Blocks.Math.Gain varTokvar(k=1/1e3)
+          annotation (Placement(transformation(extent={{20,-60},{40,-40}})));
+        Modelica.Blocks.Sources.RealExpression S_curtail_P(y=min(sqrt(SMax^2 - Q^2),
+              WtokW.y)) annotation (Placement(transformation(extent={{0,-10},{80,10}})));
+        Controls.Model.voltVarWatt_param voltVarWatt_param(
+          thrP=thrP,
+          hysP=hysP,
+          thrQ=thrQ,
+          hysQ=hysQ,
+          QMaxInd=QMaxInd*1000,
+          QMaxCap=QMaxCap*1000)
+          annotation (Placement(transformation(extent={{-50,-10},{-30,10}})));
+      equation
+        connect(weaDatInpCon.weaBus, pVModule_simple_ZeroOrder.weaBus)
+          annotation (Line(
+            points={{-60,70},{-40,70},{-40,54},{-10,54}},
+            color={255,204,51},
+            thickness=0.5));
+        connect(pVModule_simple_ZeroOrder.P, WtokW.u)
+          annotation (Line(points={{11,50},{18,50}}, color={0,0,127}));
+        connect(pVModule_simple_ZeroOrder.scale, voltVarWatt_param.Plim)
+          annotation (Line(points={{-12,46},{-20,46},{-20,5},{-29,5}}, color={0,
+                0,127}));
+        connect(voltVarWatt_param.Qctrl, varTokvar.u) annotation (Line(points={{-29,-5},
+                {-20,-5},{-20,-50},{18,-50}}, color={0,0,127}));
+        connect(varTokvar.y, Q)
+          annotation (Line(points={{41,-50},{110,-50}}, color={0,0,127}));
+        connect(P, S_curtail_P.y) annotation (Line(points={{110,50},{92,50},{92,
+                0},{84,0}}, color={0,0,127}));
+        connect(v, voltVarWatt_param.v)
+          annotation (Line(points={{-120,0},{-52,0}}, color={0,0,127}));
+        annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
+              coordinateSystem(preserveAspectRatio=false)));
+      end Pv_Inv_VoltVarWatt_simple_Slim_zerohold_onlyPv;
     end Model;
 
     package Examples
@@ -1168,7 +1248,6 @@ changed to parameters.
           n=75,
           weather_file=
               "C:/Users/Christoph/Documents/SmartInverter/smartinverter_simulation/ExampleData/USA_CA_San.Francisco.Intl.AP.724940_TMY3.mos",
-
           P_discharge=1.5,
           EMax=10)
                 annotation (Placement(transformation(extent={{-10,-10},{10,10}})));
