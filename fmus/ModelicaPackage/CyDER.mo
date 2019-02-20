@@ -1041,7 +1041,7 @@ changed to parameters.
               coordinateSystem(preserveAspectRatio=false)));
       end Pv_Inv_VoltVarWatt_simple_Slim_uStoarge;
 
-      model Pv_Inv_VoltVarWatt_simple_Slim_zerohold_onlyV
+      model Pv_Inv_VoltVarWatt_simple_Slim_zerohold_onlyPv
         // Weather data
         parameter String weather_file = "" "Path to weather file";
         // PV generation
@@ -1062,13 +1062,15 @@ changed to parameters.
         parameter Real QMaxCap(unit="kvar") = 3.3 "Maximal Reactive Power (Capacitive)";
         parameter Real Ts(unit="s") = 60 "Time constant of zero order hold";
 
-        SCooDER.Components.Photovoltaics.PVModule_simple pVModule_simple(
+        SCooDER.Components.Photovoltaics.PVModule_simple_ZeroOrder
+                                                         pVModule_simple_ZeroOrder(
           n=n,
           A=A,
           eta=eta,
           lat=lat,
           til=til,
-          azi=azi)
+          azi=azi,
+          Ts=Ts)
           annotation (Placement(transformation(extent={{-10,40},{10,60}})));
         Buildings.BoundaryConditions.WeatherData.ReaderTMY3 weaDatInpCon(
             computeWetBulbTemperature=false, filNam=weather_file)
@@ -1096,30 +1098,28 @@ changed to parameters.
           QMaxInd=QMaxInd*1000,
           QMaxCap=QMaxCap*1000)
           annotation (Placement(transformation(extent={{-50,-10},{-30,10}})));
-        Modelica.Blocks.Discrete.ZeroOrderHold zeroOrderHold_v(samplePeriod=Ts)
-          annotation (Placement(transformation(extent={{-90,-10},{-70,10}})));
       equation
-        connect(weaDatInpCon.weaBus, pVModule_simple.weaBus) annotation (Line(
+        connect(weaDatInpCon.weaBus, pVModule_simple_ZeroOrder.weaBus)
+          annotation (Line(
             points={{-60,70},{-40,70},{-40,54},{-10,54}},
             color={255,204,51},
             thickness=0.5));
-        connect(pVModule_simple.P, WtokW.u)
+        connect(pVModule_simple_ZeroOrder.P, WtokW.u)
           annotation (Line(points={{11,50},{18,50}}, color={0,0,127}));
-        connect(pVModule_simple.scale, voltVarWatt_param.Plim) annotation (Line(
-              points={{-12,46},{-20,46},{-20,5},{-29,5}}, color={0,0,127}));
+        connect(pVModule_simple_ZeroOrder.scale, voltVarWatt_param.Plim)
+          annotation (Line(points={{-12,46},{-20,46},{-20,5},{-29,5}}, color={0,
+                0,127}));
         connect(voltVarWatt_param.Qctrl, varTokvar.u) annotation (Line(points={{-29,-5},
                 {-20,-5},{-20,-50},{18,-50}}, color={0,0,127}));
-        connect(v, zeroOrderHold_v.u)
-          annotation (Line(points={{-120,0},{-92,0}}, color={0,0,127}));
-        connect(zeroOrderHold_v.y, voltVarWatt_param.v)
-          annotation (Line(points={{-69,0},{-52,0}}, color={0,0,127}));
         connect(varTokvar.y, Q)
           annotation (Line(points={{41,-50},{110,-50}}, color={0,0,127}));
         connect(P, S_curtail_P.y) annotation (Line(points={{110,50},{92,50},{92,
                 0},{84,0}}, color={0,0,127}));
+        connect(v, voltVarWatt_param.v)
+          annotation (Line(points={{-120,0},{-52,0}}, color={0,0,127}));
         annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
               coordinateSystem(preserveAspectRatio=false)));
-      end Pv_Inv_VoltVarWatt_simple_Slim_zerohold_onlyV;
+      end Pv_Inv_VoltVarWatt_simple_Slim_zerohold_onlyPv;
     end Model;
 
     package Examples
