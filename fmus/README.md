@@ -1,2 +1,2 @@
-# fmi-for-power-system
-Available FMUs and the tools to develop new FMUs
+# FMU Library
+Available FMUs, for Modelica based FMU also refer to the Modelica package.
