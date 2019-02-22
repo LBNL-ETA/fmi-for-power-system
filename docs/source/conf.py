@@ -20,13 +20,13 @@
 # -- Project information -----------------------------------------------------
 
 project = u'CyDER'
-copyright = u'2019, Evangelos Vrettos, Jonathan Coignard, Christoph Gehbauer and LBNL team'
-author = u'Evangelos Vrettos, Jonathan Coignard, Christoph Gehbauer and LBNL team'
+copyright = u'2019, Lawrence Berkeley National Laboratory'
+author = u'Lawrence Berkeley National Laboratory'
 
 # The short X.Y version
-version = u''
+version = u'0.0.1'
 # The full version, including alpha/beta/rc tags
-release = u''
+release = u'0.0.1'
 
 
 # -- General configuration ---------------------------------------------------
@@ -74,7 +74,7 @@ pygments_style = None
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme = 'default'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -129,7 +129,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'CyDER.tex', u'CyDER Documentation',
-     u'Evangelos Vrettos, Jonathan Coignard, Christoph Gehbauer and LBNL team', 'manual'),
+     u'Lawrence Berkeley National Laboratory', 'manual'),
 ]
 
 
