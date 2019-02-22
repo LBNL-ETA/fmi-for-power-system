@@ -5,10 +5,10 @@ with open('requirements.txt') as f:
 
 setup(
     name='cydertool',
-    description='Functions to compile and launch simulations for PyFMI',
-    author='Jonathan Coignard',
+    description='Functions to compile and launch simulations with FMUs',
+    author='Lawrence Berkeley National Laboratory',
     author_email='JCoignard@lbl.gov',
-    version='0.1',
+    version='0.0.1',
     packages=find_packages(),
     include_package_data=True,
     install_requires=required,
