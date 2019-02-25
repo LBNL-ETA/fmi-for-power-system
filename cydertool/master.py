@@ -7,6 +7,8 @@ except:
 import json
 import os
 
+Result = '_'  # Placeholde to keep code running
+
 def sim(datetimes, substation_filename, scada_filename, source_node,
         add_pvs=False, add_pvqs=False, add_evs=False, result_factory=Result,
         substation_powerflow=True, feeder_powerflow=False, result_options={}):

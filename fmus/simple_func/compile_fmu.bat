@@ -1,0 +1,1 @@
+C:/JModelica.org-2.1/setenv.bat && cyderc --path ./ --name simple --io simple.xlsx --fmu_struc python && @pause
