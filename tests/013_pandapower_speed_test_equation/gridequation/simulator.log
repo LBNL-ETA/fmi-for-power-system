@@ -1,0 +1,35 @@
+03/08/2019 05:50:40 PM FMI version not specified. Version 2.0 will be used.
+03/08/2019 05:50:40 PM No configuration file was provided. JModelica does not allow to set the path to a configuration file at runtime. Hence if the exported simulation program/script needs a configuration file to run, then the path to the configuration file must be provided when creating the FMU. Otherwise the FMU will fail to run.
+03/08/2019 05:50:40 PM Print Modelica model
+03/08/2019 05:50:40 PM ./model_description.xml is a valid XML document.
+03/08/2019 05:50:40 PM Invalid characters will be removed from the model name=gridequation.
+03/08/2019 05:50:40 PM The new model name is gridequation.
+03/08/2019 05:50:40 PM Declare the Python module name as gridequation_wrapper.
+03/08/2019 05:50:40 PM Invalid characters will be removed from the variable name KW_7.
+03/08/2019 05:50:40 PM The new variable name is KW_7.
+03/08/2019 05:50:40 PM Invalid characters will be removed from the variable name KVAR_7.
+03/08/2019 05:50:40 PM The new variable name is KVAR_7.
+03/08/2019 05:50:40 PM Invalid characters will be removed from the variable name Vpu_7.
+03/08/2019 05:50:40 PM The new variable name is Vpu_7.
+03/08/2019 05:50:40 PM Check for duplicates in input, output and parameter variable names.
+03/08/2019 05:50:40 PM Parsing of ./model_description.xml was successfull.
+03/08/2019 05:50:40 PM The output file gridequation.mo exists and will be overwritten.
+03/08/2019 05:50:40 PM The Modelica model gridequation.mo of gridequation is successfully created.
+03/08/2019 05:50:40 PM The Modelica model gridequation.mo of gridequation is in C:\Users\cyder\Desktop\fmi-for-power-system\tests\013_pandapower_speed_test_equation\gridequation.
+03/08/2019 05:50:40 PM Generate FMU
+03/08/2019 05:51:00 PM The FMU gridequation.fmu is successfully created.
+03/08/2019 05:51:00 PM The FMU gridequation.fmu is in C:\Users\cyder\Desktop\fmi-for-power-system\tests\013_pandapower_speed_test_equation\gridequation.
+03/08/2019 05:51:00 PM Create scripts folder
+03/08/2019 05:51:00 PM Create the folder Simulator.scripts with scripts to be added to the PYTHONPATH.
+03/08/2019 05:51:00 PM Create binaries folder
+03/08/2019 05:51:01 PM Create the folder Simulator.binaries with binaries to be added to the system PATH.
+03/08/2019 05:51:01 PM C:\Users\cyder\Desktop\SimulatorToFMU\simulatortofmu\parser\libraries\modelica\SimulatorToFMU\Resources\Library\win32\SimulatorToFMUPython27.dll will be copied to the binaries folder gridequation.binaries\win32.
+03/08/2019 05:51:01 PM C:\Users\cyder\Desktop\SimulatorToFMU\simulatortofmu\parser\libraries\modelica\SimulatorToFMU\Resources\Library\win32\python27.dll will be copied to the binaries folder gridequation.binaries\win32.
+03/08/2019 05:51:01 PM C:\Users\cyder\Desktop\SimulatorToFMU\simulatortofmu\parser\libraries\modelica\SimulatorToFMU\Resources\Library\win64\SimulatorToFMUPython27.dll will be copied to the binaries folder gridequation.binaries\win64.
+03/08/2019 05:51:01 PM C:\Users\cyder\Desktop\SimulatorToFMU\simulatortofmu\parser\libraries\modelica\SimulatorToFMU\Resources\Library\win64\python27.dll will be copied to the binaries folder gridequation.binaries\win64.
+03/08/2019 05:51:01 PM Clean temporary files
+03/08/2019 05:51:01 PM Rewrite FMU
+03/08/2019 05:51:02 PM The model description file will be rewritten to include the attribute needsExecutionTool set to true.
+03/08/2019 05:51:02 PM The FMU gridequation.fmu is successfully re-created.
+03/08/2019 05:51:02 PM The FMU gridequation.fmu is in C:\Users\cyder\Desktop\fmi-for-power-system\tests\013_pandapower_speed_test_equation\gridequation.
+03/08/2019 05:51:02 PM Export Simulator as an FMU in 22.791 seconds.

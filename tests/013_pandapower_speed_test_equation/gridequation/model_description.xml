@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<SimulatorModelDescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" fmiVersion="2.0" modelName="gridequation" description="gridequation" generationTool="SimulatorToFMU"><ModelVariables><ScalarVariable name="KW_7" description="_" causality="input" type="Real" unit="_"/><ScalarVariable name="KVAR_7" description="_" causality="input" type="Real" unit="_"/><ScalarVariable name="Vpu_7" description="_" causality="output" type="Real" unit="_"/></ModelVariables></SimulatorModelDescription>
