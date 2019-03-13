@@ -38,7 +38,7 @@ model pandapower
   // End //
   // Configuration specific parameters coming from
   // the inputs of the Python export tool (SimulatorToFMU.py)
-  parameter String patResScri = Modelica.Utilities.Files.loadResource("C:\\Users\\DRRC\\Desktop\\fmi-for-power-system\\tests\\011_pandapower_speed_test\\pandapower\\pandapower_wrapper.py")
+  parameter String patResScri = Modelica.Utilities.Files.loadResource("C:\\Users\\cyder\\Desktop\\fmi-for-power-system\\tests\\011_pandapower_speed_test\\pandapower\\pandapower_wrapper.py")
     "Path to the script in resource folder";
   // used to generate the FMU
   //
