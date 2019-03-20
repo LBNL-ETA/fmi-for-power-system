@@ -62,5 +62,11 @@ def exchange(configuration_filename, time, input_names,
                ','.join(map(str, input_values)) + ',' +
                ','.join(map(str, outputs)) + '\n')
         f.write(row)
-    print(row)
+    begin_simulation_time = dt.datetime.strptime(
+        '2016-01-01 00:00:00', '%Y-%m-%d %H:%M:%S')
+    begin_since_epoch = (
+        begin_simulation_time - dt.datetime.utcfromtimestamp(0)
+        ).total_seconds()
+    simulation_time = dt.datetime.utcfromtimestamp(begin_since_epoch + time)
+    print('PandaPower simulation time = ' + str(simulation_time))
     return [outputs, memory]
