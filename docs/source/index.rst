@@ -11,6 +11,7 @@ Welcome to CyDER's documentation!
    :caption: Contents:
 
    overview
+   getting_started
 
 
 
