@@ -3,8 +3,8 @@ Compiling FMUs
 
 Compiling Modelica code as FMU
 ------------------------------
-This is possible with PyModelica which is based on the JModelica.org compile.
-You can find some Modelica templates under example/004_getting_started/.
+This is possible with PyModelica which is based on the JModelica.org compiler.
+You can find some Modelica templates under "example/004_getting_started/".
 
 .. code-block:: python
 

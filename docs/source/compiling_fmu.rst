@@ -1,10 +1,11 @@
 Compiling FMUs
 ==============
+This section mostly focus on compiling FMUs with some embedded Python code. Note that it is also possible to obtain FMUs from Modelica code, Simulink blocks, and a variety of tools listed on the `FMI standard website <https://fmi-standard.org/tools/>`_.
 
 Compiling Modelica code as FMU
 ------------------------------
-This is possible with PyModelica which is based on the JModelica.org compile.
-You can find some Modelica templates under example/004_getting_started/.
+This is possible with PyModelica which is based on the JModelica.org compiler.
+You can find some Modelica templates under "example/004_getting_started/".
 
 .. code-block:: python
 
@@ -98,7 +99,7 @@ Finally, the compilation process can be triggered via the command line below.
 
 .. code-block:: bash
 
-  cyderc --path ./ --name modelname --io inputs_outputs.xlsx --fmu_struc python --fmu_type me
+  cyderc --path ./ --name modelname --io table.xlsx --fmu_struc python --fmu_type me
 
 Where:
   - --path: is the path where the FMU will be created,

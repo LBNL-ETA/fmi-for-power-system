@@ -1,12 +1,26 @@
 Getting Started
 ===============
+This getting started aims at providing a quick example for compiling FMUs and launching simulations. For simplicity all FMUs are generated from Modelica code. We present two simulation modes Model-Exchange (ME), and Co-Simulation (CS).
+
+In this example we simulate two FMUs:
+  - the generator FMU creates a periodic signal,
+  - the controller FMU output 1 or 0 depending on the generator's signal and a defined threshold.
+
+.. image:: ./_static/gen_con.png
+
 
 Installing the right modules
 ----------------------------
+To get started download and install `JModelica <https://jmodelica.org/>`_. For users on Linux and OS X you can install docker and get the JModelica image in a container using:
+
+.. code-block:: bash
+
+  docker pull michaelwetter/ubuntu-1604_jmodelica_trunk
 
 
 Model-Exchange with PyFMI
 -------------------------
+FMUs are exported as Model-Exchange and therefore do not include a solver. PyFMI (the master) is in charge of solving the problem. The master uses variable time-steps and roll backs to precisely solve this example.
 
 .. code-block:: python
 
@@ -63,6 +77,7 @@ Model-Exchange with PyFMI
 
 Co-Simulation with PyFMI
 ------------------------
+FMUs are exported as Co-Simulation and therefore they come with an embedded solver. The PyFMI master algorithm requests FMU to do steps with a given step size (0.5 seconds here). This is less flexible than the previous master, as it can miss events if time-steps are too large. Although, it provides a convenient way to export models with their solver.
 
 .. code-block:: python
 

@@ -44,11 +44,26 @@
             
   <div class="section" id="getting-started">
 <h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<p>This getting started aims at providing a quick example for compiling FMUs and launching simulations. For simplicity all FMUs are generated from Modelica code. We present two simulation modes Model-Exchange (ME), and Co-Simulation (CS).</p>
+<dl class="docutils">
+<dt>In this example we simulate two FMUs:</dt>
+<dd><ul class="first last simple">
+<li>the generator FMU creates a periodic signal,</li>
+<li>the controller FMU output 1 or 0 depending on the generator’s signal and a defined threshold.</li>
+</ul>
+</dd>
+</dl>
+<img alt="_images/gen_con.png" src="_images/gen_con.png" />
 <div class="section" id="installing-the-right-modules">
 <h2>Installing the right modules<a class="headerlink" href="#installing-the-right-modules" title="Permalink to this headline">¶</a></h2>
+<p>To get started download and install <a class="reference external" href="https://jmodelica.org/">JModelica</a>. For users on Linux and OS X you can install docker and get the JModelica image in a container using:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker pull michaelwetter/ubuntu-1604_jmodelica_trunk
+</pre></div>
+</div>
 </div>
 <div class="section" id="model-exchange-with-pyfmi">
 <h2>Model-Exchange with PyFMI<a class="headerlink" href="#model-exchange-with-pyfmi" title="Permalink to this headline">¶</a></h2>
+<p>FMUs are exported as Model-Exchange and therefore do not include a solver. PyFMI (the master) is in charge of solving the problem. The master uses variable time-steps and roll backs to precisely solve this example.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pymodelica</span> <span class="kn">import</span> <span class="n">compile_fmu</span>
 <span class="kn">from</span> <span class="nn">pyfmi</span> <span class="kn">import</span> <span class="n">load_fmu</span>
 <span class="kn">from</span> <span class="nn">pyfmi.fmi_coupled</span> <span class="kn">import</span> <span class="n">CoupledFMUModelME2</span>
@@ -100,6 +115,7 @@ if (document.getElementById("ad472716-d48c-461c-85ac-952c1aa3b635")) {
 </script><script type="text/javascript">window.addEventListener("resize", function(){if (document.getElementById("ad472716-d48c-461c-85ac-952c1aa3b635")) {Plotly.Plots.resize(document.getElementById("ad472716-d48c-461c-85ac-952c1aa3b635"));};})</script></div></div>
 <div class="section" id="co-simulation-with-pyfmi">
 <h2>Co-Simulation with PyFMI<a class="headerlink" href="#co-simulation-with-pyfmi" title="Permalink to this headline">¶</a></h2>
+<p>FMUs are exported as Co-Simulation and therefore they come with an embedded solver. The PyFMI master algorithm requests FMU to do steps with a given step size (0.5 seconds here). This is less flexible than the previous master, as it can miss events if time-steps are too large. Although, it provides a convenient way to export models with their solver.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pymodelica</span> <span class="kn">import</span> <span class="n">compile_fmu</span>
 <span class="kn">from</span> <span class="nn">pyfmi</span> <span class="kn">import</span> <span class="n">load_fmu</span><span class="p">,</span> <span class="n">Master</span>
 
