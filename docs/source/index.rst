@@ -12,6 +12,12 @@ Welcome to CyDER's documentation!
 
    overview
    getting_started
+   compiling_fmu
+   powersystem_simulation
+   available_fmus
+   examples
+   note_for_developers
+   team
 
 
 
