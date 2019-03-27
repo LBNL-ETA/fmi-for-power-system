@@ -56,8 +56,9 @@ Note2: The table could be replaced by SSP in the future. SSP stands for System S
 
 Customizing a master algorithm
 ------------------------------
+It is also possible to create a customized master to solve a specific problem, although this is not recommended as it might make it hard to expand the model afterward.
 
-
+This example shows a master with a "for" loop implementing a large time-step and a "while" loop with a smaller time-step to converge FMUs at a given time. This is especially interesting for simulating Python FMUs when they are forming an algebraic loop. This is also useful to simulate Co-Simulation and Model-Exchange FMUs together.
 
 .. code-block:: python
 
@@ -195,7 +196,6 @@ Customizing a master algorithm
   # Terminate FMUs
   pv.terminate()
   pandapower.terminate()
-
 
 Notes on alternative options
 ----------------------------
