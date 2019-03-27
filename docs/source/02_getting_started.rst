@@ -8,6 +8,7 @@ In this example we simulate two FMUs:
 
 .. image:: ./_static/gen_con.png
 
+Figure - Getting started example
 
 Installing the right modules
 ----------------------------
@@ -20,7 +21,7 @@ To get started download and install `JModelica <https://jmodelica.org/>`_. For u
 
 Model-Exchange with PyFMI
 -------------------------
-FMUs are exported as Model-Exchange and therefore do not include a solver. PyFMI (the master) is in charge of solving the problem. The master uses variable time-steps and roll backs to precisely solve this example.
+In this example, FMUs are exported as Model-Exchange and therefore do not include a solver. PyFMI (the master) is in charge of solving the problem. The master uses variable time-steps and roll backs to precisely solve this example.
 
 .. code-block:: python
 
@@ -77,7 +78,7 @@ FMUs are exported as Model-Exchange and therefore do not include a solver. PyFMI
 
 Co-Simulation with PyFMI
 ------------------------
-FMUs are exported as Co-Simulation and therefore they come with an embedded solver. The PyFMI master algorithm requests FMU to do steps with a given step size (0.5 seconds here). This is less flexible than the previous master, as it can miss events if time-steps are too large. Although, it provides a convenient way to export models with their solver.
+In this example, FMUs are exported as Co-Simulation and therefore they come with an embedded solver. The PyFMI master algorithm requests FMU to do steps with a given step size (0.5 seconds here). This is less flexible than the previous master, as it can miss events if time-steps are too large. Although, it provides a convenient way to export models with their solver.
 
 .. code-block:: python
 
