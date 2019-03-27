@@ -17,9 +17,11 @@ You can find some Modelica templates under "example/004_getting_started/".
 
 Compiling Python code as FMU
 ----------------------------
-`SimulatorToFMU <https://github.com/LBNL-ETA/SimulatorToFMU>`_ let you embed Python code within FMUs, it ultimately uses a compiler such as JModelica.org to create FMUs. You can find detailed documentation `here <https://github.com/LBNL-ETA/SimulatorToFMU/blob/master/simulatortofmu/userGuide.pdf>`_, but for convenience we detail the main steps to use SimulatorToFMU. In order to compile a new FMU SimulatorToFMU requires a Python file and an XML file describing the structure of the FMU (e.g. inputs/outputs).
+`SimulatorToFMU <https://github.com/LBNL-ETA/SimulatorToFMU>`_ let you embed Python code within FMUs, it ultimately uses a compiler such as JModelica.org to create FMUs. You can find detailed documentation `here <https://github.com/LBNL-ETA/SimulatorToFMU/blob/master/simulatortofmu/userGuide.pdf>`_, but for convenience we detail the main steps to use SimulatorToFMU. You can download SimulatorToFMU from `Github <https://github.com/LBNL-ETA/SimulatorToFMU>`_.
 
-The Python code should include the following function:
+.. image:: ./_static/simulatortofmu.png
+
+In order to compile a new FMU SimulatorToFMU requires a Python file and an XML file describing the structure of the FMU (e.g. inputs/outputs). The Python code should include the following function:
 
 .. code-block:: python
 
@@ -91,7 +93,8 @@ Where:
 Compiling Python code as FMU with CyDER
 ---------------------------------------
 
-In order to ease the compilation of FMUs, the CyDER team developed a small utility function to abstract some of the details presented above. The compilation process takes an Excel or a CSV file describing inputs and outputs (instead of an XML file) as shown in the table below.
+In order to ease the compilation of FMUs, the CyDER team developed a small utility function to abstract some of the details presented above. To use this feature you need to have SimulatorToFMU and the `CyDER package <https://github.com/LBNL-ETA/fmi-for-power-system>`_ installed via "pip install setup.py".
+The FMU compilation process takes an Excel or a CSV file describing inputs and outputs (instead of an XML file) as shown in the table below.
 
 .. image:: ./_static/ios_example.png
 

@@ -10,43 +10,64 @@ The feature is based of a table defining connections between FMUs. The format is
 .. image:: ./_static/connections.png
 
 Where:
-  - fmu_id1: is
+  - fmu_id: unique ID per FMU instance,
+  - fmu_path: path to the FMU file,
+  - fmu_parameters: JSON object to set parameters after loading the FMU,
+  - fmu1_output: Name of the output from the first FMU
+  - fmu2_input: Name of the input from the second FMU
 
 
 In order to launch a simulation the "cyders" command line can be used as follow:
 
-.. code-block:: python
-  @click.option('--start', required=True, type=int)
-  @click.option('--end', required=True, type=int)
-  @click.option('--connections', required=True, type=str)
+.. code-block:: bash
 
-or
+  cyders --start 0 --end 1 --connections table.xlsx
 
-.. code-block:: python
-  @click.option('--start', required=True, type=int)
-  @click.option('--end', required=True, type=int)
-  @click.option('--connections', required=True, type=str)
-  @click.option('--fmu_type', required=False, type=str, default='me')
-  @click.option('--nb_steps', required=False, type=int, default=500)
-  @click.option('--solver', required=False, type=str, default='CVode')
-  @click.option('--rtol', required=False, type=float, default=0.001)
-  @click.option('--atol', required=False, type=float, default=0.001)
-  @click.option('--result', required=False, type=str, default='results.csv')
+
+or for the full list of options:
+
+.. code-block:: bash
+
+  cyders --start 0 ^
+         --end 1 ^
+         --connections table.xlsx ^
+         --fmu_type me ^
+         --nb_steps 50 ^
+         --solver CVode ^
+         --rtol 0.001
+         --atol 0.001
+         --result result.csv
 
 Where:
-  - name: is
+  - start: is the time at start,
+  - end: is the simulation's stop time,
+  - connections: is the table file describing how FMU are connected in the system,
+  - fmu_type: is Model-Exchange or Co-Simulation deciding which master should be used (not implemented),
+  - nb_steps: is the number of steps returned in the result file,
+  - solver: is the name of the solver to pick,
+  - rtol: is the relative tolerance for the solver,
+  - atol: is the absolute tolerance for the solver,
+  - result: is the filename where all the results are saved.
 
 
-Note: The table could be replaced by SSP in the future. SSP stands for System Structure and Parameterization. The standard defines an open format for describing systems of interconnected FMUs and the parameterization of such systems. It can also specify multiple configurations of a given system.
+Note1: FMU compiled with SimulatorToFMU tend to have a bad performance in Model-Exchange mode, see the next section to increase simulation speed.
+
+Note2: The table could be replaced by SSP in the future. SSP stands for System Structure and Parameterization. The standard defines an open format for describing systems of interconnected FMUs and the parameterization of such systems. It can also specify multiple configurations of a given system.
 
 Customizing a master algorithm
 ------------------------------
 
+
+
 .. code-block:: python
+
   # Load both pandapower and pv fmus
   from pyfmi import load_fmu
   pandapower = load_fmu('pandapower/pandapower.fmu', kind='cs', log_level=7)
-  pv = load_fmu('pv_inverter/SCooDER_Components_Controller_Model_Pv_0Inv_0VoltVarWatt_0simple_0Slim_0zerohold_0onlyPv_0firstorder.fmu', kind='cs', log_level=7)
+  pv = load_fmu('pv_inverter/SCooDER_Components_Controller_' +
+                'Model_Pv_0Inv_0VoltVarWatt_0simple_0Slim_' +
+                '0zerohold_0onlyPv_0firstorder.fmu',
+                kind='cs', log_level=7)
 
   print('PANDAPOWER FMU')
   # Retrieve input names and ids
