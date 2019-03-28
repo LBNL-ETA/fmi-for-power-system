@@ -1,0 +1,307 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Power System Simulations &#8212; CyDER 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Available FMUs" href="05_available_fmus.html" />
+    <link rel="prev" title="Compiling FMUs" href="03_compiling_fmu.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="05_available_fmus.html" title="Available FMUs"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="03_compiling_fmu.html" title="Compiling FMUs"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">CyDER 0.0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="power-system-simulations">
+<h1>Power System Simulations<a class="headerlink" href="#power-system-simulations" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="simulating-fmus-with-the-cyder-utility">
+<h2>Simulating FMUs with the CyDER utility<a class="headerlink" href="#simulating-fmus-with-the-cyder-utility" title="Permalink to this headline">¶</a></h2>
+<p>As power-system simulations can involves large systems (distribution grid with thousands of nodes), we provide a utility function to facilitate connecting FMUs and launching simulation without needing to code it in Python with PyFMI.</p>
+<p>The feature is based of a table defining connections between FMUs. The format is described below.</p>
+<img alt="_images/connections.png" src="_images/connections.png" />
+<dl class="docutils">
+<dt>Where:</dt>
+<dd><ul class="first last simple">
+<li>fmu_id: unique ID per FMU instance,</li>
+<li>fmu_path: path to the FMU file,</li>
+<li>fmu_parameters: JSON object to set parameters after loading the FMU,</li>
+<li>fmu1_output: Name of the output from the first FMU</li>
+<li>fmu2_input: Name of the input from the second FMU</li>
+</ul>
+</dd>
+</dl>
+<p>In order to launch a simulation the “cyders” command line can be used as follow:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cyders --start <span class="m">0</span> --end <span class="m">1</span> --connections table.xlsx
+</pre></div>
+</div>
+<p>or for the full list of options:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cyders --start <span class="m">0</span> ^
+       --end <span class="m">1</span> ^
+       --connections table.xlsx ^
+       --fmu_type me ^
+       --nb_steps <span class="m">50</span> ^
+       --solver CVode ^
+       --rtol 0.001
+       --atol 0.001
+       --result result.csv
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>Where:</dt>
+<dd><ul class="first last simple">
+<li>start: is the time at start,</li>
+<li>end: is the simulation’s stop time,</li>
+<li>connections: is the table file describing how FMU are connected in the system,</li>
+<li>fmu_type: is Model-Exchange or Co-Simulation deciding which master should be used (not implemented),</li>
+<li>nb_steps: is the number of steps returned in the result file,</li>
+<li>solver: is the name of the solver to pick,</li>
+<li>rtol: is the relative tolerance for the solver,</li>
+<li>atol: is the absolute tolerance for the solver,</li>
+<li>result: is the filename where all the results are saved.</li>
+</ul>
+</dd>
+</dl>
+<p>Note1: FMU compiled with SimulatorToFMU tend to have a bad performance in Model-Exchange mode, see the next section to increase simulation speed.</p>
+<p>Note2: The table could be replaced by SSP in the future. SSP stands for System Structure and Parameterization. The standard defines an open format for describing systems of interconnected FMUs and the parameterization of such systems. It can also specify multiple configurations of a given system.</p>
+</div>
+<div class="section" id="customizing-a-master-algorithm">
+<h2>Customizing a master algorithm<a class="headerlink" href="#customizing-a-master-algorithm" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load both pandapower and pv fmus</span>
+<span class="kn">from</span> <span class="nn">pyfmi</span> <span class="kn">import</span> <span class="n">load_fmu</span>
+<span class="n">pandapower</span> <span class="o">=</span> <span class="n">load_fmu</span><span class="p">(</span><span class="s1">&#39;pandapower/pandapower.fmu&#39;</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s1">&#39;cs&#39;</span><span class="p">,</span> <span class="n">log_level</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
+<span class="n">pv</span> <span class="o">=</span> <span class="n">load_fmu</span><span class="p">(</span><span class="s1">&#39;pv_inverter/SCooDER_Components_Controller_&#39;</span> <span class="o">+</span>
+              <span class="s1">&#39;Model_Pv_0Inv_0VoltVarWatt_0simple_0Slim_&#39;</span> <span class="o">+</span>
+              <span class="s1">&#39;0zerohold_0onlyPv_0firstorder.fmu&#39;</span><span class="p">,</span>
+              <span class="n">kind</span><span class="o">=</span><span class="s1">&#39;cs&#39;</span><span class="p">,</span> <span class="n">log_level</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;PANDAPOWER FMU&#39;</span><span class="p">)</span>
+<span class="c1"># Retrieve input names and ids</span>
+<span class="n">pandapower_input_name</span> <span class="o">=</span> <span class="n">pandapower</span><span class="o">.</span><span class="n">get_model_variables</span><span class="p">(</span><span class="n">causality</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+<span class="n">pandapower_input_id</span> <span class="o">=</span> <span class="p">[</span><span class="n">pandapower</span><span class="o">.</span><span class="n">get_variable_valueref</span><span class="p">(</span>
+    <span class="n">pandapower_input_name</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">pandapower_input_name</span><span class="p">))]</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;INPUTS = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">pandapower_input_name</span><span class="p">)</span> <span class="o">+</span>
+      <span class="s1">&#39; --&gt; &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">pandapower_input_id</span><span class="p">))</span>
+
+<span class="c1"># Retrieve output names and ids</span>
+<span class="n">pandapower_output_name</span> <span class="o">=</span> <span class="n">pandapower</span><span class="o">.</span><span class="n">get_model_variables</span><span class="p">(</span><span class="n">causality</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+<span class="n">pandapower_output_id</span> <span class="o">=</span> <span class="p">[</span><span class="n">pandapower</span><span class="o">.</span><span class="n">get_variable_valueref</span><span class="p">(</span>
+    <span class="n">pandapower_output_name</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">pandapower_output_name</span><span class="p">))]</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;OUTPUTS = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">pandapower_output_name</span><span class="p">)</span> <span class="o">+</span>
+      <span class="s1">&#39; --&gt; &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">pandapower_output_id</span><span class="p">))</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;PV FMU&#39;</span><span class="p">)</span>
+<span class="c1"># Retrieve input names and ids</span>
+<span class="n">pv_input_name</span> <span class="o">=</span> <span class="n">pv</span><span class="o">.</span><span class="n">get_model_variables</span><span class="p">(</span><span class="n">causality</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+<span class="n">pv_input_id</span> <span class="o">=</span> <span class="p">[</span><span class="n">pv</span><span class="o">.</span><span class="n">get_variable_valueref</span><span class="p">(</span>
+    <span class="n">pv_input_name</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">pv_input_name</span><span class="p">))]</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;INPUTS = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">pv_input_name</span><span class="p">)</span> <span class="o">+</span>
+      <span class="s1">&#39; --&gt; &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">pv_input_id</span><span class="p">))</span>
+
+<span class="c1"># Retrieve output names and ids</span>
+<span class="n">pv_output_name</span> <span class="o">=</span> <span class="n">pv</span><span class="o">.</span><span class="n">get_model_variables</span><span class="p">(</span><span class="n">causality</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+<span class="n">pv_output_id</span> <span class="o">=</span> <span class="p">[</span><span class="n">pv</span><span class="o">.</span><span class="n">get_variable_valueref</span><span class="p">(</span>
+    <span class="n">pv_output_name</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">pv_output_name</span><span class="p">))]</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;OUTPUTS = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">pv_output_name</span><span class="p">)</span> <span class="o">+</span>
+      <span class="s1">&#39; --&gt; &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">pv_output_id</span><span class="p">))</span>
+
+<span class="c1"># Set PV and inverter settings</span>
+<span class="n">pv_inverter_parameters</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;weather_file&#39;</span><span class="p">:(</span><span class="s2">&quot;C:</span><span class="se">\\</span><span class="s2">Users</span><span class="se">\\</span><span class="s2">cyder</span><span class="se">\\</span><span class="s2">Desktop</span><span class="se">\\</span><span class="s2">fmi-for-power-system</span><span class="se">\\</span><span class="s2">&quot;</span> <span class="o">+</span>
+        <span class="s1">&#39;examples</span><span class="se">\\</span><span class="s1">002_cosimulation_custom_master</span><span class="se">\\</span><span class="s1">pv_inverter</span><span class="se">\\</span><span class="s1">&#39;</span> <span class="o">+</span>
+        <span class="s1">&#39;USA_CA_San.Francisco.Intl.AP.724940_TMY3.mos&#39;</span><span class="p">),</span>
+    <span class="s1">&#39;n&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s1">&#39;A&#39;</span><span class="p">:</span> <span class="mi">2000</span><span class="o">/</span><span class="mf">0.158</span><span class="p">,</span>
+    <span class="s1">&#39;eta&#39;</span><span class="p">:</span> <span class="mf">0.158</span><span class="p">,</span>
+    <span class="s1">&#39;lat&#39;</span><span class="p">:</span> <span class="mf">37.9</span><span class="p">,</span>
+    <span class="s1">&#39;til&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="s1">&#39;azi&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="s1">&#39;thrP&#39;</span><span class="p">:</span> <span class="mf">0.05</span><span class="p">,</span>
+    <span class="s1">&#39;hysP&#39;</span><span class="p">:</span> <span class="mf">0.04</span><span class="p">,</span>
+    <span class="s1">&#39;thrQ&#39;</span><span class="p">:</span> <span class="mf">0.04</span><span class="p">,</span>
+    <span class="s1">&#39;hysQ&#39;</span><span class="p">:</span> <span class="mf">0.01</span><span class="p">,</span>
+    <span class="s1">&#39;SMax&#39;</span><span class="p">:</span> <span class="mi">2000</span><span class="o">*</span><span class="mf">1.05</span><span class="p">,</span>
+    <span class="s1">&#39;QMaxInd&#39;</span><span class="p">:</span> <span class="mi">2000</span><span class="o">*</span><span class="mf">1.05</span><span class="o">*</span><span class="mf">0.44</span><span class="p">,</span>
+    <span class="s1">&#39;QMaxCap&#39;</span><span class="p">:</span> <span class="mi">2000</span><span class="o">*</span><span class="mf">1.05</span><span class="o">*</span><span class="mf">0.44</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">pv_inverter_parameters</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">pv</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+
+<span class="c1"># Inititalize both FMUs</span>
+<span class="n">start</span> <span class="o">=</span> <span class="s1">&#39;2016-06-17 00:00:00&#39;</span>
+<span class="n">end</span> <span class="o">=</span> <span class="s1">&#39;2016-06-18 00:00:00&#39;</span>
+<span class="kn">import</span> <span class="nn">datetime</span> <span class="kn">as</span> <span class="nn">dt</span>
+<span class="n">begin</span> <span class="o">=</span> <span class="n">dt</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="s1">&#39;2016-01-01 00:00:00&#39;</span><span class="p">,</span>
+                             <span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1"> %H:%M:%S&#39;</span><span class="p">)</span>
+<span class="n">start</span> <span class="o">=</span> <span class="n">dt</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1"> %H:%M:%S&#39;</span><span class="p">)</span>
+<span class="n">end</span> <span class="o">=</span> <span class="n">dt</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">end</span><span class="p">,</span> <span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1"> %H:%M:%S&#39;</span><span class="p">)</span>
+<span class="n">start_s</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">start</span> <span class="o">-</span> <span class="n">begin</span><span class="p">)</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">())</span>
+<span class="n">end_s</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">end</span> <span class="o">-</span> <span class="n">begin</span><span class="p">)</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">())</span>
+
+<span class="n">pandapower</span><span class="o">.</span><span class="n">setup_experiment</span><span class="p">(</span>
+    <span class="n">start_time</span><span class="o">=</span><span class="n">start_s</span><span class="p">,</span> <span class="n">stop_time</span><span class="o">=</span><span class="n">end_s</span><span class="p">)</span>
+<span class="n">pandapower</span><span class="o">.</span><span class="n">initialize</span><span class="p">()</span>
+<span class="n">pv</span><span class="o">.</span><span class="n">setup_experiment</span><span class="p">(</span>
+    <span class="n">start_time</span><span class="o">=</span><span class="n">start_s</span><span class="p">,</span> <span class="n">stop_time</span><span class="o">=</span><span class="n">end_s</span><span class="p">)</span>
+<span class="n">pv</span><span class="o">.</span><span class="n">initialize</span><span class="p">()</span>
+
+<span class="c1"># Define simulation parameters</span>
+<span class="n">large_step_size</span> <span class="o">=</span> <span class="mi">3600</span>
+<span class="n">small_step_size</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">voltage_tolerance</span> <span class="o">=</span> <span class="mf">0.001</span>
+<span class="n">max_number_iteration</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">v7</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">result</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;time&#39;</span><span class="p">:</span> <span class="p">[],</span> <span class="s1">&#39;p&#39;</span><span class="p">:</span> <span class="p">[],</span> <span class="s1">&#39;q&#39;</span><span class="p">:</span> <span class="p">[],</span> <span class="s1">&#39;v7&#39;</span><span class="p">:</span> <span class="p">[]}</span>
+<span class="n">begin_since_epoch</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">begin</span> <span class="o">-</span> <span class="n">dt</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">utcfromtimestamp</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span>
+
+<span class="n">clock_start</span> <span class="o">=</span> <span class="n">dt</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">time</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">start_s</span><span class="p">,</span> <span class="n">end_s</span><span class="p">,</span> <span class="n">large_step_size</span><span class="p">):</span>
+    <span class="n">converged</span> <span class="o">=</span> <span class="bp">False</span>
+    <span class="n">iteration</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">previous_v7</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="ow">not</span> <span class="n">converged</span><span class="p">:</span>
+        <span class="c1"># Define step size</span>
+        <span class="n">converged</span> <span class="o">=</span> <span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">v7</span> <span class="o">-</span> <span class="n">previous_v7</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">voltage_tolerance</span> <span class="ow">or</span>
+                     <span class="n">iteration</span> <span class="o">&gt;</span> <span class="n">max_number_iteration</span><span class="p">)</span>
+        <span class="n">previous_v7</span> <span class="o">=</span> <span class="n">v7</span>
+        <span class="k">if</span> <span class="n">converged</span><span class="p">:</span>
+            <span class="n">step</span> <span class="o">=</span> <span class="n">large_step_size</span> <span class="o">-</span> <span class="n">iteration</span> <span class="o">*</span> <span class="n">small_step_size</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">converged</span><span class="p">:</span>
+            <span class="n">step</span> <span class="o">=</span> <span class="n">small_step_size</span>
+
+        <span class="c1"># Set PV input inputs and do step</span>
+        <span class="n">pv</span><span class="o">.</span><span class="n">set_real</span><span class="p">(</span><span class="n">pv_input_id</span><span class="p">,</span> <span class="p">[</span><span class="n">v7</span><span class="p">])</span>
+        <span class="n">pv</span><span class="o">.</span><span class="n">do_step</span><span class="p">(</span><span class="n">current_t</span><span class="o">=</span><span class="n">time</span><span class="p">,</span> <span class="n">step_size</span><span class="o">=</span><span class="n">step</span><span class="p">)</span>
+        <span class="n">q</span><span class="p">,</span> <span class="n">p</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">pv</span><span class="o">.</span><span class="n">get_real</span><span class="p">(</span><span class="n">pv_output_id</span><span class="p">))</span>
+
+        <span class="c1"># Set PandaPower inputs and do step</span>
+        <span class="n">pandapower</span><span class="o">.</span><span class="n">set_real</span><span class="p">(</span><span class="n">pandapower_input_id</span><span class="p">,</span> <span class="p">[</span><span class="n">q</span><span class="p">,</span> <span class="n">p</span><span class="p">])</span>
+        <span class="n">pandapower</span><span class="o">.</span><span class="n">do_step</span><span class="p">(</span><span class="n">current_t</span><span class="o">=</span><span class="n">time</span><span class="p">,</span> <span class="n">step_size</span><span class="o">=</span><span class="n">step</span><span class="p">)</span>
+        <span class="n">v12</span><span class="p">,</span> <span class="n">v7</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">pandapower</span><span class="o">.</span><span class="n">get_real</span><span class="p">(</span><span class="n">pandapower_output_id</span><span class="p">))</span>
+
+        <span class="c1"># Save results</span>
+        <span class="k">if</span> <span class="n">iteration</span> <span class="ow">is</span> <span class="ow">not</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">result</span><span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                <span class="n">dt</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">utcfromtimestamp</span><span class="p">(</span><span class="n">begin_since_epoch</span> <span class="o">+</span> <span class="n">time</span><span class="p">))</span>
+            <span class="n">result</span><span class="p">[</span><span class="s1">&#39;p&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+            <span class="n">result</span><span class="p">[</span><span class="s1">&#39;q&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
+            <span class="n">result</span><span class="p">[</span><span class="s1">&#39;v7&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">v7</span><span class="p">)</span>
+
+        <span class="c1"># Increase time and iteration count</span>
+        <span class="n">iteration</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="n">time</span> <span class="o">+=</span> <span class="n">step</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Converged in &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">iteration</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39; iterations&#39;</span><span class="p">)</span>
+
+<span class="n">clock_end</span> <span class="o">=</span> <span class="n">dt</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Duration = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">((</span><span class="n">clock_end</span> <span class="o">-</span> <span class="n">clock_start</span><span class="p">)</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span> <span class="o">/</span> <span class="mi">60</span><span class="p">))</span>
+
+<span class="c1"># Terminate FMUs</span>
+<span class="n">pv</span><span class="o">.</span><span class="n">terminate</span><span class="p">()</span>
+<span class="n">pandapower</span><span class="o">.</span><span class="n">terminate</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="notes-on-alternative-options">
+<h2>Notes on alternative options<a class="headerlink" href="#notes-on-alternative-options" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://github.com/CATIA-Systems/FMPy/tree/master/fmpy">https://github.com/CATIA-Systems/FMPy/tree/master/fmpy</a></p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Power System Simulations</a><ul>
+<li><a class="reference internal" href="#simulating-fmus-with-the-cyder-utility">Simulating FMUs with the CyDER utility</a></li>
+<li><a class="reference internal" href="#customizing-a-master-algorithm">Customizing a master algorithm</a></li>
+<li><a class="reference internal" href="#notes-on-alternative-options">Notes on alternative options</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="03_compiling_fmu.html"
+                        title="previous chapter">Compiling FMUs</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="05_available_fmus.html"
+                        title="next chapter">Available FMUs</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/04_powersystem_simulation.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="05_available_fmus.html" title="Available FMUs"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="03_compiling_fmu.html" title="Compiling FMUs"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">CyDER 0.0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Lawrence Berkeley National Laboratory.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.4.
+    </div>
+  </body>
+</html>
