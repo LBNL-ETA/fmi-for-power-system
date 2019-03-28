@@ -26,6 +26,7 @@ Building a "server" architecture FMU requires the following files:
 The next section provides a basic template for each of those files.
 
 *run_server.py*
+
 .. code-block:: python
 
   from __future__ import print_function
@@ -119,11 +120,13 @@ The next section provides a basic template for each of those files.
       app.run(port=port, debug=True, use_reloader=False)
 
 *start_server.bat*
+
 .. code-block:: bash
 
   python %1/run_server.py
 
 *model_description.xml*
+
 .. code-block:: xml
 
   <?xml version="1.0" encoding="UTF-8"?>
@@ -158,6 +161,7 @@ The next section provides a basic template for each of those files.
   </SimulatorModelDescription>
 
 *Command line to compile the FMU*
+
 .. code-block:: bash
 
   python SimulatorToFMU.py -i model_description.xml ^
