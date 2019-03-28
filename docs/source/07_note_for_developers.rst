@@ -18,13 +18,14 @@ The server that communicate with the FMU should implement at least two end point
 
 .. image:: ./_static/serverfmu2.png
 
-Building a "server" architecture FMU is similar to embedding a Python function, the process requires:
+Building a "server" architecture FMU requires the following files:
   - a run_server.py file
   - a start_server.bat file
   - a model_description.xml
 
 The next section provides a basic template for each of those files.
 
+*run_server.py*
 .. code-block:: python
 
   from __future__ import print_function
@@ -117,12 +118,12 @@ The next section provides a basic template for each of those files.
       # Start the server
       app.run(port=port, debug=True, use_reloader=False)
 
-
+*start_server.bat*
 .. code-block:: bash
 
   python %1/run_server.py
 
-
+*model_description.xml*
 .. code-block:: xml
 
   <?xml version="1.0" encoding="UTF-8"?>
@@ -156,6 +157,7 @@ The next section provides a basic template for each of those files.
     </ModelVariables>
   </SimulatorModelDescription>
 
+*Command line to compile the FMU*
 .. code-block:: bash
 
   python SimulatorToFMU.py -i model_description.xml ^
