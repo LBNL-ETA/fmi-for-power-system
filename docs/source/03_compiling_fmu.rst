@@ -1,6 +1,6 @@
 Compiling FMUs
 ==============
-This section mostly focus on compiling FMUs with some embedded Python code. Note that it is also possible to obtain FMUs from Modelica code, Simulink blocks, and a variety of tools listed on the `FMI standard website <https://fmi-standard.org/tools/>`_.
+This section mostly focus on compiling FMUs with embedded Python code. Note that it is also possible to obtain FMUs from Modelica code, Simulink blocks, and a variety of tools listed on the `FMI standard website <https://fmi-standard.org/tools/>`_.
 
 Compiling Modelica code as FMU
 ------------------------------
