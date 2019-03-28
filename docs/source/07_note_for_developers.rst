@@ -165,6 +165,6 @@ The next section provides a basic template for each of those files.
                            -a me
 
 
-Notes of SimulatorToFMU
+Notes on SimulatorToFMU
 -----------------------
 SimulatorToFMU change the type of object sent to the Python exchange function based on the number of inputs. It provides a list for multiple inputs and a scalar variable for a single input. This is a common pit fall which needs to be fix in SimulatorToFMU.

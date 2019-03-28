@@ -7,7 +7,7 @@ The CYME FMU can be downloaded from `here <https://github.com/LBNL-ETA/fmi-for-p
 
 An example of model description is provided below. A few things are required for the CYME FMU to operate properly:
   - a parameter called _configurationFileName pointing to a JSON configuration file (including the feeder filename).
-  - inputs and outputs should have the following format {NETWORK ID}!{NODE/LOAD ID}!{KEYWORD}, where KEYWORD can be KW, KVAR, or Vpu.
+  - inputs and outputs should have the following format {network ID}!{node/load ID}!{keyword}, where keyword can be KW, KVAR, or Vpu.
 
 .. code-block:: xml
 
@@ -23,7 +23,7 @@ An example of model description is provided below. A few things are required for
       name="_configurationFileName"
       description="parameter"
       causality="parameter"
-      start="C:\\Users\\DRRC\\Desktop\\fmi-for-power-system\\tests\\005_multiplier_with_cyme\\cyme\\jonathan.json2"
+      start="C:\\Users\\jonathan.json2"
       type="String">
     </ScalarVariable>
     <ScalarVariable
@@ -65,6 +65,8 @@ The PandaPower FMU can be downloaded `here <https://github.com/LBNL-ETA/fmi-for-
 
 An example of model description is provided below. Note that this FMU does not require any configuration file since the feeder model is set within the FMU.
 
+The format for inputs and outputs is defined as {keyword}_{node id} where keyword can be KW, KVAR, and Vpu.
+
 .. code-block:: xml
 
   <?xml version='1.0' encoding='UTF-8'?>
@@ -86,15 +88,15 @@ An example of model description is provided below. Note that this FMU does not r
   </SimulatorModelDescription>
 
 
-Template Python FMU
+Python FMU Template
 -------------------
 A simple template for creating Python FMU can be found `here <https://github.com/LBNL-ETA/fmi-for-power-system/tree/master/fmus/simple_func>`_.
 
 Note: If the name of the FMU is set to "NAME" in the XML file then the Python file with the "exchange" function should be named "NAME_wrapper.py"
 
-Note: The FMU needs to be recompiled anytime it is moved to a different folder or any inputs/outputs names are changed.
+Note: The FMU needs to be recompiled anytime it is moved to a different folder or if any inputs/outputs names changed.
 
 
-Template Server FMU
+Server FMU Template
 -------------------
 A simple template for creating Server FMU can be found `here <https://github.com/LBNL-ETA/fmi-for-power-system/tree/master/tests/007_server_algebraic_loop/bbq>`_.
