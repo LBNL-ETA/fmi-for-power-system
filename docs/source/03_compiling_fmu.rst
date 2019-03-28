@@ -45,15 +45,31 @@ The format of the XML file is as follow:
 .. code-block:: xml
 
   <?xml version='1.0' encoding='UTF-8'?>
-  <SimulatorModelDescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             fmiVersion="2.0"
-                             modelName="simple"
-                             description="simple"
-                             generationTool="SimulatorToFMU">
+  <SimulatorModelDescription
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    fmiVersion="2.0"
+    modelName="simple"
+    description="simple"
+    generationTool="SimulatorToFMU">
     <ModelVariables>
-      <ScalarVariable name="a" description="input 1" causality="input" type="Real" unit="m"/>
-      <ScalarVariable name="b" description="input 2" causality="input" type="Real" unit="m"/>
-      <ScalarVariable name="r" description="result" causality="output" type="Real" unit="m"/>
+      <ScalarVariable
+        name="a"
+        description="input 1"
+        causality="input"
+        type="Real"
+        unit="m"/>
+      <ScalarVariable
+        name="b"
+        description="input 2"
+        causality="input"
+        type="Real"
+        unit="m"/>
+      <ScalarVariable
+        name="r"
+        description="result"
+        causality="output"
+        type="Real"
+        unit="m"/>
     </ModelVariables>
   </SimulatorModelDescription>
 
