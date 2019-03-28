@@ -9,6 +9,6 @@ The complexity of distribution grids is drastically increasing as a result of in
 
 The co-simulation of independent simulators on a common platform enable specialized software and third-party tools to be leveraged to study complex interdependencies between systems while preserving simplicity, transparency, flexibility, and scalability of the simulation environment.
 
-The goal of the CyDER platform is to use a well-defined open industry standard (the FMI standard) to couple power system tools in different time domains and voltage levels, such as distribution and transmission system simulations, and real-time simulations, with tools that are not developed within the traditional scope of power systems (e.g. buildings, electric vehicles).
+The goal of the CyDER platform is to use a well-defined open industry standard (the FMI standard) to couple power system tools in different time domains and voltage levels, such as distribution and transmission system simulations, and real-time simulations, with tools that are not developed within the traditional scope of power systems (e.g. buildings and electric vehicles simulators).
 
 CyDER leverages the FMI standard to seamlessly integrate different software modules by using a standardized API with a well-defined semantics.
