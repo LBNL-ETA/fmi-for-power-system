@@ -11,11 +11,6 @@ def exchange(configuration_filename, time, input_names,
     if memory is None:
         memory = pn.case33bw()
         memory['ext_grid'].loc[0, 'vm_pu'] = 1.05
-        header = ('sim_time,clock,' +
-                  ','.join(input_names) + ',' +
-                  ','.join(output_names) + '\n')
-        with open("debug.csv", "w") as f:
-            f.write(header)
 
     # Process inputs
     inputs = {}
@@ -56,12 +51,6 @@ def exchange(configuration_filename, time, input_names,
                 memory['res_bus'].loc[bus_index, 'vm_pu'])
 
     # [Optional debug]
-    with open("debug.csv", "a") as f:
-        row = (str(time) + ',' +
-               str(dt.datetime.now()) + ',' +
-               ','.join(map(str, input_values)) + ',' +
-               ','.join(map(str, outputs)) + '\n')
-        f.write(row)
     begin_simulation_time = dt.datetime.strptime(
         '2016-01-01 00:00:00', '%Y-%m-%d %H:%M:%S')
     begin_since_epoch = (

@@ -1,37 +1,37 @@
-03/20/2019 10:58:32 AM FMI version not specified. Version 2.0 will be used.
-03/20/2019 10:58:32 AM No configuration file was provided. JModelica does not allow to set the path to a configuration file at runtime. Hence if the exported simulation program/script needs a configuration file to run, then the path to the configuration file must be provided when creating the FMU. Otherwise the FMU will fail to run.
-03/20/2019 10:58:32 AM Print Modelica model
-03/20/2019 10:58:32 AM ./model_description.xml is a valid XML document.
-03/20/2019 10:58:32 AM Invalid characters will be removed from the model name=pandapower.
-03/20/2019 10:58:32 AM The new model name is pandapower.
-03/20/2019 10:58:32 AM Declare the Python module name as pandapower_wrapper.
-03/20/2019 10:58:32 AM Invalid characters will be removed from the variable name KW_7.
-03/20/2019 10:58:32 AM The new variable name is KW_7.
-03/20/2019 10:58:32 AM Invalid characters will be removed from the variable name KVAR_7.
-03/20/2019 10:58:32 AM The new variable name is KVAR_7.
-03/20/2019 10:58:32 AM Invalid characters will be removed from the variable name Vpu_7.
-03/20/2019 10:58:32 AM The new variable name is Vpu_7.
-03/20/2019 10:58:32 AM Invalid characters will be removed from the variable name Vpu_12.
-03/20/2019 10:58:32 AM The new variable name is Vpu_12.
-03/20/2019 10:58:32 AM Check for duplicates in input, output and parameter variable names.
-03/20/2019 10:58:32 AM Parsing of ./model_description.xml was successfull.
-03/20/2019 10:58:32 AM The output file pandapower.mo exists and will be overwritten.
-03/20/2019 10:58:32 AM The Modelica model pandapower.mo of pandapower is successfully created.
-03/20/2019 10:58:32 AM The Modelica model pandapower.mo of pandapower is in C:\Users\cyder\Desktop\fmi-for-power-system\examples\002_cosimulation_custom_master\pandapower.
-03/20/2019 10:58:32 AM Generate FMU
-03/20/2019 10:58:38 AM The FMU pandapower.fmu is successfully created.
-03/20/2019 10:58:38 AM The FMU pandapower.fmu is in C:\Users\cyder\Desktop\fmi-for-power-system\examples\002_cosimulation_custom_master\pandapower.
-03/20/2019 10:58:38 AM Create scripts folder
-03/20/2019 10:58:38 AM Create the folder Simulator.scripts with scripts to be added to the PYTHONPATH.
-03/20/2019 10:58:38 AM Create binaries folder
-03/20/2019 10:58:38 AM Create the folder Simulator.binaries with binaries to be added to the system PATH.
-03/20/2019 10:58:38 AM C:\Users\cyder\Desktop\SimulatorToFMU\simulatortofmu\parser\libraries\modelica\SimulatorToFMU\Resources\Library\win32\SimulatorToFMUPython27.dll will be copied to the binaries folder pandapower.binaries\win32.
-03/20/2019 10:58:38 AM C:\Users\cyder\Desktop\SimulatorToFMU\simulatortofmu\parser\libraries\modelica\SimulatorToFMU\Resources\Library\win32\python27.dll will be copied to the binaries folder pandapower.binaries\win32.
-03/20/2019 10:58:38 AM C:\Users\cyder\Desktop\SimulatorToFMU\simulatortofmu\parser\libraries\modelica\SimulatorToFMU\Resources\Library\win64\SimulatorToFMUPython27.dll will be copied to the binaries folder pandapower.binaries\win64.
-03/20/2019 10:58:38 AM C:\Users\cyder\Desktop\SimulatorToFMU\simulatortofmu\parser\libraries\modelica\SimulatorToFMU\Resources\Library\win64\python27.dll will be copied to the binaries folder pandapower.binaries\win64.
-03/20/2019 10:58:39 AM Clean temporary files
-03/20/2019 10:58:39 AM Rewrite FMU
-03/20/2019 10:58:39 AM The model description file will be rewritten to include the attribute needsExecutionTool set to true.
-03/20/2019 10:58:40 AM The FMU pandapower.fmu is successfully re-created.
-03/20/2019 10:58:40 AM The FMU pandapower.fmu is in C:\Users\cyder\Desktop\fmi-for-power-system\examples\002_cosimulation_custom_master\pandapower.
-03/20/2019 10:58:40 AM Export Simulator as an FMU in 7.272 seconds.
+03/20/2019 06:20:17 PM FMI version not specified. Version 2.0 will be used.
+03/20/2019 06:20:17 PM No configuration file was provided. JModelica does not allow to set the path to a configuration file at runtime. Hence if the exported simulation program/script needs a configuration file to run, then the path to the configuration file must be provided when creating the FMU. Otherwise the FMU will fail to run.
+03/20/2019 06:20:17 PM Print Modelica model
+03/20/2019 06:20:17 PM ./model_description.xml is a valid XML document.
+03/20/2019 06:20:17 PM Invalid characters will be removed from the model name=pandapower.
+03/20/2019 06:20:17 PM The new model name is pandapower.
+03/20/2019 06:20:17 PM Declare the Python module name as pandapower_wrapper.
+03/20/2019 06:20:17 PM Invalid characters will be removed from the variable name KW_7.
+03/20/2019 06:20:17 PM The new variable name is KW_7.
+03/20/2019 06:20:17 PM Invalid characters will be removed from the variable name KVAR_7.
+03/20/2019 06:20:17 PM The new variable name is KVAR_7.
+03/20/2019 06:20:17 PM Invalid characters will be removed from the variable name Vpu_7.
+03/20/2019 06:20:17 PM The new variable name is Vpu_7.
+03/20/2019 06:20:17 PM Invalid characters will be removed from the variable name Vpu_12.
+03/20/2019 06:20:17 PM The new variable name is Vpu_12.
+03/20/2019 06:20:17 PM Check for duplicates in input, output and parameter variable names.
+03/20/2019 06:20:17 PM Parsing of ./model_description.xml was successfull.
+03/20/2019 06:20:17 PM The output file pandapower.mo exists and will be overwritten.
+03/20/2019 06:20:17 PM The Modelica model pandapower.mo of pandapower is successfully created.
+03/20/2019 06:20:17 PM The Modelica model pandapower.mo of pandapower is in C:\Users\cyder\Desktop\fmi-for-power-system\examples\002_cosimulation_custom_master\pandapower.
+03/20/2019 06:20:17 PM Generate FMU
+03/20/2019 06:20:25 PM The FMU pandapower.fmu is successfully created.
+03/20/2019 06:20:25 PM The FMU pandapower.fmu is in C:\Users\cyder\Desktop\fmi-for-power-system\examples\002_cosimulation_custom_master\pandapower.
+03/20/2019 06:20:25 PM Create scripts folder
+03/20/2019 06:20:25 PM Create the folder Simulator.scripts with scripts to be added to the PYTHONPATH.
+03/20/2019 06:20:25 PM Create binaries folder
+03/20/2019 06:20:25 PM Create the folder Simulator.binaries with binaries to be added to the system PATH.
+03/20/2019 06:20:25 PM C:\Users\cyder\Desktop\SimulatorToFMU\simulatortofmu\parser\libraries\modelica\SimulatorToFMU\Resources\Library\win32\SimulatorToFMUPython27.dll will be copied to the binaries folder pandapower.binaries\win32.
+03/20/2019 06:20:25 PM C:\Users\cyder\Desktop\SimulatorToFMU\simulatortofmu\parser\libraries\modelica\SimulatorToFMU\Resources\Library\win32\python27.dll will be copied to the binaries folder pandapower.binaries\win32.
+03/20/2019 06:20:25 PM C:\Users\cyder\Desktop\SimulatorToFMU\simulatortofmu\parser\libraries\modelica\SimulatorToFMU\Resources\Library\win64\SimulatorToFMUPython27.dll will be copied to the binaries folder pandapower.binaries\win64.
+03/20/2019 06:20:25 PM C:\Users\cyder\Desktop\SimulatorToFMU\simulatortofmu\parser\libraries\modelica\SimulatorToFMU\Resources\Library\win64\python27.dll will be copied to the binaries folder pandapower.binaries\win64.
+03/20/2019 06:20:25 PM Clean temporary files
+03/20/2019 06:20:25 PM Rewrite FMU
+03/20/2019 06:20:26 PM The model description file will be rewritten to include the attribute needsExecutionTool set to true.
+03/20/2019 06:20:26 PM The FMU pandapower.fmu is successfully re-created.
+03/20/2019 06:20:26 PM The FMU pandapower.fmu is in C:\Users\cyder\Desktop\fmi-for-power-system\examples\002_cosimulation_custom_master\pandapower.
+03/20/2019 06:20:26 PM Export Simulator as an FMU in 8.967 seconds.
