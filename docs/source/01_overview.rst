@@ -5,7 +5,7 @@ CyDER is a modular and scalable tool for power system planning and operation tha
 
 .. image:: ./_static/cyder.png
 
-The complexity of distribution grids is drastically increasing as a result of integrating larger shares of distributed generation and storage devices, uncertainties in renewable power generation, and advanced electronics-based controllers. This necessitate new simulation tools to bridge the gap between distribution grids, buildings, electric vehicles, transmission lines, etc...
+The complexity of distribution grids is drastically increasing as a result of integrating larger shares of distributed generation and storage devices, uncertainties in renewable power generation, and advanced electronics-based controllers. This necessitate new simulation tools to bridge the gap between distribution grids, buildings, electric vehicles, transmission lines.
 
 The co-simulation of independent simulators on a common platform enable specialized software and third-party tools to be leveraged to study complex interdependencies between systems while preserving simplicity, transparency, flexibility, and scalability of the simulation environment.
 
