@@ -69,6 +69,7 @@ def compile(path, name, io, fmu_type='me', fmu_struc='python',
                " -i " + path + 'model_description.xml' +
                " -s " + path + 'start_server.bat' +
                # " -c " + path + 'conf.json2' +
+               " -x " + fmu_struc +
                " -t jmodelica" +
                " -pt C:/JModelica.org-2.1" +
                " -a " + fmu_type)        
