@@ -19,14 +19,19 @@ from pyfmi.fmi_coupled import CoupledFMUModelME2
               default=(
               'C:/Users/DRRC/Desktop/desktops/February/SimulatorToFMU' +
               '/simulatortofmu/parser/SimulatorToFMU.py'))
-def compile_cmd(path, name, io, fmu_type, fmu_struc, path_to_simulatortofmu):
-    compile(path, name, io, fmu_type, fmu_struc, path_to_simulatortofmu)
+@click.option('--path_to_jmodelica', required=False, type=str,
+              default=(
+              'C:/JModelica.org-2.4'))
+
+def compile_cmd(path, name, io, fmu_type, fmu_struc, path_to_simulatortofmu, path_to_jmodelica):
+    compile(path, name, io, fmu_type, fmu_struc, path_to_simulatortofmu, path_to_jmodelica)
 
 # Compile FMU
 def compile(path, name, io, fmu_type='me', fmu_struc='python',
             path_to_simulatortofmu=(
             'C:/Users/DRRC/Desktop/desktops/February/SimulatorToFMU' +
-            '/simulatortofmu/parser/SimulatorToFMU.py')):
+            '/simulatortofmu/parser/SimulatorToFMU.py'),
+            path_to_jmodelica=('C:/JModelica.org-2.4')):
     """
     1) Create an XML model description from Excel file
     2) Compile the FMU using SimulatorToFMU
@@ -62,7 +67,7 @@ def compile(path, name, io, fmu_type='me', fmu_struc='python',
                " -s " + path + name + "_wrapper.py" +
                " -x " + fmu_struc +
                " -t jmodelica" +
-               " -pt C:/JModelica.org-2.1" +
+               " -pt " + path_to_jmodelica +
                " -a " + fmu_type)
     else:
         cmd = ("python " + path_to_simulatortofmu +
@@ -71,7 +76,7 @@ def compile(path, name, io, fmu_type='me', fmu_struc='python',
                # " -c " + path + 'conf.json2' +
                " -x " + fmu_struc +
                " -t jmodelica" +
-               " -pt C:/JModelica.org-2.1" +
+               " -pt " + path_to_jmodelica +
                " -a " + fmu_type)        
     args = shlex.split(cmd)
     process = subprocess.Popen(args)
