@@ -15,22 +15,17 @@ from pyfmi.fmi_coupled import CoupledFMUModelME2
 @click.option('--io', required=True, type=str)
 @click.option('--fmu_type', required=False, type=str, default='me')
 @click.option('--fmu_struc', required=False, type=str, default='python')
-@click.option('--path_to_simulatortofmu', required=False, type=str,
-              default=(
-              'C:/Users/DRRC/Desktop/desktops/February/SimulatorToFMU' +
-              '/simulatortofmu/parser/SimulatorToFMU.py'))
+@click.option('--path_to_simulatortofmu', required=True, type=str)
 @click.option('--path_to_jmodelica', required=False, type=str,
               default=(
               'C:/JModelica.org-2.4'))
 
-def compile_cmd(path, name, io, fmu_type, fmu_struc, path_to_simulatortofmu, path_to_jmodelica):
-    compile(path, name, io, fmu_type, fmu_struc, path_to_simulatortofmu, path_to_jmodelica)
+def compile_cmd(path, name, io, path_to_simulatortofmu, fmu_type, fmu_struc, path_to_jmodelica):
+    compile(path, name, io, path_to_simulatortofmu, fmu_type, fmu_struc, path_to_jmodelica)
 
 # Compile FMU
-def compile(path, name, io, fmu_type='me', fmu_struc='python',
-            path_to_simulatortofmu=(
-            'C:/Users/DRRC/Desktop/desktops/February/SimulatorToFMU' +
-            '/simulatortofmu/parser/SimulatorToFMU.py'),
+def compile(path, name, io, path_to_simulatortofmu,
+            fmu_type='me', fmu_struc='python',
             path_to_jmodelica=('C:/JModelica.org-2.4')):
     """
     1) Create an XML model description from Excel file
