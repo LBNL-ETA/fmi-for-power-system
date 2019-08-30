@@ -1,0 +1,238 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Compiling FMUs &#8212; CyDER 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Power System Simulations" href="04_powersystem_simulation.html" />
+    <link rel="prev" title="Getting Started" href="02_getting_started.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="04_powersystem_simulation.html" title="Power System Simulations"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="02_getting_started.html" title="Getting Started"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">CyDER 0.0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="compiling-fmus">
+<h1>Compiling FMUs<a class="headerlink" href="#compiling-fmus" title="Permalink to this headline">¶</a></h1>
+<p>This section mostly focus on compiling FMUs with embedded Python code. Note that it is also possible to obtain FMUs from Modelica code, Simulink blocks, and a variety of tools listed on the <a class="reference external" href="https://fmi-standard.org/tools/">FMI standard website</a>.</p>
+<div class="section" id="compiling-modelica-code-as-fmu">
+<h2>Compiling Modelica code as FMU<a class="headerlink" href="#compiling-modelica-code-as-fmu" title="Permalink to this headline">¶</a></h2>
+<p>This is possible with PyModelica which is based on the JModelica.org compiler.
+You can find some Modelica templates under “example/004_getting_started/”.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pymodelica</span> <span class="kn">import</span> <span class="n">compile_fmu</span>
+<span class="n">compile_fmu</span><span class="p">(</span><span class="s1">&#39;HELICS_CyDER.Generator&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;HELICS_CyDER.mo&#39;</span><span class="p">,</span>
+            <span class="n">version</span><span class="o">=</span><span class="s1">&#39;2.0&#39;</span><span class="p">,</span>
+            <span class="n">target</span><span class="o">=</span><span class="s1">&#39;me&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="compiling-python-code-as-fmu">
+<h2>Compiling Python code as FMU<a class="headerlink" href="#compiling-python-code-as-fmu" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://github.com/LBNL-ETA/SimulatorToFMU">SimulatorToFMU</a> let you embed Python code within FMUs, it ultimately uses a compiler such as JModelica.org to create FMUs. You can find detailed documentation <a class="reference external" href="https://github.com/LBNL-ETA/SimulatorToFMU/blob/master/simulatortofmu/userGuide.pdf">here</a>, but for convenience we detail the main steps to use SimulatorToFMU. You can download SimulatorToFMU from <a class="reference external" href="https://github.com/LBNL-ETA/SimulatorToFMU">Github</a>.</p>
+<img alt="_images/simulatortofmu.png" src="_images/simulatortofmu.png" />
+<p>In order to compile a new FMU SimulatorToFMU requires a Python file and an XML file describing the structure of the FMU (e.g. inputs/outputs). The Python code should include the following function:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">exchange</span><span class="p">(</span><span class="n">configuration_filename</span><span class="p">,</span> <span class="n">time</span><span class="p">,</span> <span class="n">input_names</span><span class="p">,</span>
+             <span class="n">input_values</span><span class="p">,</span> <span class="n">output_names</span><span class="p">,</span> <span class="n">save_to_file</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span>
+             <span class="n">memory</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">output_names</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">result</span><span class="p">,</span> <span class="n">memory</span><span class="p">]</span>
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>Where:</dt>
+<dd><ul class="first last simple">
+<li>time: Time of the simulation [Float],</li>
+<li>input_names: List of input names [String],</li>
+<li>input_values: List of input values [Float],</li>
+<li>output_names: List of output names [String],</li>
+<li>save_to_file: True or False can be used to trigger the FMU to save data [Boolean],</li>
+<li>memory: None at first, can be returned to save states between function calls,</li>
+<li>configuration_filename: Can be set to a string in the XML description to pass a configuration filename.</li>
+</ul>
+</dd>
+</dl>
+<p>The format of the XML file is as follow:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&#39;1.0&#39; encoding=&#39;UTF-8&#39;?&gt;</span>
+<span class="nt">&lt;SimulatorModelDescription</span>
+  <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+  <span class="na">fmiVersion=</span><span class="s">&quot;2.0&quot;</span>
+  <span class="na">modelName=</span><span class="s">&quot;simple&quot;</span>
+  <span class="na">description=</span><span class="s">&quot;simple&quot;</span>
+  <span class="na">generationTool=</span><span class="s">&quot;SimulatorToFMU&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ModelVariables&gt;</span>
+    <span class="nt">&lt;ScalarVariable</span>
+      <span class="na">name=</span><span class="s">&quot;a&quot;</span>
+      <span class="na">description=</span><span class="s">&quot;input 1&quot;</span>
+      <span class="na">causality=</span><span class="s">&quot;input&quot;</span>
+      <span class="na">type=</span><span class="s">&quot;Real&quot;</span>
+      <span class="na">unit=</span><span class="s">&quot;m&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;ScalarVariable</span>
+      <span class="na">name=</span><span class="s">&quot;b&quot;</span>
+      <span class="na">description=</span><span class="s">&quot;input 2&quot;</span>
+      <span class="na">causality=</span><span class="s">&quot;input&quot;</span>
+      <span class="na">type=</span><span class="s">&quot;Real&quot;</span>
+      <span class="na">unit=</span><span class="s">&quot;m&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;ScalarVariable</span>
+      <span class="na">name=</span><span class="s">&quot;r&quot;</span>
+      <span class="na">description=</span><span class="s">&quot;result&quot;</span>
+      <span class="na">causality=</span><span class="s">&quot;output&quot;</span>
+      <span class="na">type=</span><span class="s">&quot;Real&quot;</span>
+      <span class="na">unit=</span><span class="s">&quot;m&quot;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/ModelVariables&gt;</span>
+<span class="nt">&lt;/SimulatorModelDescription&gt;</span>
+</pre></div>
+</div>
+<p>Note that you can also add a parameter in the XML format which will be passed to the Python function under “configuration_filename”.</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;ScalarVariable</span>
+  <span class="na">name=</span><span class="s">&quot;_configurationFileName&quot;</span>
+  <span class="na">description=</span><span class="s">&quot;parameter&quot;</span>
+  <span class="na">causality=</span><span class="s">&quot;parameter&quot;</span>
+  <span class="na">start=</span><span class="s">&quot;PATH TO SOME FILE&quot;</span>
+  <span class="na">type=</span><span class="s">&quot;String&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/ScalarVariable&gt;</span>
+</pre></div>
+</div>
+<p>In order to launch SimulatorToFMU you can use the following command line.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python PATH/SimulatorToFMU.py ^
+  -i model_description.xml ^
+  -s ./model_wrapper.py ^
+  -x python ^
+  -t jmodelica ^
+  -pt C:/JModelica.org-2.4 ^
+  -a me
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>Where:</dt>
+<dd><ul class="first last simple">
+<li>-i: is the path to the XML description,</li>
+<li>-s: is the path to the python function (such that the file is called MODELNAME_wrapper.py),</li>
+<li>-x: is the structure of the FMU (python or server), more on that later,</li>
+<li>-t: is the targeted compiler (Dymola, JModelica, OpenModelica),</li>
+<li>-pt: is the path to the compiler,</li>
+<li>-a: is the type of FMU (Model-Exchange “me” or Co-Simulation “cs”)</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="compiling-python-code-as-fmu-with-cyder">
+<h2>Compiling Python code as FMU with CyDER<a class="headerlink" href="#compiling-python-code-as-fmu-with-cyder" title="Permalink to this headline">¶</a></h2>
+<p>In order to ease the compilation of FMUs, the CyDER team developed a small utility function to abstract some of the details presented above. To use this feature you need to have SimulatorToFMU and the <a class="reference external" href="https://github.com/LBNL-ETA/fmi-for-power-system">CyDER package</a> installed via “pip install setup.py”.
+The FMU compilation process takes an Excel or a CSV file describing inputs and outputs (instead of an XML file) as shown in the table below.</p>
+<img alt="_images/ios_example.png" src="_images/ios_example.png" />
+<p>Finally, the compilation process can be triggered via the command line below.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cyderc --path ./ --name modelname --io table.xlsx --fmu_struc python --fmu_type me --path_to_simulatortofmu <span class="s1">&#39;C:/SimulatorToFMU&#39;</span> --path_to_jmodelica <span class="s1">&#39;C:/JModelica.org-2.4&#39;</span>
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>Where:</dt>
+<dd><ul class="first last simple">
+<li>–path: is the path where the FMU will be created,</li>
+<li>–name: is the name of the FMU,</li>
+<li>–io: is the path of the Excel file defining the inputs and outputs,</li>
+<li>–fmu_struc: is the architecture of the FMU (server or function),</li>
+<li>–fmu_type: is the type of FMU (ME or CS),</li>
+<li>–path_to_simulatortofmu: is the path to the SimulatorToFMU main folder</li>
+<li>–path_to_jmodelica: is the path to the JModelica-2.4 main folder</li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Compiling FMUs</a><ul>
+<li><a class="reference internal" href="#compiling-modelica-code-as-fmu">Compiling Modelica code as FMU</a></li>
+<li><a class="reference internal" href="#compiling-python-code-as-fmu">Compiling Python code as FMU</a></li>
+<li><a class="reference internal" href="#compiling-python-code-as-fmu-with-cyder">Compiling Python code as FMU with CyDER</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="02_getting_started.html"
+                        title="previous chapter">Getting Started</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="04_powersystem_simulation.html"
+                        title="next chapter">Power System Simulations</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/03_compiling_fmu.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="04_powersystem_simulation.html" title="Power System Simulations"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="02_getting_started.html" title="Getting Started"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">CyDER 0.0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Lawrence Berkeley National Laboratory.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.2.
+    </div>
+  </body>
+</html>
