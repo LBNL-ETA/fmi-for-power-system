@@ -13,7 +13,7 @@ model pandapower
     "_" annotation(Placement(transformation(extent={{100,52},{120,72}})));
   // Configuration specific parameters coming from
   // the inputs of the Python export tool (SimulatorToFMU.py)
-  parameter String patResScri = Modelica.Utilities.Files.loadResource("C:\\Users\\Joscha\\Documents\\Github\\fmi-for-power-system\\examples\\001_cosimulation\\pandapower\\pandapower_wrapper.py")
+  parameter String patResScri = Modelica.Utilities.Files.loadResource("C:\\Users\\Joscha\\Documents\\Github\\fmi-for-power-system\\examples\\001_pandapower_cosimulation\\pandapower\\pandapower_wrapper.py")
     "Path to the script in resource folder";
   // used to generate the FMU
   //

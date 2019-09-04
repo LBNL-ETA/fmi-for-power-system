@@ -23,7 +23,7 @@ model pandapower
     "Voltage at node X" annotation(Placement(transformation(extent={{100,34},{120,54}})));
   // Configuration specific parameters coming from
   // the inputs of the Python export tool (SimulatorToFMU.py)
-  parameter String patResScri = Modelica.Utilities.Files.loadResource("C:\\Users\\DRRC\\Desktop\\Jonathan\\voltvarwatt_with_cyme_fmus\\usecases\\004_pp_first_order\\pandapower\\pandapower_wrapper.py")
+  parameter String patResScri = Modelica.Utilities.Files.loadResource("C:\\Users\\Joscha\\Documents\\Github\\fmi-for-power-system\\examples\\003_pandapower_modelexchange\\pandapower\\pandapower_wrapper.py")
     "Path to the script in resource folder";
   // used to generate the FMU
   //
