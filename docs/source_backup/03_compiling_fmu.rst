@@ -1,5 +1,6 @@
 Compiling FMUs
 ==============
+This section mostly focus on compiling FMUs with embedded Python code. Note that it is also possible to obtain FMUs from Modelica code, Simulink blocks, and a variety of tools listed on the `FMI standard website <https://fmi-standard.org/tools/>`_.
 
 Compiling Modelica code as FMU
 ------------------------------
@@ -16,9 +17,11 @@ You can find some Modelica templates under "example/004_getting_started/".
 
 Compiling Python code as FMU
 ----------------------------
-`SimulatorToFMU <https://github.com/LBNL-ETA/SimulatorToFMU>`_ let you embed Python code within FMUs, it ultimately uses a compiler such as JModelica.org to create FMUs. You can find detailed documentation `here <https://github.com/LBNL-ETA/SimulatorToFMU/blob/master/simulatortofmu/userGuide.pdf>`_, but for convenience we detail the main steps to use SimulatorToFMU. In order to compile a new FMU SimulatorToFMU requires a Python file and an XML file describing the structure of the FMU (e.g. inputs/outputs).
+`SimulatorToFMU <https://github.com/LBNL-ETA/SimulatorToFMU>`_ let you embed Python code within FMUs, it ultimately uses a compiler such as JModelica.org to create FMUs. You can find detailed documentation `here <https://github.com/LBNL-ETA/SimulatorToFMU/blob/master/simulatortofmu/userGuide.pdf>`_, but for convenience we detail the main steps to use SimulatorToFMU. You can download SimulatorToFMU from `Github <https://github.com/LBNL-ETA/SimulatorToFMU>`_.
 
-The Python code should include the following function:
+.. image:: ./_static/simulatortofmu.png
+
+In order to compile a new FMU SimulatorToFMU requires a Python file and an XML file describing the structure of the FMU (e.g. inputs/outputs). The Python code should include the following function:
 
 .. code-block:: python
 
@@ -42,15 +45,31 @@ The format of the XML file is as follow:
 .. code-block:: xml
 
   <?xml version='1.0' encoding='UTF-8'?>
-  <SimulatorModelDescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             fmiVersion="2.0"
-                             modelName="simple"
-                             description="simple"
-                             generationTool="SimulatorToFMU">
+  <SimulatorModelDescription
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    fmiVersion="2.0"
+    modelName="simple"
+    description="simple"
+    generationTool="SimulatorToFMU">
     <ModelVariables>
-      <ScalarVariable name="a" description="input 1" causality="input" type="Real" unit="m"/>
-      <ScalarVariable name="b" description="input 2" causality="input" type="Real" unit="m"/>
-      <ScalarVariable name="r" description="result" causality="output" type="Real" unit="m"/>
+      <ScalarVariable
+        name="a"
+        description="input 1"
+        causality="input"
+        type="Real"
+        unit="m"/>
+      <ScalarVariable
+        name="b"
+        description="input 2"
+        causality="input"
+        type="Real"
+        unit="m"/>
+      <ScalarVariable
+        name="r"
+        description="result"
+        causality="output"
+        type="Real"
+        unit="m"/>
     </ModelVariables>
   </SimulatorModelDescription>
 
@@ -76,7 +95,7 @@ In order to launch SimulatorToFMU you can use the following command line.
     -s ./model_wrapper.py ^
     -x python ^
     -t jmodelica ^
-    -pt C:/JModelica.org-2.1 ^
+    -pt C:/JModelica.org-2.4 ^
     -a me
 
 Where:
@@ -87,10 +106,12 @@ Where:
   - -pt: is the path to the compiler,
   - -a: is the type of FMU (Model-Exchange "me" or Co-Simulation "cs")
 
+
 Compiling Python code as FMU with CyDER
 ---------------------------------------
 
-In order to ease the compilation of FMUs, the CyDER team developed a small utility function to abstract some of the details presented above. The compilation process takes an Excel or a CSV file describing inputs and outputs (instead of an XML file) as shown in the table below.
+In order to ease the compilation of FMUs, the CyDER team developed a small utility function to abstract some of the details presented above. To use this feature you need to have SimulatorToFMU and the `CyDER package <https://github.com/LBNL-ETA/fmi-for-power-system>`_ installed via "pip install setup.py".
+The FMU compilation process takes an Excel or a CSV file describing inputs and outputs (instead of an XML file) as shown in the table below.
 
 .. image:: ./_static/ios_example.png
 
@@ -98,11 +119,13 @@ Finally, the compilation process can be triggered via the command line below.
 
 .. code-block:: bash
 
-  cyderc --path ./ --name modelname --io inputs_outputs.xlsx --fmu_struc python --fmu_type me
+  cyderc --path ./ --name modelname --io table.xlsx --fmu_struc python --fmu_type me --path_to_simulatortofmu 'C:/SimulatorToFMU' --path_to_jmodelica 'C:/JModelica.org-2.4'
 
 Where:
   - --path: is the path where the FMU will be created,
   - --name: is the name of the FMU,
   - --io: is the path of the Excel file defining the inputs and outputs,
   - --fmu_struc: is the architecture of the FMU (server or function),
-  - --fmu_type: is the type of FMU (ME or CS).
+  - --fmu_type: is the type of FMU (ME or CS),
+  - --path_to_simulatortofmu: is the path to the SimulatorToFMU main folder
+  - --path_to_jmodelica: is the path to the JModelica-2.4 main folder

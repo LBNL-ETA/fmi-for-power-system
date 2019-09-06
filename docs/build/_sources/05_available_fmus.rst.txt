@@ -4,16 +4,13 @@ Available FMUs
 CYME FMU
 --------
 
-CYME does not have a functionality to export models as an FMU. The created CYME FMU utilizes the Python interface of CYME and wraps it with SimulatorToFMU into an FMU. 
 
 PandaPower FMU
 --------------
 
-PandaPower is a Python based network calculation program. It can be used to simulate networks and run power flow simulations. The PandaPower models can be wrapped into FMUs by utilizing SimulatorToFMU.
 
 Template Python FMU
 -------------------
-
 
 
 Template Server FMU

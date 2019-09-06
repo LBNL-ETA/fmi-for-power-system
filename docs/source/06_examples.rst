@@ -9,11 +9,21 @@ need to be specified. Also, a Windows environment variable PATH and a variable P
 
 Pandapower Co-Simulation
 ------------------------
-In the Pandapower Co-Simulation example, a PV FMU is connected to a Pandapower FMU. The PV FMU is created with Modelica and the Pandapower FMU is created with SimulatorToFMU. After setting all paths settings at the beginning, the code can be run.
+In the Pandapower Co-Simulation example, a PV FMU is connected to a Pandapower FMU. The PV FMU is created with Modelica and the Pandapower FMU is created with SimulatorToFMU. After setting all paths settings at the beginning, the code can be run. It creates the following results, which show some oscillations.
+
+.. image:: ./_static/Example_1_P.png
+.. image:: ./_static/Example_1_Q.png
+.. image:: ./_static/Example_1_v.png
 
 Advanced Pandapower Co-Simulation
 ---------------------------------
 The Advanced Pandapower Co-Simulation example is the same example like the regular Co-Simulation one. The difference is that it utilizes little convergence timesteps between the hourly timesteps of the simulation. This can damp oscillations resulting from feedback loops, but is still prone to those oscillations appearing between 2 timesteps. This is due to the step response between 2 timesteps.
+
+.. image:: ./_static/Example_2_P.png
+.. image:: ./_static/Example_2_Q.png
+.. image:: ./_static/Example_2_v.png
+
+
 
 
 Pandapower Model Exchange

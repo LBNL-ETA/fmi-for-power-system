@@ -1,9 +1,0 @@
-Examples
-========
-
-There are multiple examples available, which utilize differend grid FMUs and the different simulations modes co-simulation and model-exchange. For all examples, the Python environment of JModelica needs to be activated. This can be done by running the setenv.bat file in the JModelica folder from the command window before starting Jupyter Notebook. 
-
-PandaPower - co-simulation mode
------------------------------
-
-The first example is a PandaPower model run in co-simulation mode. One PV system with a volt/var/watt control is connected and simulated for one day.

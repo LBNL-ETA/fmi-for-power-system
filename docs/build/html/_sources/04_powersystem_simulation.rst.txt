@@ -50,9 +50,8 @@ Where:
   - result: is the filename where all the results are saved.
 
 
-Note1: FMU compiled with SimulatorToFMU tend to have a bad performance in Model-Exchange mode, see the next section to increase simulation speed.
+Note: FMU compiled with SimulatorToFMU tend to have a bad performance in Model-Exchange mode, see the next section to increase simulation speed.
 
-Note2: The table could be replaced by SSP in the future. SSP stands for System Structure and Parameterization. The standard defines an open format for describing systems of interconnected FMUs and the parameterization of such systems. It can also specify multiple configurations of a given system.
 
 Customizing a master algorithm
 ------------------------------
